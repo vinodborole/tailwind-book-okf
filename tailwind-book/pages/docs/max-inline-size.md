@@ -1,0 +1,74 @@
+---
+type: Web Page
+title: max-inline-size - Sizing - Tailwind CSS
+description: Utilities for setting the maximum inline size of an element.
+resource: https://tailwindcss.com/docs/max-inline-size
+timestamp: '2026-07-07T10:59:46.333743+00:00'
+---
+
+Sizing
+
+Utilities for setting the maximum inline size of an element.
+
+| Class | Styles | 
+|---|---|
+| `max-inline-` | `max-inline-size: calc(var(--spacing) * ` | 
+| `max-inline-` | `max-inline-size: calc(` | 
+| `max-inline-3xs` | `max-inline-size: var(--container-3xs); /* 16rem (256px) */` | 
+| `max-inline-2xs` | `max-inline-size: var(--container-2xs); /* 18rem (288px) */` | 
+| `max-inline-xs` | `max-inline-size: var(--container-xs); /* 20rem (320px) */` | 
+| `max-inline-sm` | `max-inline-size: var(--container-sm); /* 24rem (384px) */` | 
+| `max-inline-md` | `max-inline-size: var(--container-md); /* 28rem (448px) */` | 
+| `max-inline-lg` | `max-inline-size: var(--container-lg); /* 32rem (512px) */` | 
+| `max-inline-xl` | `max-inline-size: var(--container-xl); /* 36rem (576px) */` | 
+| `max-inline-2xl` | `max-inline-size: var(--container-2xl); /* 42rem (672px) */` | 
+| `max-inline-3xl` | `max-inline-size: var(--container-3xl); /* 48rem (768px) */` | 
+| `max-inline-4xl` | `max-inline-size: var(--container-4xl); /* 56rem (896px) */` | 
+| `max-inline-5xl` | `max-inline-size: var(--container-5xl); /* 64rem (1024px) */` | 
+| `max-inline-6xl` | `max-inline-size: var(--container-6xl); /* 72rem (1152px) */` | 
+| `max-inline-7xl` | `max-inline-size: var(--container-7xl); /* 80rem (1280px) */` | 
+| `max-inline-none` | `max-inline-size: none;` | 
+| `max-inline-px` | `max-inline-size: 1px;` | 
+| `max-inline-full` | `max-inline-size: 100%;` | 
+| `max-inline-dvw` | `max-inline-size: 100dvw;` | 
+| `max-inline-dvh` | `max-inline-size: 100dvh;` | 
+| `max-inline-lvw` | `max-inline-size: 100lvw;` | 
+| `max-inline-lvh` | `max-inline-size: 100lvh;` | 
+| `max-inline-svw` | `max-inline-size: 100svw;` | 
+| `max-inline-svh` | `max-inline-size: 100svh;` | 
+| `max-inline-screen` | `max-inline-size: 100vw;` | 
+| `max-inline-min` | `max-inline-size: min-content;` | 
+| `max-inline-max` | `max-inline-size: max-content;` | 
+| `max-inline-fit` | `max-inline-size: fit-content;` | 
+| `max-inline-(` | `max-inline-size: var(` | 
+| `max-inline-[` | `max-inline-size: ` | 
+
+Use `max-inline-` utilities like `<number>``max-inline-24` and `max-inline-64` to set an element to a fixed maximum inline size based on the spacing scale:
+
+Resize the example to see the expected behavior
+
+Use `max-inline-full` or `max-inline-` utilities like `<fraction>``max-inline-1/2` and `max-inline-2/5` to give an element a percentage-based maximum inline size:
+
+Resize the example to see the expected behavior
+
+Use utilities like `max-inline-sm` and `max-inline-xl` to set an element to a fixed maximum inline size based on the container scale:
+
+Resize the example to see the expected behavior
+
+Use the `max-inline-[` syntax to set the maximum inline size based on a completely custom value:`<value>`]
+
+`<div class="max-inline-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `max-inline-(` syntax:`<custom-property>`)
+
+`<div class="max-inline-(--my-max-inline-size) ...">  <!-- ... --></div>`This is just a shorthand for `max-inline-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+
+Prefix a `max-inline-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+
+`<div class="max-inline-sm md:max-inline-lg ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+
+The `max-inline-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
+
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme variable documentation.
+
+# Citations
+
+1. Source page: https://tailwindcss.com/docs/max-inline-size

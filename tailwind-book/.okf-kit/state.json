@@ -1,0 +1,1122 @@
+{
+  "generator": "okf-kit",
+  "okf_version": "0.1",
+  "root_url": "https://tailwindcss.com/docs/installation/using-vite",
+  "updated_at": "2026-07-07T10:59:46.368336+00:00",
+  "config": {
+    "max_depth": 3,
+    "max_pages": 90,
+    "fetcher": "http",
+    "respect_robots": true,
+    "path_prefix": "/docs/"
+  },
+  "page_count": 88,
+  "pages": [
+    {
+      "path": "pages/docs/adding-custom-styles.md",
+      "url": "https://tailwindcss.com/docs/adding-custom-styles",
+      "title": "Adding custom styles - Core concepts - Tailwind CSS",
+      "hash": "a9fe5d71b055bc6fde5610181178d51434c0fa7ebc1b559308f56dfd1918a8f2"
+    },
+    {
+      "path": "pages/docs/align-content.md",
+      "url": "https://tailwindcss.com/docs/align-content",
+      "title": "align-content - Flexbox & Grid - Tailwind CSS",
+      "hash": "6a857d02632c6f496a037027b3c0fbdcfd7820a78eb68c0cc742e620fa3097e5"
+    },
+    {
+      "path": "pages/docs/align-items.md",
+      "url": "https://tailwindcss.com/docs/align-items",
+      "title": "align-items - Flexbox & Grid - Tailwind CSS",
+      "hash": "811c66b8306f005dbc7e191429555ab84f2b17a9a6daea7ff3e42a37eeb72f96"
+    },
+    {
+      "path": "pages/docs/align-self.md",
+      "url": "https://tailwindcss.com/docs/align-self",
+      "title": "align-self - Flexbox & Grid - Tailwind CSS",
+      "hash": "845708bd01d3788f139d0a7b9576796d6af6db97a434a3837090846c5fd852ae"
+    },
+    {
+      "path": "pages/docs/aspect-ratio.md",
+      "url": "https://tailwindcss.com/docs/aspect-ratio",
+      "title": "aspect-ratio - Layout - Tailwind CSS",
+      "hash": "7e2c63a78ff819a652f48bdec7f14af9b94dbbed25a4db0996d578b392f22dc1"
+    },
+    {
+      "path": "pages/docs/block-size.md",
+      "url": "https://tailwindcss.com/docs/block-size",
+      "title": "block-size - Sizing - Tailwind CSS",
+      "hash": "27ec1cc2bad17aeaea07571ae03124a1ea75a4f485d2e40c7208d08e37dac878"
+    },
+    {
+      "path": "pages/docs/box-decoration-break.md",
+      "url": "https://tailwindcss.com/docs/box-decoration-break",
+      "title": "box-decoration-break - Layout - Tailwind CSS",
+      "hash": "8276d4b63b28c2de982f221cb54e36c2dd7d584ffcb35eec947ef776195200fa"
+    },
+    {
+      "path": "pages/docs/box-sizing.md",
+      "url": "https://tailwindcss.com/docs/box-sizing",
+      "title": "box-sizing - Layout - Tailwind CSS",
+      "hash": "a290f41fcde15d850e0a7efe76ca9250148f53a75e85ab24ef52adbcf101ce4f"
+    },
+    {
+      "path": "pages/docs/break-after.md",
+      "url": "https://tailwindcss.com/docs/break-after",
+      "title": "break-after - Layout - Tailwind CSS",
+      "hash": "8020ad7256e67313b12ff6a11f5b9c70a468b25c350c5970022aa6323e96d380"
+    },
+    {
+      "path": "pages/docs/break-before.md",
+      "url": "https://tailwindcss.com/docs/break-before",
+      "title": "break-before - Layout - Tailwind CSS",
+      "hash": "0a7f74e873c7560f5c330251c8f85c720536a7261f5023b6f87b622d06dc23ab"
+    },
+    {
+      "path": "pages/docs/break-inside.md",
+      "url": "https://tailwindcss.com/docs/break-inside",
+      "title": "break-inside - Layout - Tailwind CSS",
+      "hash": "317787d152d112e2adbbd3371930e338144db1ac94965f31ae9b2f57b3dcc17f"
+    },
+    {
+      "path": "pages/docs/clear.md",
+      "url": "https://tailwindcss.com/docs/clear",
+      "title": "clear - Layout - Tailwind CSS",
+      "hash": "6f97ab867bda9ac3159d71ae6adddf67378cd91135e632708f0deb0707d91566"
+    },
+    {
+      "path": "pages/docs/color.md",
+      "url": "https://tailwindcss.com/docs/color",
+      "title": "color - Typography - Tailwind CSS",
+      "hash": "eb739d15d098f1c98c32afb12ceb1edf30c66b957c119fd508e31b3c7d3ca6d8"
+    },
+    {
+      "path": "pages/docs/colors.md",
+      "url": "https://tailwindcss.com/docs/colors",
+      "title": "Colors - Core concepts - Tailwind CSS",
+      "hash": "49586ef4680a6677cba98981122c66311e316435387a170211bb2e46448c9b35"
+    },
+    {
+      "path": "pages/docs/columns.md",
+      "url": "https://tailwindcss.com/docs/columns",
+      "title": "columns - Layout - Tailwind CSS",
+      "hash": "09cd2b7feed76379e60fb648d6ab922665f4a5ad6c9b0843dda274a660721ec4"
+    },
+    {
+      "path": "pages/docs/compatibility.md",
+      "url": "https://tailwindcss.com/docs/compatibility",
+      "title": "Compatibility - Getting started - Tailwind CSS",
+      "hash": "f6222eb476f6127d7d66c3a9f47e957151073e720500e22ee0a1ee657f3590c6"
+    },
+    {
+      "path": "pages/docs/dark-mode.md",
+      "url": "https://tailwindcss.com/docs/dark-mode",
+      "title": "Dark mode - Core concepts - Tailwind CSS",
+      "hash": "4153a39981846ae79b83b4345179849da7397c3086d30bcb6efe4c2f9226c146"
+    },
+    {
+      "path": "pages/docs/detecting-classes-in-source-files.md",
+      "url": "https://tailwindcss.com/docs/detecting-classes-in-source-files",
+      "title": "Detecting classes in source files - Core concepts - Tailwind CSS",
+      "hash": "d6552624e537999da82c684a89626e62f2db605e280b2c9da1d8def9ea0ca6cd"
+    },
+    {
+      "path": "pages/docs/display.md",
+      "url": "https://tailwindcss.com/docs/display",
+      "title": "display - Layout - Tailwind CSS",
+      "hash": "1557c10aebf95ce3c8edeb03c4506c6190899ffab4697fff9f435103b03e2cd7"
+    },
+    {
+      "path": "pages/docs/editor-setup.md",
+      "url": "https://tailwindcss.com/docs/editor-setup",
+      "title": "Editor setup - Getting started - Tailwind CSS",
+      "hash": "740896653f0938f3cfface63a2b107f7bea774d9797beca2d0458dcc31b11674"
+    },
+    {
+      "path": "pages/docs/flex-basis.md",
+      "url": "https://tailwindcss.com/docs/flex-basis",
+      "title": "flex-basis - Flexbox & Grid - Tailwind CSS",
+      "hash": "08d7e10a65701c1b15afec5f250fa47460c88a0454e8725415efd4e36f7d918c"
+    },
+    {
+      "path": "pages/docs/flex-direction.md",
+      "url": "https://tailwindcss.com/docs/flex-direction",
+      "title": "flex-direction - Flexbox & Grid - Tailwind CSS",
+      "hash": "0c3c067fc08d7211aa40fdbb234a560ad9c438a8e535cf429be0bf90f0a498fb"
+    },
+    {
+      "path": "pages/docs/flex-grow.md",
+      "url": "https://tailwindcss.com/docs/flex-grow",
+      "title": "flex-grow - Flexbox & Grid - Tailwind CSS",
+      "hash": "eedfc4708aafc341befad5c2380d5c2ee6fb15ec2ec247dfe1684b2a51eebe0b"
+    },
+    {
+      "path": "pages/docs/flex-shrink.md",
+      "url": "https://tailwindcss.com/docs/flex-shrink",
+      "title": "flex-shrink - Flexbox & Grid - Tailwind CSS",
+      "hash": "a0270d63bb9b754c763c6303977b6a4a91c3a0a304f60da5bac6508ad395ea52"
+    },
+    {
+      "path": "pages/docs/flex-wrap.md",
+      "url": "https://tailwindcss.com/docs/flex-wrap",
+      "title": "flex-wrap - Flexbox & Grid - Tailwind CSS",
+      "hash": "3237b5d2fd3268cc2a0083ccd1df4c4efaa27dbd25f0afdb2cad4f225849c390"
+    },
+    {
+      "path": "pages/docs/flex.md",
+      "url": "https://tailwindcss.com/docs/flex",
+      "title": "flex - Flexbox & Grid - Tailwind CSS",
+      "hash": "c5c94224dfaec7ae41fe876770cbe73a6ef70d1dd0bcda7036af06fbf814ed82"
+    },
+    {
+      "path": "pages/docs/float.md",
+      "url": "https://tailwindcss.com/docs/float",
+      "title": "float - Layout - Tailwind CSS",
+      "hash": "31531ee58e99fcbf9d13f901c26b9ddd80b870dc2cc408275d89b1e64b9a64fa"
+    },
+    {
+      "path": "pages/docs/font-family.md",
+      "url": "https://tailwindcss.com/docs/font-family",
+      "title": "font-family - Typography - Tailwind CSS",
+      "hash": "4f4ec704bbc1788892fe4b8127a75c2d5c923e8545d600adbbd7252e187cfa43"
+    },
+    {
+      "path": "pages/docs/font-feature-settings.md",
+      "url": "https://tailwindcss.com/docs/font-feature-settings",
+      "title": "font-feature-settings - Typography - Tailwind CSS",
+      "hash": "aaeb08fa65edf55863df4f1405261306b3749fb8762ea65d28f41a5aabc7cebf"
+    },
+    {
+      "path": "pages/docs/font-size.md",
+      "url": "https://tailwindcss.com/docs/font-size",
+      "title": "font-size - Typography - Tailwind CSS",
+      "hash": "5f4fb5bd048fbc1c33aa9a0665717ec7b3744167826ad2e24fd939485ab9025e"
+    },
+    {
+      "path": "pages/docs/font-smoothing.md",
+      "url": "https://tailwindcss.com/docs/font-smoothing",
+      "title": "font-smoothing - Typography - Tailwind CSS",
+      "hash": "c63279a232e72241a4650de5fdbd8ffe0c1d1d75155fc166b432ded44f527feb"
+    },
+    {
+      "path": "pages/docs/font-stretch.md",
+      "url": "https://tailwindcss.com/docs/font-stretch",
+      "title": "font-stretch - Typography - Tailwind CSS",
+      "hash": "92557d2050da44a50e5e2580531e293068ba628555f38ee780699385af04c92b"
+    },
+    {
+      "path": "pages/docs/font-style.md",
+      "url": "https://tailwindcss.com/docs/font-style",
+      "title": "font-style - Typography - Tailwind CSS",
+      "hash": "c352503fc4c38d6a344783e8d32993eeb2fc205de5c3572783d9176620522294"
+    },
+    {
+      "path": "pages/docs/font-variant-numeric.md",
+      "url": "https://tailwindcss.com/docs/font-variant-numeric",
+      "title": "font-variant-numeric - Typography - Tailwind CSS",
+      "hash": "b56081db70f755d19a62373a1666c7270d56e6704221d06507e9876e0b830cf4"
+    },
+    {
+      "path": "pages/docs/font-weight.md",
+      "url": "https://tailwindcss.com/docs/font-weight",
+      "title": "font-weight - Typography - Tailwind CSS",
+      "hash": "4621dfa40751152bfcee67b58f411788458b03b08d6f4d86db5c945aa3f08db3"
+    },
+    {
+      "path": "pages/docs/functions-and-directives.md",
+      "url": "https://tailwindcss.com/docs/functions-and-directives",
+      "title": "Functions and directives - Core concepts - Tailwind CSS",
+      "hash": "0a71622d517741e8b77ed4bf788c4d08d4fa9c4dc55f9b6882ef29e7bf3861c1"
+    },
+    {
+      "path": "pages/docs/gap.md",
+      "url": "https://tailwindcss.com/docs/gap",
+      "title": "gap - Flexbox & Grid - Tailwind CSS",
+      "hash": "8d8bd02548a61102ba4d42286ddff604307b41d66e4a7a932ed413788d1bf941"
+    },
+    {
+      "path": "pages/docs/grid-auto-columns.md",
+      "url": "https://tailwindcss.com/docs/grid-auto-columns",
+      "title": "grid-auto-columns - Flexbox & Grid - Tailwind CSS",
+      "hash": "b08a88faa62be232698aca67dd94931f89cd1035724bba91034bc2588675a597"
+    },
+    {
+      "path": "pages/docs/grid-auto-flow.md",
+      "url": "https://tailwindcss.com/docs/grid-auto-flow",
+      "title": "grid-auto-flow - Flexbox & Grid - Tailwind CSS",
+      "hash": "f25073a9884fd4724bb1e667e64a9b667cb375ef1c2b90e66220d64ecd1a0abf"
+    },
+    {
+      "path": "pages/docs/grid-auto-rows.md",
+      "url": "https://tailwindcss.com/docs/grid-auto-rows",
+      "title": "grid-auto-rows - Flexbox & Grid - Tailwind CSS",
+      "hash": "73ce30e8b662ec82af7a27095217271c4a83138c5b66fa791a7822fd095af698"
+    },
+    {
+      "path": "pages/docs/grid-column.md",
+      "url": "https://tailwindcss.com/docs/grid-column",
+      "title": "grid-column - Flexbox & Grid - Tailwind CSS",
+      "hash": "37f691af4c8ae34c277fdf2ba731147e48d7454defdbf8da286091f979387964"
+    },
+    {
+      "path": "pages/docs/grid-row.md",
+      "url": "https://tailwindcss.com/docs/grid-row",
+      "title": "grid-row - Flexbox & Grid - Tailwind CSS",
+      "hash": "9fdad3d5a19fb5f919c0311ca554c1167c67f1379af68cb6d8f07a7b98da67b1"
+    },
+    {
+      "path": "pages/docs/grid-template-columns.md",
+      "url": "https://tailwindcss.com/docs/grid-template-columns",
+      "title": "grid-template-columns - Flexbox & Grid - Tailwind CSS",
+      "hash": "f7b7f3c70619a1ef0a21c007529d5072ea89a0be388573dfdcfa90017f767c80"
+    },
+    {
+      "path": "pages/docs/grid-template-rows.md",
+      "url": "https://tailwindcss.com/docs/grid-template-rows",
+      "title": "grid-template-rows - Flexbox & Grid - Tailwind CSS",
+      "hash": "5af82ef0c52d45f4b408fc42d4d7a2a467d09cdd0ce2b8810b3cfd91d1d17c3c"
+    },
+    {
+      "path": "pages/docs/height.md",
+      "url": "https://tailwindcss.com/docs/height",
+      "title": "height - Sizing - Tailwind CSS",
+      "hash": "3da129fe9ed7b116213af5d55c95977b0e56c41580b2eca2db5bcb5ee68870de"
+    },
+    {
+      "path": "pages/docs/hover-focus-and-other-states.md",
+      "url": "https://tailwindcss.com/docs/hover-focus-and-other-states",
+      "title": "Hover, focus, and other states - Core concepts - Tailwind CSS",
+      "hash": "6b6fc8b3d4a111626ce79907b995f28debdd204184769889eebe0c5deb335df3"
+    },
+    {
+      "path": "pages/docs/inline-size.md",
+      "url": "https://tailwindcss.com/docs/inline-size",
+      "title": "inline-size - Sizing - Tailwind CSS",
+      "hash": "437c6fea9ff01d5492e9dc496e50c9e30100e6bddda512d6a87bce6735558562"
+    },
+    {
+      "path": "pages/docs/installation/using-vite.md",
+      "url": "https://tailwindcss.com/docs/installation/using-vite",
+      "title": "Installing Tailwind CSS with Vite - Tailwind CSS",
+      "hash": "0e53a1f4364970e8358bc452d969d5da24f8d0bf17d105c55b38631f23c22375"
+    },
+    {
+      "path": "pages/docs/isolation.md",
+      "url": "https://tailwindcss.com/docs/isolation",
+      "title": "isolation - Layout - Tailwind CSS",
+      "hash": "6c13d0742ad3e48bc6e89d770ef920902365da3d82d00bf468f41113d4be5d3e"
+    },
+    {
+      "path": "pages/docs/justify-content.md",
+      "url": "https://tailwindcss.com/docs/justify-content",
+      "title": "justify-content - Flexbox & Grid - Tailwind CSS",
+      "hash": "503775c86cb031d8aed77fd0c6813e896447f766b8a7e6ae53bb46a6d4e77816"
+    },
+    {
+      "path": "pages/docs/justify-items.md",
+      "url": "https://tailwindcss.com/docs/justify-items",
+      "title": "justify-items - Flexbox & Grid - Tailwind CSS",
+      "hash": "6aa54d8c3ce2a2d6c1433baf16cf82ebfcf28c628a95762622cb4c0f5965e607"
+    },
+    {
+      "path": "pages/docs/justify-self.md",
+      "url": "https://tailwindcss.com/docs/justify-self",
+      "title": "justify-self - Flexbox & Grid - Tailwind CSS",
+      "hash": "68954ded4fb9b7a7bf521f9e35186ddb96f603f948d62ad11d87c566de362a64"
+    },
+    {
+      "path": "pages/docs/letter-spacing.md",
+      "url": "https://tailwindcss.com/docs/letter-spacing",
+      "title": "letter-spacing - Typography - Tailwind CSS",
+      "hash": "d71f361ed4f89097f3cd3ddbe3be483f785a4d9d0e1890f77870ef258ae6a4b4"
+    },
+    {
+      "path": "pages/docs/line-clamp.md",
+      "url": "https://tailwindcss.com/docs/line-clamp",
+      "title": "line-clamp - Typography - Tailwind CSS",
+      "hash": "a5d837f122ea945a81cae401399e294b460a803a90caff53a59a32b6ec0125ff"
+    },
+    {
+      "path": "pages/docs/line-height.md",
+      "url": "https://tailwindcss.com/docs/line-height",
+      "title": "line-height - Typography - Tailwind CSS",
+      "hash": "c5cb96755f4462203a3434de0230f16d75ce437894faff85531e1db3bafcbe0e"
+    },
+    {
+      "path": "pages/docs/list-style-image.md",
+      "url": "https://tailwindcss.com/docs/list-style-image",
+      "title": "list-style-image - Typography - Tailwind CSS",
+      "hash": "6c1cb95f76e710ef1ffd2595059c1efedfe3b4c99881aa65a6a6206eb3a118af"
+    },
+    {
+      "path": "pages/docs/list-style-position.md",
+      "url": "https://tailwindcss.com/docs/list-style-position",
+      "title": "list-style-position - Typography - Tailwind CSS",
+      "hash": "227bcd1a4fe2db2c470fafedca5571d00494b4d72f50587f6f17ad89ad49f11b"
+    },
+    {
+      "path": "pages/docs/list-style-type.md",
+      "url": "https://tailwindcss.com/docs/list-style-type",
+      "title": "list-style-type - Typography - Tailwind CSS",
+      "hash": "a61707748f3c70811a0853bb654e56b8fc921b4dfa0cde824e3397b22c9f7e1b"
+    },
+    {
+      "path": "pages/docs/margin.md",
+      "url": "https://tailwindcss.com/docs/margin",
+      "title": "margin - Spacing - Tailwind CSS",
+      "hash": "1cbec86d00aa6e8beb22b0ccccff625ec7c638e875dbe644faae66d93cf549f7"
+    },
+    {
+      "path": "pages/docs/max-block-size.md",
+      "url": "https://tailwindcss.com/docs/max-block-size",
+      "title": "max-block-size - Sizing - Tailwind CSS",
+      "hash": "305d14224e0291b803e1d397e4a6d0834fe2ec5782e89d1e65f6a5a3bb9236c4"
+    },
+    {
+      "path": "pages/docs/max-height.md",
+      "url": "https://tailwindcss.com/docs/max-height",
+      "title": "max-height - Sizing - Tailwind CSS",
+      "hash": "0b43fcd196a09cf8d8c9ce7bc1e1a31998fdee80b24d12dd335561a0b022fda6"
+    },
+    {
+      "path": "pages/docs/max-inline-size.md",
+      "url": "https://tailwindcss.com/docs/max-inline-size",
+      "title": "max-inline-size - Sizing - Tailwind CSS",
+      "hash": "9ba90f76e028acac4e0229ed2835f406ac59afbe41907fc1750685503fe1316e"
+    },
+    {
+      "path": "pages/docs/max-width.md",
+      "url": "https://tailwindcss.com/docs/max-width",
+      "title": "max-width - Sizing - Tailwind CSS",
+      "hash": "a21125f90ff42cbf52ce4e4094829392666bf18ba491c321b171dd2ed5e523a7"
+    },
+    {
+      "path": "pages/docs/min-block-size.md",
+      "url": "https://tailwindcss.com/docs/min-block-size",
+      "title": "min-block-size - Sizing - Tailwind CSS",
+      "hash": "fd288279ba761459b3556ef86a14f5a3a2e011da07f734192149d1bbe763dd12"
+    },
+    {
+      "path": "pages/docs/min-height.md",
+      "url": "https://tailwindcss.com/docs/min-height",
+      "title": "min-height - Sizing - Tailwind CSS",
+      "hash": "bfc6767c2fe89d73e8f29b0d0a8e38039d65f0a95b26f17d445f9c8719787737"
+    },
+    {
+      "path": "pages/docs/min-inline-size.md",
+      "url": "https://tailwindcss.com/docs/min-inline-size",
+      "title": "min-inline-size - Sizing - Tailwind CSS",
+      "hash": "c7f60825091e926ea80a57fe5d124eeae0623f552706bafc8ee6b4a5ac95084d"
+    },
+    {
+      "path": "pages/docs/min-width.md",
+      "url": "https://tailwindcss.com/docs/min-width",
+      "title": "min-width - Sizing - Tailwind CSS",
+      "hash": "3a29d834a80f0f2de6ff854d35c28b5f1ae01d0f4a1fb67e01ab4069afcc99c8"
+    },
+    {
+      "path": "pages/docs/object-fit.md",
+      "url": "https://tailwindcss.com/docs/object-fit",
+      "title": "object-fit - Layout - Tailwind CSS",
+      "hash": "24ff73da82bbc89e95577c3252c3f411ce5c6fa70e21157bd0be31f1df3cc422"
+    },
+    {
+      "path": "pages/docs/object-position.md",
+      "url": "https://tailwindcss.com/docs/object-position",
+      "title": "object-position - Layout - Tailwind CSS",
+      "hash": "07be84b0547182b131ed901f63a13cd0ee313c4dc2bb62263428ab067cdaf745"
+    },
+    {
+      "path": "pages/docs/order.md",
+      "url": "https://tailwindcss.com/docs/order",
+      "title": "order - Flexbox & Grid - Tailwind CSS",
+      "hash": "4191a55d02cb61554a404997a1f6eb86da33a47a22b49611eaf941be505cabc7"
+    },
+    {
+      "path": "pages/docs/overflow.md",
+      "url": "https://tailwindcss.com/docs/overflow",
+      "title": "overflow - Layout - Tailwind CSS",
+      "hash": "b98ff65df0d3937e6056928210049b3aaeae1049752f93c7f90b1190fdefd7f1"
+    },
+    {
+      "path": "pages/docs/overscroll-behavior.md",
+      "url": "https://tailwindcss.com/docs/overscroll-behavior",
+      "title": "overscroll-behavior - Layout - Tailwind CSS",
+      "hash": "294301a3e4a5881c9a767b4986ef5e0cbc05df6198d49455e65dd4ffcb7d6ea9"
+    },
+    {
+      "path": "pages/docs/padding.md",
+      "url": "https://tailwindcss.com/docs/padding",
+      "title": "padding - Spacing - Tailwind CSS",
+      "hash": "11a78700e6da986e01f7a54e48f3b2a578d87b780fdd54ecf471c9be3a5663f3"
+    },
+    {
+      "path": "pages/docs/place-content.md",
+      "url": "https://tailwindcss.com/docs/place-content",
+      "title": "place-content - Flexbox & Grid - Tailwind CSS",
+      "hash": "7d6e54f84c37e69a2c22284a2c881f573f21d10dbd386bbff4c7916031ba3bf5"
+    },
+    {
+      "path": "pages/docs/place-items.md",
+      "url": "https://tailwindcss.com/docs/place-items",
+      "title": "place-items - Flexbox & Grid - Tailwind CSS",
+      "hash": "5360c3827c75e5f001d1d97d2f8f3a9e0dacf3abf8b3ac7c2ac0005ba6dbfc5d"
+    },
+    {
+      "path": "pages/docs/place-self.md",
+      "url": "https://tailwindcss.com/docs/place-self",
+      "title": "place-self - Flexbox & Grid - Tailwind CSS",
+      "hash": "9c0073c164f7aef3f008cde4b7ce1db855c4a2a0781719ce8cf0b21e9c98d339"
+    },
+    {
+      "path": "pages/docs/position.md",
+      "url": "https://tailwindcss.com/docs/position",
+      "title": "position - Layout - Tailwind CSS",
+      "hash": "bc35305a8f944d54c7f6f66f01be524bf36ec7f037d0a0f2858042157d7bee90"
+    },
+    {
+      "path": "pages/docs/preflight.md",
+      "url": "https://tailwindcss.com/docs/preflight",
+      "title": "Preflight - Base styles - Tailwind CSS",
+      "hash": "5f1de156a5a297e01f14b8b68f13d3128154c2fe0966063c5e2c4c9c5624c403"
+    },
+    {
+      "path": "pages/docs/responsive-design.md",
+      "url": "https://tailwindcss.com/docs/responsive-design",
+      "title": "Responsive design - Core concepts - Tailwind CSS",
+      "hash": "8bad39b98a2c0cb037a7f62e5b618bd4166504ea228af4fd2daf987f1fcc7d2c"
+    },
+    {
+      "path": "pages/docs/styling-with-utility-classes.md",
+      "url": "https://tailwindcss.com/docs/styling-with-utility-classes",
+      "title": "Styling with utility classes - Core concepts - Tailwind CSS",
+      "hash": "7f5ac3eec788f84d5fc40a9b79df47b4651a4f6f51b4929277e44673d5ac92c1"
+    },
+    {
+      "path": "pages/docs/text-align.md",
+      "url": "https://tailwindcss.com/docs/text-align",
+      "title": "text-align - Typography - Tailwind CSS",
+      "hash": "842546388771ffefe847f75e0f6e359b3d8459f850bba401f8d1f9aa6a17a316"
+    },
+    {
+      "path": "pages/docs/text-decoration-line.md",
+      "url": "https://tailwindcss.com/docs/text-decoration-line",
+      "title": "text-decoration-line - Typography - Tailwind CSS",
+      "hash": "c97a1792ed2e3c4e78a0e7e3eef638c6a04d8652fbc1e720f17f1d0e0db7825f"
+    },
+    {
+      "path": "pages/docs/theme.md",
+      "url": "https://tailwindcss.com/docs/theme",
+      "title": "Theme variables - Core concepts - Tailwind CSS",
+      "hash": "d7d4e36b450fb7ce6500e292b6413bf757702ca7b7fd8ac7d0d7140e9d54d74c"
+    },
+    {
+      "path": "pages/docs/top-right-bottom-left.md",
+      "url": "https://tailwindcss.com/docs/top-right-bottom-left",
+      "title": "top / right / bottom / left - Layout - Tailwind CSS",
+      "hash": "6c66508f3cb3167a537ab449043a3070d45f2329fb8a1d367567cd06074d551d"
+    },
+    {
+      "path": "pages/docs/upgrade-guide.md",
+      "url": "https://tailwindcss.com/docs/upgrade-guide",
+      "title": "Upgrade guide - Getting started - Tailwind CSS",
+      "hash": "67177daf82dce5038f80f438a2050e84d9950b95a9e5b85688a24ba5624b1115"
+    },
+    {
+      "path": "pages/docs/visibility.md",
+      "url": "https://tailwindcss.com/docs/visibility",
+      "title": "visibility - Layout - Tailwind CSS",
+      "hash": "2348fb674ec928447746ce5b66b70a869b822330f87c6199dc028bba5895d06d"
+    },
+    {
+      "path": "pages/docs/width.md",
+      "url": "https://tailwindcss.com/docs/width",
+      "title": "width - Sizing - Tailwind CSS",
+      "hash": "9ac335447bf61bd6b6b434d9da60b77db8357f5177538083764c3ee19b554f91"
+    },
+    {
+      "path": "pages/docs/z-index.md",
+      "url": "https://tailwindcss.com/docs/z-index",
+      "title": "z-index - Layout - Tailwind CSS",
+      "hash": "05b3c5613a2f5107e6bf5d49dae5f3555ded41a694b6a7bda481cd32a7819e9c"
+    }
+  ],
+  "edges": [
+    [
+      "pages/docs/adding-custom-styles.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/adding-custom-styles.md",
+      "pages/docs/styling-with-utility-classes.md"
+    ],
+    [
+      "pages/docs/adding-custom-styles.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/align-content.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/align-items.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/align-self.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/aspect-ratio.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/aspect-ratio.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/block-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/block-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/box-decoration-break.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/box-sizing.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/box-sizing.md",
+      "pages/docs/preflight.md"
+    ],
+    [
+      "pages/docs/break-after.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/break-before.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/break-inside.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/clear.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/color.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/color.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/colors.md",
+      "pages/docs/dark-mode.md"
+    ],
+    [
+      "pages/docs/colors.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/columns.md",
+      "pages/docs/gap.md"
+    ],
+    [
+      "pages/docs/columns.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/columns.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/compatibility.md",
+      "pages/docs/colors.md"
+    ],
+    [
+      "pages/docs/detecting-classes-in-source-files.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/display.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/display.md",
+      "pages/docs/visibility.md"
+    ],
+    [
+      "pages/docs/editor-setup.md",
+      "pages/docs/functions-and-directives.md"
+    ],
+    [
+      "pages/docs/flex-basis.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/flex-basis.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/flex-direction.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/flex-grow.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/flex-shrink.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/flex-wrap.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/flex.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/float.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-family.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-family.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/font-feature-settings.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/font-smoothing.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-stretch.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-style.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-variant-numeric.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-weight.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/font-weight.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/functions-and-directives.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/functions-and-directives.md",
+      "pages/docs/detecting-classes-in-source-files.md"
+    ],
+    [
+      "pages/docs/functions-and-directives.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/gap.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-auto-columns.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-auto-flow.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-auto-rows.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-column.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-row.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-template-columns.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/grid-template-rows.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/height.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/height.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/hover-focus-and-other-states.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/hover-focus-and-other-states.md",
+      "pages/docs/dark-mode.md"
+    ],
+    [
+      "pages/docs/hover-focus-and-other-states.md",
+      "pages/docs/responsive-design.md"
+    ],
+    [
+      "pages/docs/inline-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/inline-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/isolation.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/justify-content.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/justify-items.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/justify-self.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/letter-spacing.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/letter-spacing.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/line-height.md",
+      "pages/docs/font-size.md"
+    ],
+    [
+      "pages/docs/line-height.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/line-height.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/list-style-image.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/list-style-position.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/list-style-type.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/margin.md",
+      "pages/docs/gap.md"
+    ],
+    [
+      "pages/docs/margin.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/margin.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/max-block-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/max-block-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/max-height.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/max-height.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/max-inline-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/max-inline-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/max-width.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/max-width.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/min-block-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/min-block-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/min-height.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/min-height.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/min-inline-size.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/min-inline-size.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/min-width.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/min-width.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/object-fit.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/object-position.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/order.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/overflow.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/overscroll-behavior.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/padding.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/padding.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/place-content.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/place-items.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/place-self.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/position.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/position.md",
+      "pages/docs/top-right-bottom-left.md"
+    ],
+    [
+      "pages/docs/preflight.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/preflight.md",
+      "pages/docs/list-style-position.md"
+    ],
+    [
+      "pages/docs/preflight.md",
+      "pages/docs/list-style-type.md"
+    ],
+    [
+      "pages/docs/responsive-design.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/responsive-design.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/dark-mode.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/detecting-classes-in-source-files.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/display.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/font-size.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/font-weight.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/gap.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/height.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/margin.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/max-width.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/padding.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/responsive-design.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/styling-with-utility-classes.md",
+      "pages/docs/width.md"
+    ],
+    [
+      "pages/docs/text-align.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/text-decoration-line.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/top-right-bottom-left.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/top-right-bottom-left.md",
+      "pages/docs/position.md"
+    ],
+    [
+      "pages/docs/top-right-bottom-left.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/upgrade-guide.md",
+      "pages/docs/adding-custom-styles.md"
+    ],
+    [
+      "pages/docs/upgrade-guide.md",
+      "pages/docs/compatibility.md"
+    ],
+    [
+      "pages/docs/upgrade-guide.md",
+      "pages/docs/detecting-classes-in-source-files.md"
+    ],
+    [
+      "pages/docs/upgrade-guide.md",
+      "pages/docs/functions-and-directives.md"
+    ],
+    [
+      "pages/docs/upgrade-guide.md",
+      "pages/docs/margin.md"
+    ],
+    [
+      "pages/docs/visibility.md",
+      "pages/docs/display.md"
+    ],
+    [
+      "pages/docs/visibility.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/width.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ],
+    [
+      "pages/docs/width.md",
+      "pages/docs/theme.md"
+    ],
+    [
+      "pages/docs/z-index.md",
+      "pages/docs/hover-focus-and-other-states.md"
+    ]
+  ]
+}
