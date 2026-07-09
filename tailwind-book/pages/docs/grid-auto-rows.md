@@ -3,7 +3,7 @@ type: Web Page
 title: grid-auto-rows - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling the size of implicitly-created grid rows.
 resource: https://tailwindcss.com/docs/grid-auto-rows
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -30,7 +30,7 @@ Use utilities like `auto-rows-min` and `auto-rows-max` to control the size of im
 
 Prefix a `grid-auto-rows` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="grid grid-flow-row auto-rows-max md:auto-rows-min ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="grid grid-flow-row auto-rows-max md:auto-rows-min ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

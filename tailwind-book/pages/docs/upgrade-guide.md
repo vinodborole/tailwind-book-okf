@@ -3,7 +3,7 @@ type: Web Page
 title: Upgrade guide - Getting started - Tailwind CSS
 description: Upgrading your Tailwind CSS projects from v3 to v4.
 resource: https://tailwindcss.com/docs/upgrade-guide
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Getting started
@@ -22,7 +22,7 @@ The upgrade tool requires Node.js 20 or higher, so ensure your environment is up
 
 **We recommend running the upgrade tool in a new branch**, then carefully reviewing the diff and testing your project in the browser to make sure all of the changes look correct. You may need to tweak a few things by hand in complex projects, but the tool will save you a ton of time either way.
 
-It's also a good idea to go over all of the breaking changes in v4 and get a good understanding of what's changed, in case there are other things you need to update in your project that the upgrade tool doesn't catch.
+It's also a good idea to go over all of the [breaking changes](#changes-from-v3) in v4 and get a good understanding of what's changed, in case there are other things you need to update in your project that the upgrade tool doesn't catch.
 
 In v3, the `tailwindcss` package was a PostCSS plugin, but in v4 the PostCSS plugin lives in a dedicated `@tailwindcss/postcss` package.
 
@@ -34,7 +34,7 @@ Additionally, in v4 imports and vendor prefixing is now handled for you automati
 
 `npx tailwindcss -i input.css -o output.cssnpx @tailwindcss/cli -i input.css -o output.css`Here's a comprehensive list of all the breaking changes in Tailwind CSS v4.0.
 
-Our upgrade tool will handle most of these changes for you automatically, so we highly recommend using it if you can.
+Our [upgrade tool](#using-the-upgrade-tool) will handle most of these changes for you automatically, so we highly recommend using it if you can.
 
 Tailwind CSS v4.0 is designed for modern browsers and targets Safari 16.4, Chrome 111, and Firefox 128. We depend on modern CSS features like `@property` and `color-mix()` for core framework features, and Tailwind CSS v4.0 will not work in older browsers.
 
@@ -91,13 +91,13 @@ To update your project for this change, replace any usage of `outline-none` with
 
 To update your project for this change, replace any usage of `ring` with `ring-3`:
 
-`<input class="ring ring-blue-500" /><input class="ring-3 ring-blue-500" />`We've changed the selector used by the `space-x-*` and `space-y-*` utilities to address serious performance issues on large pages:
+`<input class="ring ring-blue-500" /><input class="ring-3 ring-blue-500" />`We've changed the selector used by the [ space-x-* and space-y-* utilities](/docs/margin#adding-space-between-children) to address serious performance issues on large pages:
 
 `/* Before */.space-y-4 > :not([hidden]) ~ :not([hidden]) {  margin-top: 1rem;}/* Now */.space-y-4 > :not(:last-child) {  margin-bottom: 1rem;}`You might see changes in your project if you were ever using these utilities with inline elements, or if you were adding other margins to child elements to tweak their spacing.
 
 If this change causes any issues in your project, we recommend migrating to a flex or grid layout and using `gap` instead:
 
-`<div class="space-y-4 p-4"><div class="flex flex-col gap-4 p-4">  <label for="name">Name</label>  <input type="text" name="name" /></div>`We've changed the selector used by the `divide-x-*` and `divide-y-*` utilities to address serious performance issues on large pages:
+`<div class="space-y-4 p-4"><div class="flex flex-col gap-4 p-4">  <label for="name">Name</label>  <input type="text" name="name" /></div>`We've changed the selector used by the [ divide-x-* and divide-y-* utilities](/docs/border-width#between-children) to address serious performance issues on large pages:
 
 `/* Before */.divide-y-4 > :not([hidden]) ~ :not([hidden]) {  border-top-width: 4px;}/* Now */.divide-y-4 > :not(:last-child) {  border-bottom-width: 4px;}`You might see changes in your project if you were ever using these utilities with inline elements, if you were adding other margins/padding to child elements to tweak their spacing, or adjusting the borders of specific child elements.
 
@@ -159,7 +159,7 @@ In v4 we are using native cascade layers and no longer hijacking the `@layer` at
 
 `@layer utilities {  .tab-4 {    tab-size: 4;  }}@utility tab-4 {  tab-size: 4;}`Custom utilities are now also sorted based on the amount of properties they define. This means that component utilities like this `.btn` can be overwritten by other Tailwind utilities without additional configuration:
 
-`@layer components {  .btn {    border-radius: 0.5rem;    padding: 0.5rem 1rem;    background-color: ButtonFace;  }}@utility btn {  border-radius: 0.5rem;  padding: 0.5rem 1rem;  background-color: ButtonFace;}`Learn more about registering custom utilities in the adding custom utilities documentation.
+`@layer components {  .btn {    border-radius: 0.5rem;    padding: 0.5rem 1rem;    background-color: ButtonFace;  }}@utility btn {  border-radius: 0.5rem;  padding: 0.5rem 1rem;  background-color: ButtonFace;}`Learn more about registering custom utilities in the [adding custom utilities documentation](/docs/adding-custom-styles#adding-custom-utilities).
 
 In v3, stacked variants were applied from right to left, but in v4 we've updated them to apply left to right to look more like CSS syntax.
 
@@ -201,27 +201,27 @@ Since v4 includes CSS variables for all of your theme values, we recommend using
 
 If you still need to use a JavaScript config file, you can load it explicitly using the `@config` directive:
 
-`@config "../../tailwind.config.js";`The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use `@source inline()`.
+`@config "../../tailwind.config.js";`The `corePlugins`, `safelist`, and `separator` options from the JavaScript-based config are not supported in v4.0. To safelist utilities in v4 use [ @source inline()](/docs/detecting-classes-in-source-files#safelisting-specific-utilities).
 
 In v3 we exported a `resolveConfig` function that you could use to turn your JavaScript-based config into a flat object that you could use in your other JavaScript.
 
 We've removed this in v4 in hopes that people can use the CSS variables we generate directly instead, which is much simpler and will significantly reduce your bundle size.
 
-For example, the popular Motion library for React lets you animate to and from CSS variable values:
+For example, the popular [Motion](https://motion.dev/docs/react-quick-start) library for React lets you animate to and from CSS variable values:
 
 `<motion.div animate={{ backgroundColor: "var(--color-blue-500)" }} />`If you need access to a resolved CSS variable value in JS, you can use `getComputedStyle` to get the value of a theme variable on the document root:
 
 `let styles = getComputedStyle(document.documentElement);let shadow = styles.getPropertyValue("--shadow-xl");`In v4, stylesheets that are bundled separately from your main CSS file (e.g. CSS modules files, `<style>` blocks in Vue, Svelte, or Astro, etc.) do not have access to theme variables, custom utilities, and custom variants defined in other files.
 
-To make these definitions available in these contexts, use `@reference` to import them without duplicating any CSS in your bundle:
+To make these definitions available in these contexts, use [ @reference](/docs/functions-and-directives#reference-directive) to import them without duplicating any CSS in your bundle:
 
 `<template>  <h1>Hello world!</h1></template><style>  @reference "../../app.css";  h1 {    @apply text-2xl font-bold text-red-500;  }</style>`Alternatively, you can use your CSS theme variables directly instead of using `@apply` at all, which will also improve performance since Tailwind won't need to process these styles:
 
-`<template>  <h1>Hello world!</h1></template><style>  h1 {    color: var(--text-red-500);  }</style>`You can find more documentation on using Tailwind with CSS modules.
+`<template>  <h1>Hello world!</h1></template><style>  h1 {    color: var(--text-red-500);  }</style>`You can find more documentation on [using Tailwind with CSS modules](/docs/compatibility#css-modules).
 
 Tailwind CSS v4.0 is not designed to be used with CSS preprocessors like Sass, Less, or Stylus. Think of Tailwind CSS itself as your preprocessor — you shouldn't use Tailwind with Sass for the same reason you wouldn't use Sass with Stylus. Because of this it is not possible to use Sass, Less, or Stylus for your stylesheets or `<style>` blocks in Vue, Svelte, Astro, etc.
 
-Learn more in the compatibility documentation.
+Learn more in the [compatibility documentation](/docs/compatibility#sass-less-and-stylus).
 
 # Citations
 

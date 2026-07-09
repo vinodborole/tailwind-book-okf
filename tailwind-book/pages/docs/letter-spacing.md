@@ -3,7 +3,7 @@ type: Web Page
 title: letter-spacing - Typography - Tailwind CSS
 description: Utilities for controlling the tracking, or letter spacing, of an element.
 resource: https://tailwindcss.com/docs/letter-spacing
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -35,13 +35,13 @@ Using negative values doesn't make a ton of sense with the named letter spacing 
 
 Prefix a `letter-spacing` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="tracking-tight md:tracking-wide ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="tracking-tight md:tracking-wide ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--tracking-*` theme variables to customize the letter spacing utilities in your project:
 
 `@theme {  --tracking-tightest: -0.075em; }`Now the `tracking-tightest` utility can be used in your markup:
 
-`<p class="tracking-tightest">  Lorem ipsum dolor sit amet...</p>`Learn more about customizing your theme in the theme documentation.
+`<p class="tracking-tightest">  Lorem ipsum dolor sit amet...</p>`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

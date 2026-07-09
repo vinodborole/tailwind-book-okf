@@ -3,7 +3,7 @@ type: Web Page
 title: order - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling the order of flex and grid items.
 resource: https://tailwindcss.com/docs/order
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -34,7 +34,7 @@ To use a negative order value, prefix the class name with a dash to convert it t
 
 Prefix an `order` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="order-first md:order-last ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="order-first md:order-last ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

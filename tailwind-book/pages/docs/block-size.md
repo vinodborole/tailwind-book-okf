@@ -3,7 +3,7 @@ type: Web Page
 title: block-size - Sizing - Tailwind CSS
 description: Utilities for setting the block size of an element.
 resource: https://tailwindcss.com/docs/block-size
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Sizing
@@ -51,11 +51,11 @@ Use the `block-screen` utility to make an element span the entire block size of 
 
 Prefix a `block-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="block-1/2 md:block-full ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="block-1/2 md:block-full ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `block-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme variable documentation.
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

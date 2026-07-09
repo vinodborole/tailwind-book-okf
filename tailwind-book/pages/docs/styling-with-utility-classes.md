@@ -3,7 +3,7 @@ type: Web Page
 title: Styling with utility classes - Core concepts - Tailwind CSS
 description: Building complex components from a constrained set of primitive utilities.
 resource: https://tailwindcss.com/docs/styling-with-utility-classes
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -28,7 +28,7 @@ To style an element on states like hover or focus, prefix any utility with the s
 
 Hover over this button to see the background color change
 
-These prefixes are called variants in Tailwind, and they only apply the styles from a utility class when the condition for that variant matches.
+These prefixes are called [variants](/docs/hover-focus-and-other-states) in Tailwind, and they only apply the styles from a utility class when the condition for that variant matches.
 
 Here's what the generated CSS looks like for the `hover:bg-sky-700` class:
 
@@ -38,7 +38,7 @@ This is different from how you'd write traditional CSS, where a single class wou
 
 `<button class="btn">Save changes</button><style>  .btn {    background-color: var(--color-sky-500);    &:hover {      background-color: var(--color-sky-700);    }  }</style>`You can even stack variants in Tailwind to apply a utility when multiple conditions match, like combining `hover:` and `disabled:`
 
-`<button class="bg-sky-500 disabled:hover:bg-sky-500 ...">Save changes</button>`Learn more in the documentation styling elements on hover, focus, and other states.
+`<button class="bg-sky-500 disabled:hover:bg-sky-500 ...">Save changes</button>`Learn more in the documentation styling elements on [hover, focus, and other states](/docs/hover-focus-and-other-states).
 
 Just like hover and focus states, you can style elements at different breakpoints by prefixing any utility with the breakpoint where you want that style to apply:
 
@@ -46,13 +46,13 @@ Resize this example to see the layout change
 
 In the example above, the `sm:` prefix makes sure that `grid-cols-3` only triggers at the `sm` breakpoint and above, which is 40rem out of the box:
 
-`.sm\:grid-cols-3 {  @media (width >= 40rem) {    grid-template-columns: repeat(3, minmax(0, 1fr));  }}`Learn more in the responsive design documentation.
+`.sm\:grid-cols-3 {  @media (width >= 40rem) {    grid-template-columns: repeat(3, minmax(0, 1fr));  }}`Learn more in the [responsive design](/docs/responsive-design) documentation.
 
 Styling an element in dark mode is just a matter of adding the `dark:` prefix to any utility you want to apply when dark mode is active:
 
 Just like with hover states or media queries, the important thing to understand is that a single utility class will never include *both* the light and dark styles — you style things in dark mode by using multiple classes, one for the light mode styles and another for the dark mode styles.
 
-`.dark\:bg-gray-800 {  @media (prefers-color-scheme: dark) {    background-color: var(--color-gray-800);  }}`Learn more in the dark mode documentation.
+`.dark\:bg-gray-800 {  @media (prefers-color-scheme: dark) {    background-color: var(--color-gray-800);  }}`Learn more in the [dark mode](/docs/dark-mode) documentation.
 
 A lot of the time with Tailwind you'll even use multiple classes to build up the value for a single CSS property, for example adding multiple filters to an element:
 
@@ -60,9 +60,9 @@ A lot of the time with Tailwind you'll even use multiple classes to build up the
 
 `.blur-sm {  --tw-blur: blur(var(--blur-sm));  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-grayscale,);}.grayscale {  --tw-grayscale: grayscale(100%);  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-grayscale,);}`The generated CSS above is slightly simplified, but the trick here is that each utility sets a CSS variable just for the effect it's meant to apply. Then the `filter` property looks at all of these variables, falling back to nothing if the variable hasn't been set.
 
-Tailwind uses this same approach for gradients, shadow colors, transforms, and more.
+Tailwind uses this same approach for [gradients](/docs/background-image#adding-a-linear-gradient), [shadow colors](/docs/box-shadow#setting-the-shadow-color), [transforms](/docs/translate), and more.
 
-Many utilities in Tailwind are driven by theme variables, like `bg-blue-500`, `text-xl`, and `shadow-md`, which map to your underlying color palette, type scale, and shadows.
+Many utilities in Tailwind are driven by [theme variables](/docs/theme), like `bg-blue-500`, `text-xl`, and `shadow-md`, which map to your underlying color palette, type scale, and shadows.
 
 When you need to use a one-off value outside of your theme, use the special square bracket syntax for specifying arbitrary values:
 
@@ -72,7 +72,7 @@ When you need to use a one-off value outside of your theme, use the special squa
 
 `<div class="max-h-[calc(100dvh-(--spacing(6)))]">  <!-- ... --></div>`There's even a syntax for generating completely arbitrary CSS including an arbitrary property name, which can be useful for setting CSS variables:
 
-`<div class="[--gutter-width:1rem] lg:[--gutter-width:2rem]">  <!-- ... --></div>`Learn more in the documentation on using arbitrary values.
+`<div class="[--gutter-width:1rem] lg:[--gutter-width:2rem]">  <!-- ... --></div>`Learn more in the documentation on [using arbitrary values](/docs/adding-custom-styles#using-arbitrary-values).
 
 Tailwind CSS isn't one big static stylesheet like you might be used to with other CSS frameworks — it generates the CSS needed based on the classes you're actually using when you compile your CSS.
 
@@ -82,7 +82,7 @@ It does this by scanning all of the files in your project looking for any symbol
 
 Since the CSS is generated based on the class name, Tailwind can recognize classes using arbitrary values like `bg-[#316ff6]` and generate the necessary CSS, even when the value isn't part of your theme.
 
-Learn more about how this works in detecting classes in source files.
+Learn more about how this works in [detecting classes in source files](/docs/detecting-classes-in-source-files).
 
 Sometimes you need to style an element under a combination of conditions, for example in dark mode, at a specific breakpoint, when hovered, and when the element has a specific data attribute.
 
@@ -90,9 +90,9 @@ Here's an example of what that looks like with Tailwind:
 
 `<button class="dark:lg:data-current:hover:bg-indigo-600 ...">  <!-- ... --></button>``@media (prefers-color-scheme: dark) and (width >= 64rem) {  button[data-current]:hover {    background-color: var(--color-indigo-600);  }}`Tailwind also supports things like `group-hover`, which let you style an element when a specific parent is hovered:
 
-`<a href="#" class="group rounded-lg p-8">  <!-- ... -->  <span class="group-hover:underline">Read more…</span></a>``@media (hover: hover) {  a:hover span {    text-decoration-line: underline;  }}`This `group-*` syntax works with other variants too, like `group-focus`, `group-active`, and many more.
+`<a href="#" class="group rounded-lg p-8">  <!-- ... -->  <span class="group-hover:underline">Read more…</span></a>``@media (hover: hover) {  a:hover span {    text-decoration-line: underline;  }}`This `group-*` syntax works with other variants too, like `group-focus`, `group-active`, and [many more](/docs/hover-focus-and-other-states#styling-based-on-parent-state).
 
-For really complex scenarios *(especially when styling HTML you don't control)*, Tailwind supports arbitrary variants which let you write any selector you want, directly in a class name:
+For really complex scenarios *(especially when styling HTML you don't control)*, Tailwind supports [arbitrary variants](/docs/adding-custom-styles#arbitrary-variants) which let you write any selector you want, directly in a class name:
 
 `<div class="[&>[data-active]+span]:text-blue-600 ...">  <span data-active><!-- ... --></span>  <span>This text will be blue</span></div>``div > [data-active] + span {  color: var(--color-blue-600);}`Inline styles are still very useful in Tailwind CSS projects, particularly when a value is coming from a dynamic source like a database or API:
 
@@ -112,7 +112,7 @@ For example, the duplicate avatars at the beginning of this guide would almost c
 
 When elements are rendered in a loop like this, the actual class list is only written once so there's no actual duplication problem to solve.
 
-When duplication is localized to a group of elements in a single file, the easiest way to deal with it is to use multi-cursor editing to quickly select and edit the class list for each element at once:
+When duplication is localized to a group of elements in a single file, the easiest way to deal with it is to use [multi-cursor editing](https://code.visualstudio.com/docs/editor/codebasics#_multiple-selections-multicursor) to quickly select and edit the class list for each element at once:
 
 You'd be surprised at how often this ends up being the best solution. If you can quickly edit all of the duplicated class lists simultaneously, there's no benefit to introducing any additional abstraction.
 
@@ -124,7 +124,7 @@ If you're using a templating language like ERB or Twig instead of something like
 
 While it's highly recommended that you create proper template partials for more complex components, writing some custom CSS is totally fine when a template partial feels heavy-handed.
 
-Here's what a `btn-primary` class might look like, using theme variables to keep the design consistent:
+Here's what a `btn-primary` class might look like, using [theme variables](/docs/theme#with-custom-css) to keep the design consistent:
 
 Again though, for anything that's more complicated than just a single HTML element, we highly recommend using template partials so the styles and structure can be encapsulated in one place.
 

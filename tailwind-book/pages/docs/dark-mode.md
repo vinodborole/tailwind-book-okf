@@ -3,7 +3,7 @@ type: Web Page
 title: Dark mode - Core concepts - Tailwind CSS
 description: Using variants to style your site in dark mode.
 resource: https://tailwindcss.com/docs/dark-mode
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -14,7 +14,7 @@ Now that dark mode is a first-class feature of many operating systems, it's beco
 
 To make this as easy as possible, Tailwind includes a `dark` variant that lets you style your site differently when dark mode is enabled:
 
-By default this uses the `prefers-color-scheme` CSS media feature, but you can also build sites that support toggling dark mode manually by overriding the dark variant.
+By default this uses the `prefers-color-scheme` CSS media feature, but you can also build sites that support [toggling dark mode manually](#toggling-dark-mode-manually) by overriding the dark variant.
 
 If you want your dark theme to be driven by a CSS selector instead of the `prefers-color-scheme` media query, override the `dark` variant to use your custom selector:
 
@@ -26,9 +26,9 @@ To use a data attribute instead of a class to activate dark mode, just override 
 
 `@import "tailwindcss";@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));`Now dark mode utilities will be applied whenever the `data-theme` attribute is set to `dark` somewhere up the tree:
 
-`<html data-theme="dark">  <body>    <div class="bg-white dark:bg-black">      <!-- ... -->    </div>  </body></html>`To build three-way theme toggles that support light mode, dark mode, and your system theme, use a custom dark mode selector and the `window.matchMedia()` API to detect the system theme and update the `html` element when needed.
+`<html data-theme="dark">  <body>    <div class="bg-white dark:bg-black">      <!-- ... -->    </div>  </body></html>`To build three-way theme toggles that support light mode, dark mode, and your system theme, use a custom dark mode selector and the [ window.matchMedia() API](https://developer.mozilla.org/en-US/docs/Web/API/Window/matchMedia) to detect the system theme and update the 
 
-Here's a simple example of how you can support light mode, dark mode, as well as respecting the operating system preference:
+`html` element when needed.Here's a simple example of how you can support light mode, dark mode, as well as respecting the operating system preference:
 
 `// On page load or when changing themes, best to add inline in `head` to avoid FOUCdocument.documentElement.classList.toggle(  "dark",  localStorage.theme === "dark" ||    (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches),);// Whenever the user explicitly chooses light modelocalStorage.theme = "light";// Whenever the user explicitly chooses dark modelocalStorage.theme = "dark";// Whenever the user explicitly chooses to respect the OS preferencelocalStorage.removeItem("theme");`Again you can manage this however you like, even storing the preference server-side in a database and rendering the class on the server — it's totally up to you.
 

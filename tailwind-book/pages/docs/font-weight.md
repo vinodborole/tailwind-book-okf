@@ -3,7 +3,7 @@ type: Web Page
 title: font-weight - Typography - Tailwind CSS
 description: Utilities for controlling the font weight of an element.
 resource: https://tailwindcss.com/docs/font-weight
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -34,13 +34,13 @@ Use the `font-[` syntax to set the font weight based on a completely custom valu
 
 Prefix a `font-weight` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="font-normal md:font-bold ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="font-normal md:font-bold ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--font-weight-*` theme variables to customize the font weight utilities in your project:
 
 `@theme {  --font-weight-extrablack: 1000; }`Now the `font-extrablack` utility can be used in your markup:
 
-`<div class="font-extrablack">  <!-- ... --></div>`Learn more about customizing your theme in the theme documentation.
+`<div class="font-extrablack">  <!-- ... --></div>`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

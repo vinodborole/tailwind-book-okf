@@ -3,7 +3,7 @@ type: Web Page
 title: Compatibility - Getting started - Tailwind CSS
 description: Learn about browser support and compatibility with other tooling.
 resource: https://tailwindcss.com/docs/compatibility
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Getting started
@@ -14,7 +14,7 @@ Tailwind CSS v4.0 is designed for and tested on modern browsers, and the core fu
 
 Tailwind also includes support for many bleeding-edge platform features like `field-sizing: content`, `@starting-style`, and `text-wrap: balance` that have limited browser support. It's up to you if you want to use these modern features in your projects — if the browsers you're targeting don't support them, simply don't use those utilities and variants.
 
-If you're unsure about the support for a modern platform feature, the Can I use database is a great resource.
+If you're unsure about the support for a modern platform feature, the [Can I use](https://caniuse.com/mdn-css_at-rules_starting-style) database is a great resource.
 
 Tailwind CSS v4.0 is a full-featured CSS build tool designed for a specific workflow, and is not designed to be used with CSS preprocessors like Sass, Less, or Stylus.
 
@@ -26,11 +26,11 @@ Tailwind will automatically bundle other CSS files you include with `@import`, w
 
 `@import "tailwindcss";@import "./typography.css";`In this example, the `typography.css` file will be bundled into your compiled CSS for you by Tailwind, without any other tooling like Sass or `postcss-import`.
 
-All modern browsers support native CSS variables without the need for any sort of preprocessor:
+All modern browsers support [native CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties) without the need for any sort of preprocessor:
 
 `.typography {  font-size: var(--text-base);  color: var(--color-gray-700);}`Tailwind relies on CSS variables heavily internally, so if you can use Tailwind in your project, you can use native CSS variables.
 
-Under the hood Tailwind uses Lightning CSS to process nested CSS like this:
+Under the hood Tailwind uses [Lightning CSS](https://lightningcss.dev/) to process nested CSS like this:
 
 `.typography {  p {    font-size: var(--text-base);  }  img {    border-radius: var(--radius-lg);  }}`Tailwind flattens that nested CSS for you so it can be understood by all modern browsers:
 
@@ -42,9 +42,9 @@ On top of that, when you're building things with Tailwind CSS, you do the vast m
 
 When using preprocessors like Sass or Less, you may have used functions like `darken` or `lighten` to adjust colors.
 
-When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed default color palette included with the framework.
+When using Tailwind, the recommended workflow is to use a predefined color palette that includes light and dark shades of each color, like the expertly designed [default color palette](/docs/colors) included with the framework.
 
-`<button class="bg-indigo-500 hover:bg-indigo-600 ...">  <!-- ... --></button>`You can also use modern CSS features like color-mix() to adjust colors at run-time directly in the browser. This even lets you adjust colors defined using CSS variables or the `currentcolor` keyword, which isn't possible with preprocessors.
+`<button class="bg-indigo-500 hover:bg-indigo-600 ...">  <!-- ... --></button>`You can also use modern CSS features like [color-mix()](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/color-mix) to adjust colors at run-time directly in the browser. This even lets you adjust colors defined using CSS variables or the `currentcolor` keyword, which isn't possible with preprocessors.
 
 Similarly, browsers support math functions like `min()`, `max()`, and `round()` natively now, so there's no need to rely on a preprocessor for these features anymore either.
 
@@ -64,7 +64,7 @@ Import your global styles as reference to make sure your theme variables are def
 
 `@reference "../app.css";button {  @apply bg-blue-500;}`Alternatively, you can also just use CSS variables instead of `@apply` which has the added benefit of letting Tailwind skip processing those files and will improve your build performance:
 
-`button {  background: var(--color-blue-500);}`Vue, Svelte, and Astro support `<style>` blocks in component files that behave very much like CSS modules, which means they are each processed by your build tooling totally separately and have all of the same drawbacks.
+`button {  background: var(--color-blue-500);}`Vue, Svelte, and Astro support `<style>` blocks in component files that behave very much like [CSS modules](#css-modules), which means they are each processed by your build tooling totally separately and have all of the same drawbacks.
 
 If you're using Tailwind with these tools, **we recommend avoiding  <style> blocks in your components** and just styling things with utility classes directly in your markup, the way Tailwind is meant to be used.
 

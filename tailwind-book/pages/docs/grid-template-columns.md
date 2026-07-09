@@ -3,7 +3,7 @@ type: Web Page
 title: grid-template-columns - Flexbox & Grid - Tailwind CSS
 description: Utilities for specifying the columns in a grid layout.
 resource: https://tailwindcss.com/docs/grid-template-columns
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -30,7 +30,7 @@ Use the `grid-cols-[` syntax to set the columns based on a completely custom val
 
 Prefix a `grid-template-columns` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="grid grid-cols-1 md:grid-cols-6 ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="grid grid-cols-1 md:grid-cols-6 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

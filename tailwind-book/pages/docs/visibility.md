@@ -3,7 +3,7 @@ type: Web Page
 title: visibility - Layout - Tailwind CSS
 description: Utilities for controlling the visibility of an element.
 resource: https://tailwindcss.com/docs/visibility
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Layout
@@ -18,7 +18,7 @@ Utilities for controlling the visibility of an element.
 
 Use the `invisible` utility to hide an element, but still maintain its place in the document, affecting the layout of other elements:
 
-To completely remove an element from the document, use the display property instead.
+To completely remove an element from the document, use the [display](/docs/display#hidden) property instead.
 
 Use the `collapse` utility to hide table rows, row groups, columns, and column groups as if they were set to `display: none`, but without impacting the size of other rows and columns:
 
@@ -48,7 +48,7 @@ This is mostly useful for undoing the `invisible` utility at different screen si
 
 Prefix a `visibility` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="visible md:invisible ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="visible md:invisible ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

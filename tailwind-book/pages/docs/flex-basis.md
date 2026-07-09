@@ -3,7 +3,7 @@ type: Web Page
 title: flex-basis - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling the initial size of flex items.
 resource: https://tailwindcss.com/docs/flex-basis
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -46,7 +46,7 @@ Use the `basis-[` syntax to set the basis based on a completely custom value:`<v
 
 Prefix a `flex-basis` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="flex flex-row">  <div class="basis-1/4 md:basis-1/3">01</div>  <div class="basis-1/4 md:basis-1/3">02</div>  <div class="basis-1/2 md:basis-1/3">03</div></div>`Learn more about using variants in the variants documentation.
+`<div class="flex flex-row">  <div class="basis-1/4 md:basis-1/3">01</div>  <div class="basis-1/4 md:basis-1/3">02</div>  <div class="basis-1/2 md:basis-1/3">03</div></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--container-*` theme variables to customize the fixed-width basis utilities in your project:
 
@@ -54,7 +54,7 @@ Use the `--container-*` theme variables to customize the fixed-width basis utili
 
 `<div class="basis-4xs">  <!-- ... --></div>`The `basis-` utilities are driven by the `<number>``--spacing` theme variable, which you can also customize:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme documentation.
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

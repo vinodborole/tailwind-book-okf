@@ -3,7 +3,7 @@ type: Web Page
 title: line-clamp - Typography - Tailwind CSS
 description: Utilities for clamping text to a specific number of lines.
 resource: https://tailwindcss.com/docs/line-clamp
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -53,7 +53,7 @@ Use `line-clamp-none` to undo a previously applied line clamp utility:
 
 Prefix a `line-clamp` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="line-clamp-3 md:line-clamp-4 ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="line-clamp-3 md:line-clamp-4 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

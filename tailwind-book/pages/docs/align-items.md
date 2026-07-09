@@ -4,7 +4,7 @@ title: align-items - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how flex and grid items are positioned along
   a container's cross axis.
 resource: https://tailwindcss.com/docs/align-items
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -38,7 +38,7 @@ This is useful for ensuring that text items align with each other, even if they 
 
 Prefix an `align-items` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="flex items-stretch md:items-center ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="flex items-stretch md:items-center ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

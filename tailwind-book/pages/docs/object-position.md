@@ -4,7 +4,7 @@ title: object-position - Layout - Tailwind CSS
 description: Utilities for controlling how a replaced element's content should be
   positioned within its container.
 resource: https://tailwindcss.com/docs/object-position
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Layout
@@ -37,7 +37,7 @@ Use the `object-[` syntax to set the object position based on a completely custo
 
 Prefix an `object-position` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<img class="object-center md:object-top ..." src="/img/mountains.jpg" />`Learn more about using variants in the variants documentation.
+`<img class="object-center md:object-top ..." src="/img/mountains.jpg" />`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

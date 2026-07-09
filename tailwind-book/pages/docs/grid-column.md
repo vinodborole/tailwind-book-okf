@@ -4,7 +4,7 @@ title: grid-column - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how elements are sized and placed across grid
   columns.
 resource: https://tailwindcss.com/docs/grid-column
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -47,7 +47,7 @@ Use utilities like `col-[`,`<value>`]`col-span-[`,`<value>`]`col-start-[`, and `
 
 Prefix `grid-column`,`grid-column-start`, and `grid-column-end` utilities with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="col-span-2 md:col-span-6 ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="col-span-2 md:col-span-6 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

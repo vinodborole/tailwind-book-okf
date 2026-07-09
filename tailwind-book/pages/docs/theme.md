@@ -3,7 +3,7 @@ type: Web Page
 title: Theme variables - Core concepts - Tailwind CSS
 description: Using utility classes as an API for your design tokens.
 resource: https://tailwindcss.com/docs/theme
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -22,7 +22,7 @@ For example, you can add a new color to your project by defining a theme variabl
 
 `<div class="bg-mint-500">  <!-- ... --></div>`Tailwind also generates regular CSS variables for your theme variables so you can reference your design tokens in arbitrary values or inline styles:
 
-`<div style="background-color: var(--color-mint-500)">  <!-- ... --></div>`Learn more about how theme variables map to different utility classes in the theme variable namespaces documentation.
+`<div style="background-color: var(--color-mint-500)">  <!-- ... --></div>`Learn more about how theme variables map to different utility classes in the [theme variable namespaces](#theme-variable-namespaces) documentation.
 
 `@theme` instead of `:root`?Theme variables aren't *just* CSS variables — they also instruct Tailwind to create new utility classes that you can use in your HTML.
 
@@ -44,7 +44,7 @@ Some theme variables are used to define variants rather than utilities. For exam
 
 `@import "tailwindcss";@theme {  --breakpoint-3xl: 120rem;}`Now you can use the `3xl:*` variant to only trigger a utility when the viewport is 120rem or wider:
 
-`<div class="3xl:grid-cols-6 grid grid-cols-2 md:grid-cols-4">  <!-- ... --></div>`Learn more about how theme variables map to different utility classes and variants in the theme variable namespaces documentation.
+`<div class="3xl:grid-cols-6 grid grid-cols-2 md:grid-cols-4">  <!-- ... --></div>`Learn more about how theme variables map to different utility classes and variants in the [theme variable namespaces](#theme-variable-namespaces) documentation.
 
 Theme variables are defined in *namespaces* and each namespace corresponds to one or more utility class or variant APIs.
 
@@ -73,7 +73,7 @@ Defining new theme variables in these namespaces will make new corresponding uti
 | `--ease-*` | Transition timing function utilities like `ease-out` | 
 | `--animate-*` | Animation utilities like `animate-spin` | 
 
-For a list of all of the default theme variables, see the default theme variable reference.
+For a list of all of the default theme variables, see the [default theme variable reference](#default-theme-variable-reference).
 
 When you import `tailwindcss` at the top of your CSS file, it includes a set of default theme variables to get you started.
 
@@ -83,7 +83,7 @@ Here's what you're actually importing when you import `tailwindcss`:
 
 `@theme {  --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;  --color-red-50: oklch(0.971 0.013 17.38);  --color-red-100: oklch(0.936 0.032 17.717);  --color-red-200: oklch(0.885 0.062 18.334);  /* ... */  --shadow-2xs: 0 1px rgb(0 0 0 / 0.05);  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);  /* ... */}`This is why utilities like `bg-red-200`, `font-serif`, and `shadow-sm` exist out of the box — they're driven by the default theme, not hardcoded into the framework like `flex-col` or `pointer-events-none`.
 
-For a list of all of the default theme variables, see the default theme variable reference.
+For a list of all of the default theme variables, see the [default theme variable reference](#default-theme-variable-reference).
 
 The default theme variables are very general purpose and suitable for building dramatically different designs, but they are still just a starting point. It's very common to customize things like the color palette, fonts, and shadows to build exactly the design you have in mind.
 
@@ -91,7 +91,7 @@ Use `@theme` to define new theme variables and extend the default theme:
 
 `@import "tailwindcss";@theme {  --font-script: Great Vibes, cursive;}`This makes a new `font-script` utility class available that you can use in your HTML, just like the default `font-sans` or `font-mono` utilities:
 
-`<p class="font-script">This will use the Great Vibes font family.</p>`Learn more about how theme variables map to different utility classes and variants in the theme variable namespaces documentation.
+`<p class="font-script">This will use the Great Vibes font family.</p>`Learn more about how theme variables map to different utility classes and variants in the [theme variable namespaces](#theme-variable-namespaces) documentation.
 
 Override a default theme variable value by redefining it within `@theme`:
 
@@ -101,7 +101,7 @@ Override a default theme variable value by redefining it within `@theme`:
 
 `@import "tailwindcss";@theme {  --color-*: initial;  --color-white: #fff;  --color-purple: #3f3cbb;  --color-midnight: #121063;  --color-tahiti: #3ab7bf;  --color-bermuda: #78dcca;}`When you do this, all of the default utilities that use that namespace *(like  bg-red-500)* will be removed, and only your custom values 
 
-`bg-midnight`)Learn more about how theme variables map to different utility classes and variants in the theme variable namespaces documentation.
+`bg-midnight`)Learn more about how theme variables map to different utility classes and variants in the [theme variable namespaces](#theme-variable-namespaces) documentation.
 
 To completely disable the default theme and use only custom values, set the global theme variable namespace to `initial`:
 
@@ -143,7 +143,7 @@ Using theme variables in arbitrary values can be useful, especially in combinati
 
 Most of the time when you need to reference your theme variables in JS you can just use the CSS variables directly, just like any other CSS value.
 
-For example, the popular Motion library for React lets you animate to and from CSS variable values:
+For example, the popular [Motion](https://motion.dev/docs/react-quick-start) library for React lets you animate to and from CSS variable values:
 
 `<motion.div animate={{ backgroundColor: "var(--color-blue-500)" }} />`If you need access to a resolved CSS variable value in JS, you can use `getComputedStyle` to get the value of a theme variable on the document root:
 

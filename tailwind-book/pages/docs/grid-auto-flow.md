@@ -3,7 +3,7 @@ type: Web Page
 title: grid-auto-flow - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how elements in a grid are auto-placed.
 resource: https://tailwindcss.com/docs/grid-auto-flow
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -22,7 +22,7 @@ Use utilities like `grid-flow-col` and `grid-flow-row-dense` to control how the 
 
 Prefix a `grid-auto-flow` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="grid grid-flow-col md:grid-flow-row ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="grid grid-flow-col md:grid-flow-row ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

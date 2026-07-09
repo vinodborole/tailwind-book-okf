@@ -3,7 +3,7 @@ type: Web Page
 title: columns - Layout - Tailwind CSS
 description: Utilities for controlling the number of columns within an element.
 resource: https://tailwindcss.com/docs/columns
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Layout
@@ -42,7 +42,7 @@ When setting the column width, the number of columns automatically adjusts to en
 
 Use the `gap-` utilities to specify the width between columns:`<width>`
 
-Learn more about the gap utilities in the gap documentation.
+Learn more about the gap utilities in the [gap documentation](/docs/gap).
 
 Use the `columns-[` syntax to set the columns based on a completely custom value:`<value>`]
 
@@ -54,13 +54,13 @@ Prefix a `columns` utility with a breakpoint variant like `sm:` to only apply th
 
 Resize the example to see the expected behavior
 
-Learn more about using variants in the variants documentation.
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--container-*` theme variables to customize the fixed-width column utilities in your project:
 
 `@theme {  --container-4xs: 14rem; }`Now the `columns-4xs` utility can be used in your markup:
 
-`<div class="columns-4xs">  <!-- ... --></div>`Learn more about customizing your theme in the theme documentation.
+`<div class="columns-4xs">  <!-- ... --></div>`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

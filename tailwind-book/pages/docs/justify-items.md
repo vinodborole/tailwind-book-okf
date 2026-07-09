@@ -4,7 +4,7 @@ title: justify-items - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how grid items are aligned along their inline
   axis.
 resource: https://tailwindcss.com/docs/justify-items
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -39,7 +39,7 @@ Use the `justify-items-stretch` utility to stretch items along their inline axis
 
 Prefix a `justify-items` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="grid justify-items-start md:justify-items-center ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="grid justify-items-start md:justify-items-center ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

@@ -4,7 +4,7 @@ title: justify-self - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how an individual grid item is aligned along
   its inline axis.
 resource: https://tailwindcss.com/docs/justify-self
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -41,7 +41,7 @@ Use the `justify-self-stretch` utility to stretch a grid item to fill the grid a
 
 Prefix a `justify-self` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="justify-self-start md:justify-self-end ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="justify-self-start md:justify-self-end ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

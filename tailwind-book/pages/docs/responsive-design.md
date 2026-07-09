@@ -3,7 +3,7 @@ type: Web Page
 title: Responsive design - Core concepts - Tailwind CSS
 description: Using responsive utility variants to build adaptive user interfaces.
 resource: https://tailwindcss.com/docs/responsive-design
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -12,7 +12,7 @@ Using responsive utility variants to build adaptive user interfaces.
 
 Every utility class in Tailwind can be applied conditionally at different breakpoints, which makes it a piece of cake to build complex responsive interfaces without ever leaving your HTML.
 
-First, make sure you've added the viewport meta tag to the `<head>` of your document:
+First, make sure you've added the [viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) to the `<head>` of your document:
 
 `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`Then to add a utility but only have it take effect at a certain breakpoint, all you need to do is prefix the utility with the breakpoint name, followed by the `:` character:
 
@@ -62,7 +62,7 @@ If you'd like to apply a utility *only* when a specific breakpoint range is acti
 
 To target a single breakpoint, target the range for that breakpoint by stacking a responsive variant like `md` with the `max-*` variant for the next breakpoint:
 
-`<div class="md:max-lg:flex">  <!-- ... --></div>`Read about targeting breakpoint ranges to learn more.
+`<div class="md:max-lg:flex">  <!-- ... --></div>`Read about [targeting breakpoint ranges](#targeting-a-breakpoint-range) to learn more.
 
 Use the `--breakpoint-*` theme variables to customize your breakpoints:
 
@@ -72,19 +72,19 @@ Use the `--breakpoint-*` theme variables to customize your breakpoints:
 
 Tailwind uses `rem` for the default breakpoints, so if you are adding additional breakpoints to the defaults, make sure you use `rem` as well.
 
-Learn more about customizing your theme in the theme documentation.
+Learn more about customizing your theme in the [theme documentation](/docs/theme).
 
 To remove a default breakpoint, reset its value to the `initial` keyword:
 
 `@import "tailwindcss";@theme {  --breakpoint-2xl: initial;}`You can also reset all of the default breakpoints using `--breakpoint-*: initial`, then define all of your breakpoints from scratch:
 
-`@import "tailwindcss";@theme {  --breakpoint-*: initial;  --breakpoint-tablet: 40rem;  --breakpoint-laptop: 64rem;  --breakpoint-desktop: 80rem;}`Learn more removing default theme values in the theme documentation.
+`@import "tailwindcss";@theme {  --breakpoint-*: initial;  --breakpoint-tablet: 40rem;  --breakpoint-laptop: 64rem;  --breakpoint-desktop: 80rem;}`Learn more removing default theme values in the [theme documentation](/docs/theme).
 
 If you need to use a one-off breakpoint that doesn’t make sense to include in your theme, use the `min` or `max` variants to generate a custom breakpoint on the fly using any arbitrary value.
 
-`<div class="max-[600px]:bg-sky-300 min-[320px]:text-center">  <!-- ... --></div>`Learn more about arbitrary value support in the arbitrary values documentation.
+`<div class="max-[600px]:bg-sky-300 min-[320px]:text-center">  <!-- ... --></div>`Learn more about arbitrary value support in the [arbitrary values](/docs/adding-custom-styles#using-arbitrary-values) documentation.
 
-Container queries are a modern CSS feature that let you style something based on the size of a parent element instead of the size of the entire viewport. They let you build components that are a lot more portable and reusable because they can change based on the actual space available for that component.
+[Container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries) are a modern CSS feature that let you style something based on the size of a parent element instead of the size of the entire viewport. They let you build components that are a lot more portable and reusable because they can change based on the actual space available for that component.
 
 Use the `@container` class to mark an element as an inline-size container, then use variants like `@sm` and `@md` to style child elements based on the size of the container:
 
@@ -106,11 +106,11 @@ Use the `--container-*` theme variables to customize your container sizes:
 
 `@import "tailwindcss";@theme {  --container-8xl: 96rem;}`This adds a new `8xl` container query variant that can be used in your markup:
 
-`<div class="@container">  <div class="flex flex-col @8xl:flex-row">    <!-- ... -->  </div></div>`Learn more about customizing your theme in the theme documentation.
+`<div class="@container">  <div class="flex flex-col @8xl:flex-row">    <!-- ... -->  </div></div>`Learn more about customizing your theme in the [theme documentation](/docs/theme).
 
 Use variants like `@min-[475px]` and `@max-[960px]` for one-off container query sizes you don't want to add to your theme:
 
-`<div class="@container">  <div class="flex flex-col @min-[475px]:flex-row">    <!-- ... -->  </div></div>`Use container query length units like `cqw` and `cqi` as arbitrary values in other utility classes to reference the container size:
+`<div class="@container">  <div class="flex flex-col @min-[475px]:flex-row">    <!-- ... -->  </div></div>`Use [container query length units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries#container_query_length_units) like `cqw` and `cqi` as arbitrary values in other utility classes to reference the container size:
 
 `<div class="@container">  <div class="w-[50cqw]">    <!-- ... -->  </div></div>`For units that need more than the inline size, like `cqb` and `cqh`, use `@container-size` to make the full size of the container available.
 

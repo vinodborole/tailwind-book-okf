@@ -3,7 +3,7 @@ type: Web Page
 title: display - Layout - Tailwind CSS
 description: Utilities for controlling the display box type of an element.
 resource: https://tailwindcss.com/docs/display
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Layout
@@ -59,7 +59,7 @@ white-space: normal;
 
 Use the `inline`, `inline-block`, and `block` utilities to control the flow of text and elements:
 
-Use the `flow-root` utility to create a block-level element with its own block formatting context:
+Use the `flow-root` utility to create a block-level element with its own [block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context):
 
 Use the `flex` utility to create a block-level flex container:
 
@@ -75,7 +75,7 @@ Use the `table`, `table-row`, `table-cell`, `table-caption`, `table-column`, `ta
 
 Use the `hidden` utility to remove an element from the document:
 
-To visually hide an element but keep it in the document, use the visibility property instead.
+To visually hide an element but keep it in the document, use the [visibility](/docs/visibility#making-elements-invisible) property instead.
 
 Use `sr-only` to hide an element visually without hiding it from screen readers:
 
@@ -85,7 +85,7 @@ Use `sr-only` to hide an element visually without hiding it from screen readers:
 
 Prefix a `display` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="flex md:inline-flex ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="flex md:inline-flex ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

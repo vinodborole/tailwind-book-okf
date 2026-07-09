@@ -3,7 +3,7 @@ type: Web Page
 title: padding - Spacing - Tailwind CSS
 description: Utilities for controlling an element's padding.
 resource: https://tailwindcss.com/docs/padding
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Spacing
@@ -67,7 +67,7 @@ Use `py-` utilities like `<number>``py-4` and `py-8` to control the vertical pad
 
 Use `ps-` or `<number>``pe-` utilities like `<number>``ps-4` and `pe-8` to set the `padding-inline-start` and `padding-inline-end` logical properties, which map to either the left or right side based on the text direction:
 
-For more control, you can also use the LTR and RTL modifiers to conditionally apply specific styles depending on the current text direction.
+For more control, you can also use the [LTR and RTL modifiers](/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
 
 Use the `pbs-` and `<number>``pbe-` utilities to set the `<number>``padding-block-start` and `padding-block-end` logical properties, which map to either the top or bottom side based on the writing mode:
 
@@ -79,11 +79,11 @@ Use the `pbs-` and `<number>``pbe-` utilities to set the `<number>``padding-bloc
 
 Prefix a `padding` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="py-4 md:py-8 ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="py-4 md:py-8 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `p-`,`<number>``px-`,`<number>``py-`,`<number>``ps-`,`<number>``pe-`,`<number>``pbs-`,`<number>``pbe-`,`<number>``pt-`,`<number>``pr-`,`<number>``pb-`, and `<number>``pl-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme variable documentation.
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

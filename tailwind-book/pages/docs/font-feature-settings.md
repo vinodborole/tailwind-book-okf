@@ -3,7 +3,7 @@ type: Web Page
 title: font-feature-settings - Typography - Tailwind CSS
 description: Utilities for controlling advanced typographic features.
 resource: https://tailwindcss.com/docs/font-feature-settings
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -23,7 +23,7 @@ Use the `font-features-[` utility to enable OpenType features in fonts that supp
 
 `<p class="font-features-(--my-features) ...">  <!-- ... --></p>`Prefix a `font-feature-settings` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="font-features-['tnum'] md:font-features-['smcp'] ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="font-features-['tnum'] md:font-features-['smcp'] ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

@@ -4,7 +4,7 @@ title: place-content - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how content is justified and aligned at the
   same time.
 resource: https://tailwindcss.com/docs/place-content
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -40,7 +40,7 @@ Use `place-content-stretch` to stretch grid items along their grid areas on the 
 
 Prefix a `place-content` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="grid place-content-start md:place-content-center ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="grid place-content-start md:place-content-center ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

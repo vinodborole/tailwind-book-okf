@@ -3,20 +3,20 @@ type: Web Page
 title: Preflight - Base styles - Tailwind CSS
 description: An opinionated set of base styles for Tailwind projects.
 resource: https://tailwindcss.com/docs/preflight
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Base styles
 
 An opinionated set of base styles for Tailwind projects.
 
-Built on top of modern-normalize, Preflight is a set of base styles for Tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you to work within the constraints of your design system.
+Built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize), Preflight is a set of base styles for Tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you to work within the constraints of your design system.
 
 When you import `tailwindcss` into your project, Preflight is automatically injected into the `base` layer:
 
 `@layer theme, base, components, utilities;@import "tailwindcss/theme.css" layer(theme);@import "tailwindcss/preflight.css" layer(base);@import "tailwindcss/utilities.css" layer(utilities);`While most of the styles in Preflight are meant to go unnoticed—they simply make things behave more like you'd expect them to—some are more opinionated and can be surprising when you first encounter them.
 
-For a complete reference of all the styles applied by Preflight, see the stylesheet.
+For a complete reference of all the styles applied by Preflight, [see the stylesheet](https://github.com/tailwindlabs/tailwindcss/blob/main/packages/tailwindcss/preflight.css).
 
 Preflight removes all of the default margins from all elements including headings, blockquotes, paragraphs, etc:
 
@@ -26,7 +26,7 @@ In order to make it easy to add a border by simply adding the `border` class, Ta
 
 `*,::after,::before,::backdrop,::file-selector-button {  box-sizing: border-box;  border: 0 solid;}`Since the `border` class only sets the `border-width` property, this reset ensures that adding that class always adds a solid `1px` border that uses `currentColor`.
 
-This can cause some unexpected results when integrating certain third-party libraries, like Google maps for example.
+This can cause some unexpected results when integrating certain third-party libraries, like [Google maps](https://github.com/tailwindlabs/tailwindcss/issues/484) for example.
 
 When you run into situations like this, you can work around them by overriding the Preflight styles with your own custom CSS:
 
@@ -34,15 +34,15 @@ When you run into situations like this, you can work around them by overriding t
 
 `h1,h2,h3,h4,h5,h6 {  font-size: inherit;  font-weight: inherit;}`The reason for this is two-fold:
 
-You can always add default header styles to your project by adding your own base styles.
+You can always add default header styles to your project by [adding your own base styles](/docs/adding-custom-styles#adding-base-styles).
 
 Ordered and unordered lists are unstyled by default, with no bullets or numbers:
 
-`ol,ul,menu {  list-style: none;}`If you'd like to style a list, you can do so using the list-style-type and list-style-position utilities:
+`ol,ul,menu {  list-style: none;}`If you'd like to style a list, you can do so using the [list-style-type](/docs/list-style-type) and [list-style-position](/docs/list-style-position) utilities:
 
-`<ul class="list-inside list-disc">  <li>One</li>  <li>Two</li>  <li>Three</li></ul>`You can always add default list styles to your project by adding your own base styles.
+`<ul class="list-inside list-disc">  <li>One</li>  <li>Two</li>  <li>Three</li></ul>`You can always add default list styles to your project by [adding your own base styles](/docs/adding-custom-styles#adding-base-styles).
 
-Unstyled lists are not announced as lists by VoiceOver. If your content is truly a list but you would like to keep it unstyled, add a "list" role to the element:
+Unstyled lists are [not announced as lists by VoiceOver](https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/). If your content is truly a list but you would like to keep it unstyled, [add a "list" role](https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html) to the element:
 
 `<ul role="list">  <li>One</li>  <li>Two</li>  <li>Three</li></ul>`Images and other replaced elements (like `svg`, `video`, `canvas`, and others) are `display: block` by default:
 
@@ -58,7 +58,7 @@ If you ever need to make one of these elements `inline` instead of `block`, simp
 
 If you'd like to add your own base styles on top of Preflight, add them to the `base` CSS layer in your CSS using `@layer base`:
 
-`@layer base {  h1 {    font-size: var(--text-2xl);  }  h2 {    font-size: var(--text-xl);  }  h3 {    font-size: var(--text-lg);  }  a {    color: var(--color-blue-600);    text-decoration-line: underline;  }}`Learn more in the adding base styles documentation.
+`@layer base {  h1 {    font-size: var(--text-2xl);  }  h2 {    font-size: var(--text-xl);  }  h3 {    font-size: var(--text-lg);  }  a {    color: var(--color-blue-600);    text-decoration-line: underline;  }}`Learn more in the [adding base styles documentation](/docs/adding-custom-styles#adding-base-styles).
 
 If you'd like to completely disable Preflight—perhaps because you're integrating Tailwind into an existing project or you'd prefer to define your own base styles—you can do so by importing only the parts of Tailwind that you need.
 

@@ -3,7 +3,7 @@ type: Web Page
 title: Colors - Core concepts - Tailwind CSS
 description: Using and customizing the color palette in Tailwind CSS projects.
 resource: https://tailwindcss.com/docs/colors
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -66,7 +66,7 @@ olive
 
 Every color in the default palette includes 11 steps, with 50 being the lightest, and 950 being the darkest:
 
-The entire color palette is available across all color related utilities, including things like background color, border color, fill, caret color, and many more.
+The entire color palette is available across all color related utilities, including things like [background color](/docs/background-color), [border color](/docs/border-color), [fill](/docs/fill), [caret color](/docs/caret-color), and many more.
 
 Use color utilities like `bg-white`, `border-pink-300`, and `text-gray-950` to set the different color properties of elements in your design:
 
@@ -74,21 +74,21 @@ Here's a full list of utilities that use your color palette:
 
 | Utility | Description | 
 |---|---|
-| `bg-*` | Sets the background color of an element | 
-| `text-*` | Sets the text color of an element | 
-| `decoration-*` | Sets the text decoration color of an element | 
-| `border-*` | Sets the border color of an element | 
-| `outline-*` | Sets the outline color of an element | 
-| `shadow-*` | Sets the color of box shadows | 
-| `inset-shadow-*` | Sets the color of inset box shadows | 
-| `ring-*` | Sets the color of ring shadows | 
-| `inset-ring-*` | Sets the color of inset ring shadows | 
-| `accent-*` | Sets the accent color of form controls | 
-| `caret-*` | Sets the caret color in form controls | 
-| `scrollbar-thumb-*` | Sets the thumb color of an element's scrollbar | 
-| `scrollbar-track-*` | Sets the track color of an element's scrollbar | 
-| `fill-*` | Sets the fill color of SVG elements | 
-| `stroke-*` | Sets the stroke color of SVG elements | 
+| `bg-*` | Sets the [background color](/docs/background-color)of an element | 
+| `text-*` | Sets the [text color](/docs/text-color)of an element | 
+| `decoration-*` | Sets the [text decoration color](/docs/text-decoration-color)of an element | 
+| `border-*` | Sets the [border color](/docs/border-color)of an element | 
+| `outline-*` | Sets the [outline color](/docs/outline-color)of an element | 
+| `shadow-*` | Sets the color of [box shadows](/docs/box-shadow#setting-the-shadow-color) | 
+| `inset-shadow-*` | Sets the color of [inset box shadows](/docs/box-shadow#setting-the-inset-shadow-color) | 
+| `ring-*` | Sets the color of [ring shadows](/docs/box-shadow#setting-the-ring-color) | 
+| `inset-ring-*` | Sets the color of [inset ring shadows](/docs/box-shadow#setting-the-inset-ring-color) | 
+| `accent-*` | Sets the [accent color](/docs/accent-color)of form controls | 
+| `caret-*` | Sets the [caret color](/docs/caret-color)in form controls | 
+| `scrollbar-thumb-*` | Sets the [thumb color](/docs/scrollbar-color)of an element's scrollbar | 
+| `scrollbar-track-*` | Sets the [track color](/docs/scrollbar-color)of an element's scrollbar | 
+| `fill-*` | Sets the [fill color](/docs/fill)of SVG elements | 
+| `stroke-*` | Sets the [stroke color](/docs/stroke)of SVG elements | 
 
 You can adjust the opacity of a color using syntax like `bg-black/75`, where `75` sets the alpha channel of the color to 75%:
 
@@ -96,11 +96,11 @@ This syntax also supports arbitrary values and the CSS variable shorthand:
 
 `<div class="bg-pink-500/[71.37%]"><!-- ... --></div><div class="bg-cyan-400/(--my-alpha-value)"><!-- ... --></div>`Use the `dark` variant to write classes like `dark:bg-gray-800` that only apply a color when dark mode is active:
 
-Learn more about styling for dark mode in the dark mode documentation.
+Learn more about styling for dark mode in the [dark mode documentation](/docs/dark-mode).
 
 Colors are exposed as CSS variables in the `--color-*` namespace, so you can reference them in CSS with variables like `--color-blue-500` and `--color-pink-700`:
 
-`@import "tailwindcss";@layer components {  .typography {    color: var(--color-gray-950);    a {      color: var(--color-blue-500);      &:hover {        color: var(--color-blue-800);      }    }  }}`You can also use these as arbitrary values in utility classes:
+`@import "tailwindcss";@layer components {  .typography {    color: var(--color-gray-950);    a {      color: var(--color-blue-500);      &:hover {        color: var(--color-blue-800);      }    }  }}`You can also use these as [arbitrary values] in utility classes:
 
 `<div class="bg-[light-dark(var(--color-white),var(--color-gray-950))]">  <!-- ... --></div>`To quickly adjust the opacity of a color when referencing it as a variable in CSS, Tailwind includes a special `--alpha()` function:
 
@@ -108,7 +108,7 @@ Colors are exposed as CSS variables in the `--color-*` namespace, so you can ref
 
 `@import "tailwindcss";@theme {  --color-midnight: #121063;  --color-tahiti: #3ab7bf;  --color-bermuda: #78dcca;}`Now utilities like `bg-midnight`, `text-tahiti`, and `fill-bermuda` will be available in your project in addition to the default colors.
 
-Learn more about theme variables in the theme variables documentation.
+Learn more about theme variables in the [theme variables documentation](/docs/theme).
 
 Override any of the default colors by defining new theme variables with the same name:
 
@@ -120,7 +120,7 @@ Use `--color-*: initial` to completely disable all of the default colors and def
 
 `@import "tailwindcss";@theme {  --color-*: initial;  --color-white: #fff;  --color-purple: #3f3cbb;  --color-midnight: #121063;  --color-tahiti: #3ab7bf;  --color-bermuda: #78dcca;}`Use `@theme inline` when defining colors that reference other colors:
 
-`@import "tailwindcss";:root {  --acme-canvas-color: oklch(0.967 0.003 264.542);}[data-theme="dark"] {  --acme-canvas-color: oklch(0.21 0.034 264.665);}@theme inline {  --color-canvas: var(--acme-canvas-color);}`Learn more in the theme documentation on referencing other variables.
+`@import "tailwindcss";:root {  --acme-canvas-color: oklch(0.967 0.003 264.542);}[data-theme="dark"] {  --acme-canvas-color: oklch(0.21 0.034 264.665);}@theme inline {  --color-canvas: var(--acme-canvas-color);}`Learn more in the theme documentation on [referencing other variables](/docs/theme#referencing-other-variables).
 
 Here's a complete list of the default colors and their values for reference:
 

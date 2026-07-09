@@ -3,7 +3,7 @@ type: Web Page
 title: Detecting classes in source files - Core concepts - Tailwind CSS
 description: Understanding and customizing how Tailwind scans your source files.
 resource: https://tailwindcss.com/docs/detecting-classes-in-source-files
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -12,7 +12,7 @@ Understanding and customizing how Tailwind scans your source files.
 
 Tailwind works by scanning your project for utility classes, then generating all of the necessary CSS based on the classes you've actually used.
 
-This makes sure your CSS is as small as possible, and is also what makes features like arbitrary values possible.
+This makes sure your CSS is as small as possible, and is also what makes features like [arbitrary values](/docs/adding-custom-styles#using-arbitrary-values) possible.
 
 Tailwind treats all of your source files as plain text, and doesn't attempt to actually parse your files as code in any way.
 
@@ -44,7 +44,7 @@ Always map props to static class names
 
 Tailwind will scan every file in your project for class names, except in the following cases:
 
-`.gitignore` file`node_modules` directoryIf you need to scan any files that Tailwind is ignoring by default, you can explicitly register those sources.
+`.gitignore` file`node_modules` directoryIf you need to scan any files that Tailwind is ignoring by default, you can [explicitly register](#explicitly-registering-sources) those sources.
 
 Use `@source` to explicitly register source paths relative to the stylesheet:
 
@@ -68,7 +68,7 @@ If you need to make sure Tailwind generates certain class names that don’t exi
 
 `@import "tailwindcss";@source inline("underline");``.underline {  text-decoration-line: underline;}`You can also use `@source inline()` to generate classes with variants. For example, to generate the `underline` class with hover and focus variants, add `{hover:,focus:,}` to the source input:
 
-`@import "tailwindcss";@source inline("{hover:,focus:,}underline");``.underline {  text-decoration-line: underline;}@media (hover: hover) {  .hover\:underline:hover {    text-decoration-line: underline;  }}@media (focus: focus) {  .focus\:underline:focus {    text-decoration-line: underline;  }}`The source input is brace expanded, so you can generate multiple classes at once. For example, to generate all the red background colors with hover variants, use a range:
+`@import "tailwindcss";@source inline("{hover:,focus:,}underline");``.underline {  text-decoration-line: underline;}@media (hover: hover) {  .hover\:underline:hover {    text-decoration-line: underline;  }}@media (focus: focus) {  .focus\:underline:focus {    text-decoration-line: underline;  }}`The source input is [brace expanded](https://www.gnu.org/software/bash/manual/html_node/Brace-Expansion.html), so you can generate multiple classes at once. For example, to generate all the red background colors with hover variants, use a range:
 
 `@import "tailwindcss";@source inline("{hover:,}bg-red-{50,{100..900..100},950}");``.bg-red-50 {  background-color: var(--color-red-50);}.bg-red-100 {  background-color: var(--color-red-100);}.bg-red-200 {  background-color: var(--color-red-200);}/* ... */.bg-red-800 {  background-color: var(--color-red-800);}.bg-red-900 {  background-color: var(--color-red-900);}.bg-red-950 {  background-color: var(--color-red-950);}@media (hover: hover) {  .hover\:bg-red-50:hover {    background-color: var(--color-red-50);  }  /* ... */  .hover\:bg-red-950:hover {    background-color: var(--color-red-950);  }}`This generates red background colors from 100 to 900 in increments of 100, along with the first and last shades of 50 and 950. It also adds the `hover:` variant for each of those classes.
 

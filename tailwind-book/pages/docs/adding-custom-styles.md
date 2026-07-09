@@ -3,7 +3,7 @@ type: Web Page
 title: Adding custom styles - Core concepts - Tailwind CSS
 description: Best practices for adding your own custom styles in Tailwind projects.
 resource: https://tailwindcss.com/docs/adding-custom-styles
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -18,7 +18,7 @@ This guide covers topics like customizing your design tokens, how to break out o
 
 If you want to change things like your color palette, spacing scale, typography scale, or breakpoints, add your customizations using the `@theme` directive in your CSS:
 
-`@theme {  --font-display: "Satoshi", "sans-serif";  --breakpoint-3xl: 120rem;  --color-avocado-100: oklch(0.99 0 0);  --color-avocado-200: oklch(0.98 0.04 113.22);  --color-avocado-300: oklch(0.94 0.11 115.03);  --color-avocado-400: oklch(0.92 0.19 114.08);  --color-avocado-500: oklch(0.84 0.18 117.33);  --color-avocado-600: oklch(0.53 0.12 118.34);  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);  /* ... */}`Learn more about customizing your theme in the theme variables documentation.
+`@theme {  --font-display: "Satoshi", "sans-serif";  --breakpoint-3xl: 120rem;  --color-avocado-100: oklch(0.99 0 0);  --color-avocado-200: oklch(0.98 0.04 113.22);  --color-avocado-300: oklch(0.94 0.11 115.03);  --color-avocado-400: oklch(0.92 0.19 114.08);  --color-avocado-500: oklch(0.84 0.18 117.33);  --color-avocado-600: oklch(0.53 0.12 118.34);  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);  --ease-snappy: cubic-bezier(0.2, 0, 0, 1);  /* ... */}`Learn more about customizing your theme in the [theme variables documentation](/docs/theme).
 
 While you can usually build the bulk of a well-crafted design using a constrained set of design tokens, once in a while you need to break out of those constraints to get things pixel-perfect.
 
@@ -40,7 +40,7 @@ If you ever need to use a CSS property that Tailwind doesn't include a utility f
 
 `<div class="[--scroll-offset:56px] lg:[--scroll-offset:44px]">  <!-- ... --></div>`Arbitrary *variants* are like arbitrary values but for doing on-the-fly selector modification, like you can with built-in pseudo-class variants like `hover:{utility}` or responsive variants like `md:{utility}` but using square bracket notation directly in your HTML.
 
-`<ul role="list">  {#each items as item}  <li class="lg:[&:nth-child(-n+3)]:hover:underline">{item}</li>  {/each}</ul>`Learn more in the arbitrary variants documentation.
+`<ul role="list">  {#each items as item}  <li class="lg:[&:nth-child(-n+3)]:hover:underline">{item}</li>  {/each}</ul>`Learn more in the [arbitrary variants](/docs/hover-focus-and-other-states#using-arbitrary-variants) documentation.
 
 When an arbitrary value needs to contain a space, use an underscore (`_`) instead and Tailwind will automatically convert it to a space at build-time:
 
@@ -48,7 +48,7 @@ When an arbitrary value needs to contain a space, use an underscore (`_`) instea
 
 `<div class="bg-[url('/what_a_rush.png')]">  <!-- ... --></div>`In the rare case that you actually need to use an underscore but it's ambiguous because a space is valid as well, escape the underscore with a backslash and Tailwind won't convert it to a space:
 
-`<div class="before:content-['hello\_world']">  <!-- ... --></div>`If you're using something like JSX where the backslash is stripped from the rendered HTML, use String.raw() so the backslash isn't treated as a JavaScript escape character:
+`<div class="before:content-['hello\_world']">  <!-- ... --></div>`If you're using something like JSX where the backslash is stripped from the rendered HTML, use [String.raw()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/raw) so the backslash isn't treated as a JavaScript escape character:
 
 `<div className={String.raw`before:content-['hello\_world']`}>  <!-- ... --></div>`Many utilities in Tailwind share a common namespace but map to different CSS properties. For example `text-lg` and `text-black` both share the `text-` namespace, but one is for `font-size` and the other is for `color`.
 
@@ -56,7 +56,7 @@ When using arbitrary values, Tailwind can generally handle this ambiguity automa
 
 `<!-- Will generate a font-size utility --><div class="text-[22px]">...</div><!-- Will generate a color utility --><div class="text-[#bada55]">...</div>`Sometimes it really is ambiguous though, for example when using CSS variables:
 
-`<div class="text-(--my-var)">...</div>`In these situations, you can "hint" the underlying type to Tailwind by adding a CSS data type before the value:
+`<div class="text-(--my-var)">...</div>`In these situations, you can "hint" the underlying type to Tailwind by adding a [CSS data type](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Types) before the value:
 
 `<!-- Will generate a font-size utility --><div class="text-(length:--my-var)">...</div><!-- Will generate a color utility --><div class="text-(color:--my-var)">...</div>`While Tailwind is designed to handle the bulk of your styling needs, there is nothing stopping you from just writing plain CSS when you need to:
 
@@ -72,7 +72,7 @@ Traditionally these would be classes like `card`, `btn`, `badge` — that kind o
 
 `@layer components {  .card {    background-color: var(--color-white);    border-radius: var(--radius-lg);    padding: --spacing(6);    box-shadow: var(--shadow-xl);  }}`By defining component classes in the `components` layer, you can still use utility classes to override them when necessary:
 
-`<!-- Will look like a card, but with square corners --><div class="card rounded-none">  <!-- ... --></div>`Using Tailwind you probably don't need these types of classes as often as you think. Read our guide on managing duplication for our recommendations.
+`<!-- Will look like a card, but with square corners --><div class="card rounded-none">  <!-- ... --></div>`Using Tailwind you probably don't need these types of classes as often as you think. Read our guide on [managing duplication](/docs/styling-with-utility-classes#managing-duplication) for our recommendations.
 
 The `components` layer is also a good place to put custom styles for any third-party components you're using:
 

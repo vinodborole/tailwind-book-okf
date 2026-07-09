@@ -4,7 +4,7 @@ title: place-items - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how items are justified and aligned at the
   same time.
 resource: https://tailwindcss.com/docs/place-items
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Flexbox & Grid
@@ -31,7 +31,7 @@ Use `place-items-stretch` to stretch items along their grid areas on both axes:
 
 Prefix a `place-items` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="grid place-items-start md:place-items-center ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="grid place-items-start md:place-items-center ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

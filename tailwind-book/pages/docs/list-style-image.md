@@ -3,7 +3,7 @@ type: Web Page
 title: list-style-image - Typography - Tailwind CSS
 description: Utilities for controlling the marker images for list items.
 resource: https://tailwindcss.com/docs/list-style-image
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -26,7 +26,7 @@ Use the `list-image-none` utility to remove an existing marker image from list i
 
 `<ul class="list-image-none">  <!-- ... --></ul>`Prefix a `list-style-image` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<ul class="list-image-none md:list-image-[url(/img/checkmark.png)] ...">  <!-- ... --></ul>`Learn more about using variants in the variants documentation.
+`<ul class="list-image-none md:list-image-[url(/img/checkmark.png)] ...">  <!-- ... --></ul>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

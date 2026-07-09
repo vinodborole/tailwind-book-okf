@@ -3,7 +3,7 @@ type: Web Page
 title: aspect-ratio - Layout - Tailwind CSS
 description: Utilities for controlling the aspect ratio of an element.
 resource: https://tailwindcss.com/docs/aspect-ratio
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Layout
@@ -35,13 +35,13 @@ Use the `aspect-[` syntax to set the aspect ratio based on a completely custom v
 
 Prefix an `aspect-ratio` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<iframe class="aspect-video md:aspect-square ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>`Learn more about using variants in the variants documentation.
+`<iframe class="aspect-video md:aspect-square ..." src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--aspect-*` theme variables to customize the aspect ratio utilities in your project:
 
 `@theme {  --aspect-retro: 4 / 3; }`Now the `aspect-retro` utility can be used in your markup:
 
-`<iframe class="aspect-retro" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>`Learn more about customizing your theme in the theme documentation.
+`<iframe class="aspect-retro" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

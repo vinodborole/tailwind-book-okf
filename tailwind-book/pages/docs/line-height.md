@@ -3,7 +3,7 @@ type: Web Page
 title: line-height - Typography - Tailwind CSS
 description: Utilities for controlling the leading, or line height, of an element.
 resource: https://tailwindcss.com/docs/line-height
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -22,7 +22,7 @@ Utilities for controlling the leading, or line height, of an element.
 
 Use font size utilities like `text-sm/6` and `text-lg/7` to set the font size and line-height of an element at the same time:
 
-Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the font-size documentation.
+Each font size utility also sets a default line height when one isn't provided. You can learn more about these values and how to customize them in the [font-size documentation](/docs/font-size).
 
 Use `leading-` utilities like `<number>``leading-6` and `leading-7` to set the line height of an element independent of the font-size:
 
@@ -36,11 +36,11 @@ Use the `leading-[` syntax to set the line height based on a completely custom v
 
 Prefix a `line-height` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="leading-5 md:leading-6 ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="leading-5 md:leading-6 ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `leading-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme variable documentation.
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

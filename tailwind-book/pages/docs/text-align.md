@@ -3,7 +3,7 @@ type: Web Page
 title: text-align - Typography - Tailwind CSS
 description: Utilities for controlling the alignment of text.
 resource: https://tailwindcss.com/docs/text-align
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -27,11 +27,11 @@ Use the `text-center` utility to center the text of an element:
 
 Use the `text-justify` utility to justify the text of an element:
 
-Use the `text-start` and `text-end` utilities, which use logical properties to map to either the left or right side based on the text direction:
+Use the `text-start` and `text-end` utilities, which use [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Basic_concepts) to map to either the left or right side based on the text direction:
 
 Prefix a `text-align` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="text-left md:text-center ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="text-left md:text-center ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

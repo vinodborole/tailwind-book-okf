@@ -3,7 +3,7 @@ type: Web Page
 title: font-variant-numeric - Typography - Tailwind CSS
 description: Utilities for controlling the variant of numbers.
 resource: https://tailwindcss.com/docs/font-variant-numeric
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -44,7 +44,7 @@ Use the `normal-nums` property to reset numeric font variants:
 
 `<p class="slashed-zero tabular-nums md:normal-nums ...">  <!-- ... --></p>`Prefix a `font-variant-numeric` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="proportional-nums md:tabular-nums ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="proportional-nums md:tabular-nums ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

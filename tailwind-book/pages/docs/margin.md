@@ -3,7 +3,7 @@ type: Web Page
 title: margin - Spacing - Tailwind CSS
 description: Utilities for controlling an element's margin.
 resource: https://tailwindcss.com/docs/margin
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Spacing
@@ -202,9 +202,9 @@ If your elements are in reverse order (using say `flex-row-reverse` or `flex-col
 
 The space utilities are really just a shortcut for adding margin to all-but-the-last-item in a group, and aren't designed to handle complex cases like grids, layouts that wrap, or situations where the children are rendered in a complex custom order rather than their natural DOM order.
 
-For those situations, it's better to use the gap utilities when possible, or add margin to every element with a matching negative margin on the parent.
+For those situations, it's better to use the [gap utilities](/docs/gap) when possible, or add margin to every element with a matching negative margin on the parent.
 
-Additionally, the space utilities are not designed to work together with the divide utilities. For those situations, consider adding margin/padding utilities to the children instead.
+Additionally, the space utilities are not designed to work together with the [divide utilities](/docs/border-width#between-children). For those situations, consider adding margin/padding utilities to the children instead.
 
 Use utilities like `m-[`,`<value>`]`mx-[`, and `<value>`]`mb-[` to set the margin based on a completely custom value:`<value>`]
 
@@ -214,11 +214,11 @@ Use utilities like `m-[`,`<value>`]`mx-[`, and `<value>`]`mb-[` to set the margi
 
 Prefix a `margin` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="mt-4 md:mt-8 ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="mt-4 md:mt-8 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `m-`,`<number>``mx-`,`<number>``my-`,`<number>``ms-`,`<number>``me-`,`<number>``mbs-`,`<number>``mbe-`,`<number>``mt-`,`<number>``mr-`,`<number>``mb-`, and `<number>``ml-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme variable documentation.
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

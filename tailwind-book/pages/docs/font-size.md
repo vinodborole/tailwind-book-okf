@@ -3,7 +3,7 @@ type: Web Page
 title: font-size - Typography - Tailwind CSS
 description: Utilities for controlling the font size of an element.
 resource: https://tailwindcss.com/docs/font-size
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -92,7 +92,7 @@ Use the `text-[` syntax to set the font size based on a completely custom value:
 
 Prefix a `font-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="text-sm md:text-base ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the variants documentation.
+`<p class="text-sm md:text-base ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--text-*` theme variables to customize the font size utilities in your project:
 
@@ -100,7 +100,7 @@ Use the `--text-*` theme variables to customize the font size utilities in your 
 
 `<div class="text-tiny">  <!-- ... --></div>`You can also provide default `line-height`, `letter-spacing`, and `font-weight` values for a font size:
 
-`@theme {  --text-tiny: 0.625rem;  --text-tiny--line-height: 1.5rem;   --text-tiny--letter-spacing: 0.125rem;   --text-tiny--font-weight: 500; }`Learn more about customizing your theme in the theme documentation.
+`@theme {  --text-tiny: 0.625rem;  --text-tiny--line-height: 1.5rem;   --text-tiny--letter-spacing: 0.125rem;   --text-tiny--font-weight: 500; }`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

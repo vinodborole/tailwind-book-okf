@@ -3,7 +3,7 @@ type: Web Page
 title: text-decoration-line - Typography - Tailwind CSS
 description: Utilities for controlling the decoration of text.
 resource: https://tailwindcss.com/docs/text-decoration-line
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Typography
@@ -29,11 +29,11 @@ Prefix a `text-decoration-line` utility with a variant like `hover:*` to only ap
 
 Hover over the text to see the expected behavior
 
-Learn more about using variants in the variants documentation.
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Prefix a `text-decoration-line` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<a class="no-underline md:underline ..." href="...">  <!-- ... --></a>`Learn more about using variants in the variants documentation.
+`<a class="no-underline md:underline ..." href="...">  <!-- ... --></a>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

@@ -3,7 +3,7 @@ type: Web Page
 title: top / right / bottom / left - Layout - Tailwind CSS
 description: Utilities for controlling the placement of positioned elements.
 resource: https://tailwindcss.com/docs/top-right-bottom-left
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Layout
@@ -134,13 +134,13 @@ Utilities for controlling the placement of positioned elements.
 | `left-(` | `left: var(` | 
 | `left-[` | `left: ` | 
 
-Use `top-`, `<number>``right-`, `<number>``bottom-`, `<number>``left-`, and `<number>``inset-` utilities like `<number>``top-0` and `bottom-4` to set the horizontal or vertical position of a positioned element:
+Use `top-`, `<number>``right-`, `<number>``bottom-`, `<number>``left-`, and `<number>``inset-` utilities like `<number>``top-0` and `bottom-4` to set the horizontal or vertical position of a [positioned element](/docs/position):
 
 To use a negative top/right/bottom/left value, prefix the class name with a dash to convert it to a negative value:
 
-Use `inset-s-` or `<number>``inset-e-` utilities like `<number>``inset-s-0` and `inset-e-4` to set the `inset-inline-start` and `inset-inline-end` logical properties, which map to either the left or right side based on the text direction:
+Use `inset-s-` or `<number>``inset-e-` utilities like `<number>``inset-s-0` and `inset-e-4` to set the `inset-inline-start` and `inset-inline-end` [logical properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties/Basic_concepts), which map to either the left or right side based on the text direction:
 
-For more control, you can also use the LTR and RTL modifiers to conditionally apply specific styles depending on the current text direction.
+For more control, you can also use the [LTR and RTL modifiers](/docs/hover-focus-and-other-states#rtl-support) to conditionally apply specific styles depending on the current text direction.
 
 Use utilities like `inset-[` and `<value>`]`top-[` to set the position based on a completely custom value:`<value>`]
 
@@ -150,11 +150,11 @@ Use utilities like `inset-[` and `<value>`]`top-[` to set the position based on 
 
 Prefix `inset`,`inset-x`,`inset-y`,`inset-s`,`inset-e`,`inset-bs`,`inset-be`,`top`,`left`,`bottom`, and `right` utilities with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="top-4 md:top-6 ...">  <!-- ... --></div>`Learn more about using variants in the variants documentation.
+`<div class="top-4 md:top-6 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `inset-`,`<number>``inset-x-`,`<number>``inset-y-`,`<number>``inset-s-`,`<number>``inset-e-`,`<number>``inset-bs-`,`<number>``inset-be-`,`<number>``top-`,`<number>``left-`,`<number>``bottom-`, and `<number>``right-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the theme variable documentation.
+`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

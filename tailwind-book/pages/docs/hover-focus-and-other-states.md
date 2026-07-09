@@ -3,7 +3,7 @@ type: Web Page
 title: Hover, focus, and other states - Core concepts - Tailwind CSS
 description: Using utilities to style elements on hover, focus, and more.
 resource: https://tailwindcss.com/docs/hover-focus-and-other-states
-timestamp: '2026-07-07T10:59:46.333743+00:00'
+timestamp: '2026-07-09T12:17:00.933290+00:00'
 ---
 
 Core concepts
@@ -40,7 +40,7 @@ Try interacting with this button to see the hover, focus, and active states
 
 Tailwind also includes variants for other interactive states like `:visited`, `:focus-within`, `:focus-visible`, and more.
 
-See the pseudo-class reference for a complete list of available pseudo-class variants.
+See the [pseudo-class reference](#pseudo-class-reference) for a complete list of available pseudo-class variants.
 
 Style an element when it is the first-child or last-child using the `first` and `last` variants:
 
@@ -60,7 +60,7 @@ You can also style an element when it's an odd or even child using the `odd` and
 
 Tailwind also includes variants for other structural pseudo-classes like `:only-child`, `:first-of-type`, `:empty`, and more.
 
-See the pseudo-class reference for a complete list of available pseudo-class variants.
+See the [pseudo-class reference](#pseudo-class-reference) for a complete list of available pseudo-class variants.
 
 Style form elements in different states using variants like `required`, `invalid`, and `disabled`:
 
@@ -70,7 +70,7 @@ Using variants for this sort of thing can reduce the amount of conditional logic
 
 Tailwind also includes variants for other form states like `:read-only`, `:indeterminate`, `:checked`, and more.
 
-See the pseudo-class reference for a complete list of available pseudo-class variants.
+See the [pseudo-class reference](#pseudo-class-reference) for a complete list of available pseudo-class variants.
 
 Use the `has-*` variant to style an element based on the state or content of its descendants:
 
@@ -98,7 +98,7 @@ When nesting groups, you can style something based on the state of a *specific* 
 
 Groups can be named however you like and don’t need to be configured in any way — just name your groups directly in your markup and Tailwind will automatically generate the necessary CSS.
 
-You can create one-off `group-*` variants on the fly by providing your own selector as an arbitrary value between square brackets:
+You can create one-off `group-*` variants on the fly by providing your own selector as an [arbitrary value](/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
 
 `<div class="group is-published">  <div class="hidden group-[.is-published]:block">    Published  </div></div>`For more control, you can use the `&` character to mark where `.group` should end up in the final selector relative to the selector you are passing in:
 
@@ -110,11 +110,11 @@ When you need to style an element based on the state of a *sibling* element, mar
 
 Try making the email address valid to see the warning disappear
 
-This makes it possible to do all sorts of neat tricks, like floating labels for example without any JS.
+This makes it possible to do all sorts of neat tricks, like [floating labels](https://www.youtube.com/watch?v=nJzKi6oIvBA) for example without any JS.
 
 This pattern works with every pseudo-class variant, for example `peer-focus`, `peer-required`, and `peer-disabled`.
 
-It's important to note that the `peer` marker can only be used on *previous* siblings because of how the subsequent-sibling combinator works in CSS:
+It's important to note that the `peer` marker can only be used on *previous* siblings because of how the [subsequent-sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/Subsequent-sibling_combinator) works in CSS:
 
 Won't work, only previous siblings can be marked as peers
 
@@ -122,7 +122,7 @@ Won't work, only previous siblings can be marked as peers
 
 Peers can be named however you like and don’t need to be configured in any way — just name your peers directly in your markup and Tailwind will automatically generate the necessary CSS.
 
-You can create one-off `peer-*` variants on the fly by providing your own selector as an arbitrary value between square brackets:
+You can create one-off `peer-*` variants on the fly by providing your own selector as an [arbitrary value](/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
 
 `<form>  <label for="email">Email:</label>  <input id="email" name="email" type="email" class="is-dirty peer" required />  <div class="peer-[.is-dirty]:peer-required:block hidden">This field is required.</div>  <!-- ... --></form>`For more control, you can use the `&` character to mark where `.peer` should end up in the final selector relative to the selector you are passing in:
 
@@ -154,9 +154,9 @@ This makes it easy to set the selection color to match your brand across your en
 
 `<html>  <head>    <!-- ... -->  </head>  <body class="selection:bg-pink-300">    <!-- ... -->  </body></html>`Style the first line in a block of content using the `first-line` variant, and the first letter using the `first-letter` variant:
 
-Style the backdrop of a native `<dialog>` element using the `backdrop` variant:
+Style the backdrop of a [native  <dialog> element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) using the 
 
-`<dialog class="backdrop:bg-gray-50">  <form method="dialog">    <!-- ... -->  </form></dialog>`If you're using native `<dialog>` elements in your project, you may also want to read about styling open/closed states using the `open` variant.
+`backdrop` variant:`<dialog class="backdrop:bg-gray-50">  <form method="dialog">    <!-- ... -->  </form></dialog>`If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](/docs/hover-focus-and-other-states#openclosed-state) using the `open` variant.
 
 To style an element at a specific breakpoint, use responsive variants like `md` and `lg`.
 
@@ -164,13 +164,13 @@ For example, this will render a 3-column grid on mobile, a 4-column grid on medi
 
 `<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6">  <!-- ... --></div>`To style an element based on the width of a parent element instead of the viewport, use variants like `@md` and `@lg`:
 
-`<div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>`Check out the Responsive design documentation for an in-depth look at how these features work.
+`<div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>`Check out the [Responsive design](/docs/responsive-design) documentation for an in-depth look at how these features work.
 
 The `prefers-color-scheme` media query tells you whether the user prefers a light theme or dark theme, and is usually configured at the operating system level.
 
 Use utilities with no variant to target light mode, and use the `dark` variant to provide overrides for dark mode:
 
-Check out the Dark Mode documentation for an in-depth look at how this feature works.
+Check out the [Dark Mode](/docs/dark-mode) documentation for an in-depth look at how this feature works.
 
 The `prefers-reduced-motion` media query tells you if the user has requested that you minimize non-essential motion.
 
@@ -196,7 +196,7 @@ Try emulating `forced-colors: active` in your developer tools to see the changes
 
 Use the `not-forced-colors` variant to apply styles based when the user is *not* using a forced colors mode:
 
-`<div class="not-forced-colors:appearance-none ...">  <!-- ... --></div>`Tailwind also includes a forced color adjust utilities to opt in and out of forced colors.
+`<div class="not-forced-colors:appearance-none ...">  <!-- ... --></div>`Tailwind also includes a [forced color adjust](/docs/forced-color-adjust) utilities to opt in and out of forced colors.
 
 Use the `inverted-colors` variant to conditionally add styles when the user has enabled an inverted color scheme:
 
@@ -218,9 +218,9 @@ Use the `portrait` and `landscape` variants to conditionally add styles when the
 
 `<div>  <article class="print:hidden">    <h1>My Secret Pizza Recipe</h1>    <p>This recipe is a secret, and must not be shared with anyone</p>    <!-- ... -->  </article>  <div class="hidden print:block">Are you seriously trying to print this? It's secret!</div></div>`Use the `supports-[...]` variant to style things based on whether a certain feature is supported in the user's browser:
 
-`<div class="flex supports-[display:grid]:grid ...">  <!-- ... --></div>`Under the hood the `supports-[...]` variant generates `@supports rules` and takes anything you’d use with `@supports (...)` between the square brackets, like a property/value pair, and even expressions using `and` and `or`.
+`<div class="flex supports-[display:grid]:grid ...">  <!-- ... --></div>`Under the hood the `supports-[...]` variant generates [ @supports rules](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) and takes anything you’d use with 
 
-For terseness, if you only need to check if a property is supported (and not a specific value), you can just specify the property name:
+`@supports (...)` between the square brackets, like a property/value pair, and even expressions using `and` and `or`.For terseness, if you only need to check if a property is supported (and not a specific value), you can just specify the property name:
 
 `<div class="bg-black/75 supports-backdrop-filter:bg-black/25 supports-backdrop-filter:backdrop-blur ...">  <!-- ... --></div>`Use the `not-supports-[...]` variant to style things based on whether a certain feature is not supported in the user's browser:
 
@@ -230,7 +230,7 @@ For terseness, if you only need to check if a property is supported (and not a s
 
 `<div class="supports-grid:grid">  <!-- ... --></div>`Use the `starting` variant to set the appearance of an element when it is first rendered in the DOM, or transitions from `display: none` to visible:
 
-Use the `aria-*` variant to conditionally style things based on ARIA attributes.
+Use the `aria-*` variant to conditionally style things based on [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
 
 For example, to apply the `bg-sky-700` class when the `aria-checked` attribute is set to `true`, use the `aria-checked:bg-sky-700` class:
 
@@ -260,7 +260,7 @@ You can customize which `aria-*` variants are available by creating a new varian
 
 `<table>  <thead>    <tr>      <th        aria-sort="ascending"        class="aria-[sort=ascending]:bg-[url('/img/down-arrow.svg')] aria-[sort=descending]:bg-[url('/img/up-arrow.svg')]"      >        Invoice #      </th>      <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`ARIA state variants can also target parent and sibling elements using the `group-aria-*` and `peer-aria-*` variants:
 
-`<table>  <thead>    <tr>    <th aria-sort="ascending" class="group">      Invoice #      <svg class="group-aria-[sort=ascending]:rotate-0 group-aria-[sort=descending]:rotate-180"><!-- ... --></svg>    </th>    <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`Use the `data-*` variant to conditionally apply styles based on data attributes.
+`<table>  <thead>    <tr>    <th aria-sort="ascending" class="group">      Invoice #      <svg class="group-aria-[sort=ascending]:rotate-0 group-aria-[sort=descending]:rotate-180"><!-- ... --></svg>    </th>    <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`Use the `data-*` variant to conditionally apply styles based on [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
 To check if a data attribute exists (and not a specific value), you can just specify the attribute name:
 
@@ -292,7 +292,7 @@ Won't work, children can't override styles given to them by the parent.
 
 `<ul class="*:bg-sky-50 ...">  <li class="bg-red-50 ...">Sales</li>  <li>Marketing</li>  <li>SEO</li>  <!-- ... --></ul>`Like `*`, the `**` variant can be used to style children of an element. The main difference is that `**` will apply styles to *all* descendants, not just the direct children. This is especially useful when you combine it with another variant for narrowing the thing you're selecting:
 
-Just like arbitrary values let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
+Just like [arbitrary values](/docs/adding-custom-styles#using-arbitrary-values) let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
 
 Arbitrary variants are just format strings that represent the selector, wrapped in square brackets. For example, this arbitrary variant changes the cursor to `grabbing` when the element has the `is-dragging` class:
 
@@ -308,141 +308,141 @@ If you find yourself using the same arbitrary variant multiple times in your pro
 
 `@custom-variant theme-midnight (&:where([data-theme="midnight"] *));`Now you can use the `theme-midnight:` variant in your HTML:`<utility>`
 
-`<html data-theme="midnight">  <button class="theme-midnight:bg-black ..."></button></html>`Learn more about adding custom variants in the adding custom variants documentation.
+`<html data-theme="midnight">  <button class="theme-midnight:bg-black ..."></button></html>`Learn more about adding custom variants in the [adding custom variants documentation](/docs/adding-custom-styles#adding-custom-variants).
 
 A quick reference table of every single variant included in Tailwind by default.
 
 | Variant | CSS | 
 |---|---|
-| hover | `@media (hover: hover) {  &:hover  }` | 
-| focus | `&:focus` | 
-| focus-within | `&:focus-within` | 
-| focus-visible | `&:focus-visible` | 
-| active | `&:active` | 
-| visited | `&:visited` | 
-| target | `&:target` | 
-| * | `:is(&  > *)` | 
-| ** | `:is(&  *)` | 
-| has-[...] | `&:has(...)` | 
-| group-[...] | `&:is(:where(.group)... *)` | 
-| peer-[...] | `&:is(:where(.peer)... ~ *)` | 
-| in-[...] | `:where(...) &` | 
-| not-[...] | `&:not(...)` | 
-| inert | `&:is([inert], [inert] *)` | 
-| first | `&:first-child` | 
-| last | `&:last-child` | 
-| only | `&:only-child` | 
-| odd | `&:nth-child(odd)` | 
-| even | `&:nth-child(even)` | 
-| first-of-type | `&:first-of-type` | 
-| last-of-type | `&:last-of-type` | 
-| only-of-type | `&:only-of-type` | 
-| nth-[...] | `&:nth-child(...)` | 
-| nth-last-[...] | `&:nth-last-child(...)` | 
-| nth-of-type-[...] | `&:nth-of-type(...)` | 
-| nth-last-of-type-[...] | `&:nth-last-of-type(...)` | 
-| empty | `&:empty` | 
-| disabled | `&:disabled` | 
-| enabled | `&:enabled` | 
-| checked | `&:checked` | 
-| indeterminate | `&:indeterminate` | 
-| default | `&:default` | 
-| optional | `&:optional` | 
-| required | `&:required` | 
-| valid | `&:valid` | 
-| invalid | `&:invalid` | 
-| user-valid | `&:user-valid` | 
-| user-invalid | `&:user-invalid` | 
-| in-range | `&:in-range` | 
-| out-of-range | `&:out-of-range` | 
-| placeholder-shown | `&:placeholder-shown` | 
-| details-content | `&:details-content` | 
-| autofill | `&:autofill` | 
-| read-only | `&:read-only` | 
-| before | `&::before` | 
-| after | `&::after` | 
-| first-letter | `&::first-letter` | 
-| first-line | `&::first-line` | 
-| marker | `&::marker, & *::marker` | 
-| selection | `&::selection` | 
-| file | `&::file-selector-button` | 
-| backdrop | `&::backdrop` | 
-| placeholder | `&::placeholder` | 
-| sm | `@media (width >= 40rem)` | 
-| md | `@media (width >= 48rem)` | 
-| lg | `@media (width >= 64rem)` | 
-| xl | `@media (width >= 80rem)` | 
-| 2xl | `@media (width >= 96rem)` | 
-| min-[...] | `@media (width >=  ...)` | 
-| max-sm | `@media (width < 40rem)` | 
-| max-md | `@media (width < 48rem)` | 
-| max-lg | `@media (width < 64rem)` | 
-| max-xl | `@media (width < 80rem)` | 
-| max-2xl | `@media (width < 96rem)` | 
-| max-[...] | `@media (width <  ...)` | 
-| @3xs | `@container (width >= 16rem)` | 
-| @2xs | `@container (width >= 18rem)` | 
-| @xs | `@container (width >= 20rem)` | 
-| @sm | `@container (width >= 24rem)` | 
-| @md | `@container (width >= 28rem)` | 
-| @lg | `@container (width >= 32rem)` | 
-| @xl | `@container (width >= 36rem)` | 
-| @2xl | `@container (width >= 42rem)` | 
-| @3xl | `@container (width >= 48rem)` | 
-| @4xl | `@container (width >= 56rem)` | 
-| @5xl | `@container (width >= 64rem)` | 
-| @6xl | `@container (width >= 72rem)` | 
-| @7xl | `@container (width >= 80rem)` | 
-| @min-[...] | `@container (width >=  ...)` | 
-| @max-3xs | `@container (width < 16rem)` | 
-| @max-2xs | `@container (width < 18rem)` | 
-| @max-xs | `@container (width < 20rem)` | 
-| @max-sm | `@container (width < 24rem)` | 
-| @max-md | `@container (width < 28rem)` | 
-| @max-lg | `@container (width < 32rem)` | 
-| @max-xl | `@container (width < 36rem)` | 
-| @max-2xl | `@container (width < 42rem)` | 
-| @max-3xl | `@container (width < 48rem)` | 
-| @max-4xl | `@container (width < 56rem)` | 
-| @max-5xl | `@container (width < 64rem)` | 
-| @max-6xl | `@container (width < 72rem)` | 
-| @max-7xl | `@container (width < 80rem)` | 
-| @max-[...] | `@container (width <  ...)` | 
-| dark | `@media (prefers-color-scheme: dark)` | 
-| motion-safe | `@media (prefers-reduced-motion: no-preference)` | 
-| motion-reduce | `@media (prefers-reduced-motion: reduce)` | 
-| contrast-more | `@media (prefers-contrast: more)` | 
-| contrast-less | `@media (prefers-contrast: less)` | 
-| forced-colors | `@media (forced-colors: active)` | 
-| inverted-colors | `@media (inverted-colors: inverted)` | 
-| pointer-fine | `@media (pointer: fine)` | 
-| pointer-coarse | `@media (pointer: coarse)` | 
-| pointer-none | `@media (pointer: none)` | 
-| any-pointer-fine | `@media (any-pointer: fine)` | 
-| any-pointer-coarse | `@media (any-pointer: coarse)` | 
-| any-pointer-none | `@media (any-pointer: none)` | 
-| portrait | `@media (orientation: portrait)` | 
-| landscape | `@media (orientation: landscape)` | 
-| noscript | `@media (scripting: none)` | 
-| `@media print` | |
-| supports-[…] | `@supports (…)` | 
-| aria-busy | `&[aria-busy="true"]` | 
-| aria-checked | `&[aria-checked="true"]` | 
-| aria-disabled | `&[aria-disabled="true"]` | 
-| aria-expanded | `&[aria-expanded="true"]` | 
-| aria-hidden | `&[aria-hidden="true"]` | 
-| aria-pressed | `&[aria-pressed="true"]` | 
-| aria-readonly | `&[aria-readonly="true"]` | 
-| aria-required | `&[aria-required="true"]` | 
-| aria-selected | `&[aria-selected="true"]` | 
-| aria-[…] | `&[aria-…]` | 
-| data-[…] | `&[data-…]` | 
-| rtl | `&:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *)` | 
-| ltr | `&:where(:dir(ltr), [dir="ltr"], [dir="ltr"] *)` | 
-| open | `&:is([open], :popover-open, :open)` | 
-| starting | `@starting-style` | 
+| [hover](#hover) | `@media (hover: hover) {  &:hover  }` | 
+| [focus](#focus) | `&:focus` | 
+| [focus-within](#focus-within) | `&:focus-within` | 
+| [focus-visible](#focus-visible) | `&:focus-visible` | 
+| [active](#active) | `&:active` | 
+| [visited](#visited) | `&:visited` | 
+| [target](#target) | `&:target` | 
+| [*](#styling-direct-children) | `:is(&  > *)` | 
+| [**](#styling-all-descendants) | `:is(&  *)` | 
+| [has-[...]](#has) | `&:has(...)` | 
+| [group-[...]](#styling-based-on-parent-state) | `&:is(:where(.group)... *)` | 
+| [peer-[...]](#styling-based-on-sibling-state) | `&:is(:where(.peer)... ~ *)` | 
+| [in-[...]](#implicit-groups) | `:where(...) &` | 
+| [not-[...]](#not) | `&:not(...)` | 
+| [inert](#styling-inert-elements) | `&:is([inert], [inert] *)` | 
+| [first](#first) | `&:first-child` | 
+| [last](#last) | `&:last-child` | 
+| [only](#only) | `&:only-child` | 
+| [odd](#odd) | `&:nth-child(odd)` | 
+| [even](#even) | `&:nth-child(even)` | 
+| [first-of-type](#first-of-type) | `&:first-of-type` | 
+| [last-of-type](#last-of-type) | `&:last-of-type` | 
+| [only-of-type](#only-of-type) | `&:only-of-type` | 
+| [nth-[...]](#nth) | `&:nth-child(...)` | 
+| [nth-last-[...]](#nth-last) | `&:nth-last-child(...)` | 
+| [nth-of-type-[...]](#nth-of-type) | `&:nth-of-type(...)` | 
+| [nth-last-of-type-[...]](#nth-last-of-type) | `&:nth-last-of-type(...)` | 
+| [empty](#empty) | `&:empty` | 
+| [disabled](#disabled) | `&:disabled` | 
+| [enabled](#enabled) | `&:enabled` | 
+| [checked](#checked) | `&:checked` | 
+| [indeterminate](#indeterminate) | `&:indeterminate` | 
+| [default](#default) | `&:default` | 
+| [optional](#optional) | `&:optional` | 
+| [required](#required) | `&:required` | 
+| [valid](#valid) | `&:valid` | 
+| [invalid](#invalid) | `&:invalid` | 
+| [user-valid](#user-valid) | `&:user-valid` | 
+| [user-invalid](#user-invalid) | `&:user-invalid` | 
+| [in-range](#in-range) | `&:in-range` | 
+| [out-of-range](#out-of-range) | `&:out-of-range` | 
+| [placeholder-shown](#placeholder-shown) | `&:placeholder-shown` | 
+| [details-content](#placeholder-shown) | `&:details-content` | 
+| [autofill](#autofill) | `&:autofill` | 
+| [read-only](#read-only) | `&:read-only` | 
+| [before](#before-and-after) | `&::before` | 
+| [after](#before-and-after) | `&::after` | 
+| [first-letter](#first-line-and-first-letter) | `&::first-letter` | 
+| [first-line](#first-line-and-first-letter) | `&::first-line` | 
+| [marker](#marker) | `&::marker, & *::marker` | 
+| [selection](#selection) | `&::selection` | 
+| [file](#file) | `&::file-selector-button` | 
+| [backdrop](#backdrop) | `&::backdrop` | 
+| [placeholder](#placeholder) | `&::placeholder` | 
+| [sm](#responsive-breakpoints) | `@media (width >= 40rem)` | 
+| [md](#responsive-breakpoints) | `@media (width >= 48rem)` | 
+| [lg](#responsive-breakpoints) | `@media (width >= 64rem)` | 
+| [xl](#responsive-breakpoints) | `@media (width >= 80rem)` | 
+| [2xl](#responsive-breakpoints) | `@media (width >= 96rem)` | 
+| [min-[...]](#responsive-breakpoints) | `@media (width >=  ...)` | 
+| [max-sm](#responsive-breakpoints) | `@media (width < 40rem)` | 
+| [max-md](#responsive-breakpoints) | `@media (width < 48rem)` | 
+| [max-lg](#responsive-breakpoints) | `@media (width < 64rem)` | 
+| [max-xl](#responsive-breakpoints) | `@media (width < 80rem)` | 
+| [max-2xl](#responsive-breakpoints) | `@media (width < 96rem)` | 
+| [max-[...]](#responsive-breakpoints) | `@media (width <  ...)` | 
+| [@3xs](#responsive-breakpoints) | `@container (width >= 16rem)` | 
+| [@2xs](#responsive-breakpoints) | `@container (width >= 18rem)` | 
+| [@xs](#responsive-breakpoints) | `@container (width >= 20rem)` | 
+| [@sm](#responsive-breakpoints) | `@container (width >= 24rem)` | 
+| [@md](#responsive-breakpoints) | `@container (width >= 28rem)` | 
+| [@lg](#responsive-breakpoints) | `@container (width >= 32rem)` | 
+| [@xl](#responsive-breakpoints) | `@container (width >= 36rem)` | 
+| [@2xl](#responsive-breakpoints) | `@container (width >= 42rem)` | 
+| [@3xl](#responsive-breakpoints) | `@container (width >= 48rem)` | 
+| [@4xl](#responsive-breakpoints) | `@container (width >= 56rem)` | 
+| [@5xl](#responsive-breakpoints) | `@container (width >= 64rem)` | 
+| [@6xl](#responsive-breakpoints) | `@container (width >= 72rem)` | 
+| [@7xl](#responsive-breakpoints) | `@container (width >= 80rem)` | 
+| [@min-[...]](#responsive-breakpoints) | `@container (width >=  ...)` | 
+| [@max-3xs](#responsive-breakpoints) | `@container (width < 16rem)` | 
+| [@max-2xs](#responsive-breakpoints) | `@container (width < 18rem)` | 
+| [@max-xs](#responsive-breakpoints) | `@container (width < 20rem)` | 
+| [@max-sm](#responsive-breakpoints) | `@container (width < 24rem)` | 
+| [@max-md](#responsive-breakpoints) | `@container (width < 28rem)` | 
+| [@max-lg](#responsive-breakpoints) | `@container (width < 32rem)` | 
+| [@max-xl](#responsive-breakpoints) | `@container (width < 36rem)` | 
+| [@max-2xl](#responsive-breakpoints) | `@container (width < 42rem)` | 
+| [@max-3xl](#responsive-breakpoints) | `@container (width < 48rem)` | 
+| [@max-4xl](#responsive-breakpoints) | `@container (width < 56rem)` | 
+| [@max-5xl](#responsive-breakpoints) | `@container (width < 64rem)` | 
+| [@max-6xl](#responsive-breakpoints) | `@container (width < 72rem)` | 
+| [@max-7xl](#responsive-breakpoints) | `@container (width < 80rem)` | 
+| [@max-[...]](#responsive-breakpoints) | `@container (width <  ...)` | 
+| [dark](#prefers-color-scheme) | `@media (prefers-color-scheme: dark)` | 
+| [motion-safe](#prefers-reduced-motion) | `@media (prefers-reduced-motion: no-preference)` | 
+| [motion-reduce](#prefers-reduced-motion) | `@media (prefers-reduced-motion: reduce)` | 
+| [contrast-more](#prefers-contrast) | `@media (prefers-contrast: more)` | 
+| [contrast-less](#prefers-contrast) | `@media (prefers-contrast: less)` | 
+| [forced-colors](#forced-colors) | `@media (forced-colors: active)` | 
+| [inverted-colors](#inverted-colors) | `@media (inverted-colors: inverted)` | 
+| [pointer-fine](#pointer-and-any-pointer) | `@media (pointer: fine)` | 
+| [pointer-coarse](#pointer-and-any-pointer) | `@media (pointer: coarse)` | 
+| [pointer-none](#pointer-and-any-pointer) | `@media (pointer: none)` | 
+| [any-pointer-fine](#pointer-and-any-pointer) | `@media (any-pointer: fine)` | 
+| [any-pointer-coarse](#pointer-and-any-pointer) | `@media (any-pointer: coarse)` | 
+| [any-pointer-none](#pointer-and-any-pointer) | `@media (any-pointer: none)` | 
+| [portrait](#orientation) | `@media (orientation: portrait)` | 
+| [landscape](#orientation) | `@media (orientation: landscape)` | 
+| [noscript](#scripting) | `@media (scripting: none)` | 
+| [print](#print) | `@media print` | 
+| [supports-[…]](#supports) | `@supports (…)` | 
+| [aria-busy](#aria-states) | `&[aria-busy="true"]` | 
+| [aria-checked](#aria-states) | `&[aria-checked="true"]` | 
+| [aria-disabled](#aria-states) | `&[aria-disabled="true"]` | 
+| [aria-expanded](#aria-states) | `&[aria-expanded="true"]` | 
+| [aria-hidden](#aria-states) | `&[aria-hidden="true"]` | 
+| [aria-pressed](#aria-states) | `&[aria-pressed="true"]` | 
+| [aria-readonly](#aria-states) | `&[aria-readonly="true"]` | 
+| [aria-required](#aria-states) | `&[aria-required="true"]` | 
+| [aria-selected](#aria-states) | `&[aria-selected="true"]` | 
+| [aria-[…]](#aria-states) | `&[aria-…]` | 
+| [data-[…]](#data-attributes) | `&[data-…]` | 
+| [rtl](#rtl-support) | `&:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *)` | 
+| [ltr](#rtl-support) | `&:where(:dir(ltr), [dir="ltr"], [dir="ltr"] *)` | 
+| [open](#openclosed-state) | `&:is([open], :popover-open, :open)` | 
+| [starting](#starting-style) | `@starting-style` | 
 
-This is a comprehensive list of examples for all the pseudo-class variants included in Tailwind to complement the pseudo-classes documentation at the beginning of this guide.
+This is a comprehensive list of examples for all the pseudo-class variants included in Tailwind to complement the [pseudo-classes documentation](/docs/hover-focus-and-other-states#pseudo-classes) at the beginning of this guide.
 
 Style an element when the user hovers over it with the mouse cursor using the `hover` variant:
 
