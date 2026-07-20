@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://tailwindcss.com/docs/installation/using-vite",
-  "updated_at": "2026-07-13T08:45:16.485695+00:00",
+  "updated_at": "2026-07-20T08:37:00.464568+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 90,
@@ -88,7 +88,7 @@
       "path": "pages/docs/color.md",
       "url": "https://tailwindcss.com/docs/color",
       "title": "color - Typography - Tailwind CSS",
-      "hash": "82766582a9d223a2c86fdffd1202555aea6d6d0f0d68300f9460472b5506ad5d"
+      "hash": "3377b716d19b94f1ff113379ead2d476fa8e700dc3b9fef1973a69e2f4d8585e"
     },
     {
       "path": "pages/docs/colors.md",
@@ -430,7 +430,7 @@
       "path": "pages/docs/order.md",
       "url": "https://tailwindcss.com/docs/order",
       "title": "order - Flexbox & Grid - Tailwind CSS",
-      "hash": "6da7fe106ac65f3ddbba5f0dc11590a7449c337ebfd96e975e38ec04a3aa5641"
+      "hash": "1253e10ded896a61f8a07677e32ac852961e70674dca7e7225fe73414475f28f"
     },
     {
       "path": "pages/docs/overflow.md",
@@ -1120,9 +1120,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-07-13T08:45:16.453409+00:00",
+    "synced_at": "2026-07-20T08:37:00.431210+00:00",
     "added": 0,
-    "changed": 0,
+    "changed": 2,
     "removed": 0,
     "pages": 88
   }

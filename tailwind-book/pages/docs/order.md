@@ -3,7 +3,7 @@ type: Web Page
 title: order - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling the order of flex and grid items.
 resource: https://tailwindcss.com/docs/order
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-07-20T08:37:00.428497+00:00'
 ---
 
 Flexbox & Grid
@@ -16,7 +16,6 @@ Utilities for controlling the order of flex and grid items.
 | `-order-` | `order: calc(` | 
 | `order-first` | `order: -9999;` | 
 | `order-last` | `order: 9999;` | 
-| `order-none` | `order: 0;` | 
 | `order-(` | `order: var(` | 
 | `order-[` | `order: ` | 
 

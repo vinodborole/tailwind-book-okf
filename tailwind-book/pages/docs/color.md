@@ -3,7 +3,7 @@ type: Web Page
 title: color - Typography - Tailwind CSS
 description: Utilities for controlling the text color of an element.
 resource: https://tailwindcss.com/docs/color
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-07-20T08:37:00.428497+00:00'
 ---
 
 Typography
@@ -226,7 +226,7 @@ Utilities for controlling the text color of an element.
 | `text-gray-800` | `color: var(--color-gray-800); /* oklch(27.8% 0.033 256.848) */` | 
 | `text-gray-900` | `color: var(--color-gray-900); /* oklch(21% 0.034 264.665) */` | 
 | `text-gray-950` | `color: var(--color-gray-950); /* oklch(13% 0.028 261.692) */` | 
-| `text-zinc-50` | `color: var(--color-zinc-50); /* oklch(98.5% 0 0) */` | 
+| `text-zinc-50` | `color: var(--color-zinc-50); /* oklch(98.5% 0 none) */` | 
 | `text-zinc-100` | `color: var(--color-zinc-100); /* oklch(96.7% 0.001 286.375) */` | 
 | `text-zinc-200` | `color: var(--color-zinc-200); /* oklch(92% 0.004 286.32) */` | 
 | `text-zinc-300` | `color: var(--color-zinc-300); /* oklch(87.1% 0.006 286.286) */` | 
@@ -237,17 +237,17 @@ Utilities for controlling the text color of an element.
 | `text-zinc-800` | `color: var(--color-zinc-800); /* oklch(27.4% 0.006 286.033) */` | 
 | `text-zinc-900` | `color: var(--color-zinc-900); /* oklch(21% 0.006 285.885) */` | 
 | `text-zinc-950` | `color: var(--color-zinc-950); /* oklch(14.1% 0.005 285.823) */` | 
-| `text-neutral-50` | `color: var(--color-neutral-50); /* oklch(98.5% 0 0) */` | 
-| `text-neutral-100` | `color: var(--color-neutral-100); /* oklch(97% 0 0) */` | 
-| `text-neutral-200` | `color: var(--color-neutral-200); /* oklch(92.2% 0 0) */` | 
-| `text-neutral-300` | `color: var(--color-neutral-300); /* oklch(87% 0 0) */` | 
-| `text-neutral-400` | `color: var(--color-neutral-400); /* oklch(70.8% 0 0) */` | 
-| `text-neutral-500` | `color: var(--color-neutral-500); /* oklch(55.6% 0 0) */` | 
-| `text-neutral-600` | `color: var(--color-neutral-600); /* oklch(43.9% 0 0) */` | 
-| `text-neutral-700` | `color: var(--color-neutral-700); /* oklch(37.1% 0 0) */` | 
-| `text-neutral-800` | `color: var(--color-neutral-800); /* oklch(26.9% 0 0) */` | 
-| `text-neutral-900` | `color: var(--color-neutral-900); /* oklch(20.5% 0 0) */` | 
-| `text-neutral-950` | `color: var(--color-neutral-950); /* oklch(14.5% 0 0) */` | 
+| `text-neutral-50` | `color: var(--color-neutral-50); /* oklch(98.5% 0 none) */` | 
+| `text-neutral-100` | `color: var(--color-neutral-100); /* oklch(97% 0 none) */` | 
+| `text-neutral-200` | `color: var(--color-neutral-200); /* oklch(92.2% 0 none) */` | 
+| `text-neutral-300` | `color: var(--color-neutral-300); /* oklch(87% 0 none) */` | 
+| `text-neutral-400` | `color: var(--color-neutral-400); /* oklch(70.8% 0 none) */` | 
+| `text-neutral-500` | `color: var(--color-neutral-500); /* oklch(55.6% 0 none) */` | 
+| `text-neutral-600` | `color: var(--color-neutral-600); /* oklch(43.9% 0 none) */` | 
+| `text-neutral-700` | `color: var(--color-neutral-700); /* oklch(37.1% 0 none) */` | 
+| `text-neutral-800` | `color: var(--color-neutral-800); /* oklch(26.9% 0 none) */` | 
+| `text-neutral-900` | `color: var(--color-neutral-900); /* oklch(20.5% 0 none) */` | 
+| `text-neutral-950` | `color: var(--color-neutral-950); /* oklch(14.5% 0 none) */` | 
 | `text-stone-50` | `color: var(--color-stone-50); /* oklch(98.5% 0.001 106.423) */` | 
 | `text-stone-100` | `color: var(--color-stone-100); /* oklch(97% 0.001 106.424) */` | 
 | `text-stone-200` | `color: var(--color-stone-200); /* oklch(92.3% 0.003 48.717) */` | 
@@ -259,7 +259,7 @@ Utilities for controlling the text color of an element.
 | `text-stone-800` | `color: var(--color-stone-800); /* oklch(26.8% 0.007 34.298) */` | 
 | `text-stone-900` | `color: var(--color-stone-900); /* oklch(21.6% 0.006 56.043) */` | 
 | `text-stone-950` | `color: var(--color-stone-950); /* oklch(14.7% 0.004 49.25) */` | 
-| `text-mauve-50` | `color: var(--color-mauve-50); /* oklch(98.5% 0 0) */` | 
+| `text-mauve-50` | `color: var(--color-mauve-50); /* oklch(98.5% 0 none) */` | 
 | `text-mauve-100` | `color: var(--color-mauve-100); /* oklch(96% 0.003 325.6) */` | 
 | `text-mauve-200` | `color: var(--color-mauve-200); /* oklch(92.2% 0.005 325.62) */` | 
 | `text-mauve-300` | `color: var(--color-mauve-300); /* oklch(86.5% 0.012 325.68) */` | 
