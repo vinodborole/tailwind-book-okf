@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://tailwindcss.com/docs/installation/using-vite",
-  "updated_at": "2026-07-20T08:37:00.464568+00:00",
+  "updated_at": "2026-07-27T09:26:23.389723+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 90,
@@ -1120,9 +1120,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-07-20T08:37:00.431210+00:00",
+    "synced_at": "2026-07-27T09:26:23.362425+00:00",
     "added": 0,
-    "changed": 2,
+    "changed": 0,
     "removed": 0,
     "pages": 88
   }
