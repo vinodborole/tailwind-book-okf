@@ -3,7 +3,7 @@ type: Web Page
 title: margin - Spacing - Tailwind CSS
 description: Utilities for controlling an element's margin.
 resource: https://tailwindcss.com/docs/margin
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Spacing
@@ -12,175 +12,97 @@ Utilities for controlling an element's margin.
 
 | Class | Styles | 
 |---|---|
-| `m-` | `margin: calc(var(--spacing) * ` | 
-| `-m-` | `margin: calc(var(--spacing) * -` | 
+| `m-``<number>` | `margin: calc(var(--spacing) *` `<number>` ); | 
+| `-m-``<number>` | `margin: calc(var(--spacing) * -``<number>` ); | 
 | `m-auto` | `margin: auto;` | 
 | `m-px` | `margin: 1px;` | 
 | `-m-px` | `margin: -1px;` | 
-| `m-(` | `margin: var(` | 
-| `m-[` | `margin: ` | 
-| `mx-` | `margin-inline: calc(var(--spacing) * ` | 
-| `-mx-` | `margin-inline: calc(var(--spacing) * -` | 
+| `m-(``<custom-property>` ) | `margin: var(``<custom-property>` ); | 
+| `m-[``<value>` ] | `margin:` `<value>` ; | 
+| `mx-``<number>` | `margin-inline: calc(var(--spacing) *` `<number>` ); | 
+| `-mx-``<number>` | `margin-inline: calc(var(--spacing) * -``<number>` ); | 
 | `mx-auto` | `margin-inline: auto;` | 
 | `mx-px` | `margin-inline: 1px;` | 
 | `-mx-px` | `margin-inline: -1px;` | 
-| `mx-(` | `margin-inline: var(` | 
-| `mx-[` | `margin-inline: ` | 
-| `my-` | `margin-block: calc(var(--spacing) * ` | 
-| `-my-` | `margin-block: calc(var(--spacing) * -` | 
+| `mx-(``<custom-property>` ) | `margin-inline: var(``<custom-property>` ); | 
+| `mx-[``<value>` ] | `margin-inline:` `<value>` ; | 
+| `my-``<number>` | `margin-block: calc(var(--spacing) *` `<number>` ); | 
+| `-my-``<number>` | `margin-block: calc(var(--spacing) * -``<number>` ); | 
 | `my-auto` | `margin-block: auto;` | 
 | `my-px` | `margin-block: 1px;` | 
 | `-my-px` | `margin-block: -1px;` | 
-| `my-(` | `margin-block: var(` | 
-| `my-[` | `margin-block: ` | 
-| `ms-` | `margin-inline-start: calc(var(--spacing) * ` | 
-| `-ms-` | `margin-inline-start: calc(var(--spacing) * -` | 
+| `my-(``<custom-property>` ) | `margin-block: var(``<custom-property>` ); | 
+| `my-[``<value>` ] | `margin-block:` `<value>` ; | 
+| `ms-``<number>` | `margin-inline-start: calc(var(--spacing) *` `<number>` ); | 
+| `-ms-``<number>` | `margin-inline-start: calc(var(--spacing) * -``<number>` ); | 
 | `ms-auto` | `margin-inline-start: auto;` | 
 | `ms-px` | `margin-inline-start: 1px;` | 
 | `-ms-px` | `margin-inline-start: -1px;` | 
-| `ms-(` | `margin-inline-start: var(` | 
-| `ms-[` | `margin-inline-start: ` | 
-| `me-` | `margin-inline-end: calc(var(--spacing) * ` | 
-| `-me-` | `margin-inline-end: calc(var(--spacing) * -` | 
+| `ms-(``<custom-property>` ) | `margin-inline-start: var(``<custom-property>` ); | 
+| `ms-[``<value>` ] | `margin-inline-start:` `<value>` ; | 
+| `me-``<number>` | `margin-inline-end: calc(var(--spacing) *` `<number>` ); | 
+| `-me-``<number>` | `margin-inline-end: calc(var(--spacing) * -``<number>` ); | 
 | `me-auto` | `margin-inline-end: auto;` | 
 | `me-px` | `margin-inline-end: 1px;` | 
 | `-me-px` | `margin-inline-end: -1px;` | 
-| `me-(` | `margin-inline-end: var(` | 
-| `me-[` | `margin-inline-end: ` | 
-| `mbs-` | `margin-block-start: calc(var(--spacing) * ` | 
-| `-mbs-` | `margin-block-start: calc(var(--spacing) * -` | 
+| `me-(``<custom-property>` ) | `margin-inline-end: var(``<custom-property>` ); | 
+| `me-[``<value>` ] | `margin-inline-end:` `<value>` ; | 
+| `mbs-``<number>` | `margin-block-start: calc(var(--spacing) *` `<number>` ); | 
+| `-mbs-``<number>` | `margin-block-start: calc(var(--spacing) * -``<number>` ); | 
 | `mbs-auto` | `margin-block-start: auto;` | 
 | `mbs-px` | `margin-block-start: 1px;` | 
 | `-mbs-px` | `margin-block-start: -1px;` | 
-| `mbs-(` | `margin-block-start: var(` | 
-| `mbs-[` | `margin-block-start: ` | 
-| `mbe-` | `margin-block-end: calc(var(--spacing) * ` | 
-| `-mbe-` | `margin-block-end: calc(var(--spacing) * -` | 
+| `mbs-(``<custom-property>` ) | `margin-block-start: var(``<custom-property>` ); | 
+| `mbs-[``<value>` ] | `margin-block-start:` `<value>` ; | 
+| `mbe-``<number>` | `margin-block-end: calc(var(--spacing) *` `<number>` ); | 
+| `-mbe-``<number>` | `margin-block-end: calc(var(--spacing) * -``<number>` ); | 
 | `mbe-auto` | `margin-block-end: auto;` | 
 | `mbe-px` | `margin-block-end: 1px;` | 
 | `-mbe-px` | `margin-block-end: -1px;` | 
-| `mbe-(` | `margin-block-end: var(` | 
-| `mbe-[` | `margin-block-end: ` | 
-| `mt-` | `margin-top: calc(var(--spacing) * ` | 
-| `-mt-` | `margin-top: calc(var(--spacing) * -` | 
+| `mbe-(``<custom-property>` ) | `margin-block-end: var(``<custom-property>` ); | 
+| `mbe-[``<value>` ] | `margin-block-end:` `<value>` ; | 
+| `mt-``<number>` | `margin-top: calc(var(--spacing) *` `<number>` ); | 
+| `-mt-``<number>` | `margin-top: calc(var(--spacing) * -``<number>` ); | 
 | `mt-auto` | `margin-top: auto;` | 
 | `mt-px` | `margin-top: 1px;` | 
 | `-mt-px` | `margin-top: -1px;` | 
-| `mt-(` | `margin-top: var(` | 
-| `mt-[` | `margin-top: ` | 
-| `mr-` | `margin-right: calc(var(--spacing) * ` | 
-| `-mr-` | `margin-right: calc(var(--spacing) * -` | 
+| `mt-(``<custom-property>` ) | `margin-top: var(``<custom-property>` ); | 
+| `mt-[``<value>` ] | `margin-top:` `<value>` ; | 
+| `mr-``<number>` | `margin-right: calc(var(--spacing) *` `<number>` ); | 
+| `-mr-``<number>` | `margin-right: calc(var(--spacing) * -``<number>` ); | 
 | `mr-auto` | `margin-right: auto;` | 
 | `mr-px` | `margin-right: 1px;` | 
 | `-mr-px` | `margin-right: -1px;` | 
-| `mr-(` | `margin-right: var(` | 
-| `mr-[` | `margin-right: ` | 
-| `mb-` | `margin-bottom: calc(var(--spacing) * ` | 
-| `-mb-` | `margin-bottom: calc(var(--spacing) * -` | 
+| `mr-(``<custom-property>` ) | `margin-right: var(``<custom-property>` ); | 
+| `mr-[``<value>` ] | `margin-right:` `<value>` ; | 
+| `mb-``<number>` | `margin-bottom: calc(var(--spacing) *` `<number>` ); | 
+| `-mb-``<number>` | `margin-bottom: calc(var(--spacing) * -``<number>` ); | 
 | `mb-auto` | `margin-bottom: auto;` | 
 | `mb-px` | `margin-bottom: 1px;` | 
 | `-mb-px` | `margin-bottom: -1px;` | 
-| `mb-(` | `margin-bottom: var(` | 
-| `mb-[` | `margin-bottom: ` | 
-| `ml-` | `margin-left: calc(var(--spacing) * ` | 
-| `-ml-` | `margin-left: calc(var(--spacing) * -` | 
+| `mb-(``<custom-property>` ) | `margin-bottom: var(``<custom-property>` ); | 
+| `mb-[``<value>` ] | `margin-bottom:` `<value>` ; | 
+| `ml-``<number>` | `margin-left: calc(var(--spacing) *` `<number>` ); | 
+| `-ml-``<number>` | `margin-left: calc(var(--spacing) * -``<number>` ); | 
 | `ml-auto` | `margin-left: auto;` | 
 | `ml-px` | `margin-left: 1px;` | 
 | `-ml-px` | `margin-left: -1px;` | 
-| `ml-(` | `margin-left: var(` | 
-| `ml-[` | `margin-left: ` | 
-| `space-x-` | ```
-& > :not(:last-child) {
-  --tw-space-x-reverse: 0;
-  margin-inline-start: calc(calc(var(--spacing) * 
-```
- | 
-| `-space-x-` | ```
-& > :not(:last-child) {
-  --tw-space-x-reverse: 0;
-  margin-inline-start: calc(calc(var(--spacing) * -
-```
- | 
-| `space-x-px` | ```
-& > :not(:last-child) {
-  --tw-space-x-reverse: 0;
-  margin-inline-start: calc(1px * var(--tw-space-x-reverse));
-  margin-inline-end: calc(1px * calc(1 - var(--tw-space-x-reverse)));
-};
-```
- | 
-| `-space-x-px` | ```
-& > :not(:last-child) {
-  --tw-space-x-reverse: 0;
-  margin-inline-start: calc(-1px * var(--tw-space-x-reverse));
-  margin-inline-end: calc(-1px * calc(1 - var(--tw-space-x-reverse)));
-};
-```
- | 
-| `space-x-(` | ```
-& > :not(:last-child) {
-  --tw-space-x-reverse: 0;
-  margin-inline-start: calc(var(
-```
- | 
-| `space-x-[` | ```
-& > :not(:last-child) {
-  --tw-space-x-reverse: 0;
-  margin-inline-start: calc(
-```
- | 
-| `space-y-` | ```
-& > :not(:last-child) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(calc(var(--spacing) * 
-```
- | 
-| `-space-y-` | ```
-& > :not(:last-child) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(calc(var(--spacing) * -
-```
- | 
-| `space-y-px` | ```
-& > :not(:last-child) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(1px * var(--tw-space-y-reverse));
-  margin-block-end: calc(1px * calc(1 - var(--tw-space-y-reverse)));
-};
-```
- | 
-| `-space-y-px` | ```
-& > :not(:last-child) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(-1px * var(--tw-space-y-reverse));
-  margin-block-end: calc(-1px * calc(1 - var(--tw-space-y-reverse)));
-};
-```
- | 
-| `space-y-(` | ```
-& > :not(:last-child) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(var(
-```
- | 
-| `space-y-[` | ```
-& > :not(:last-child) {
-  --tw-space-y-reverse: 0;
-  margin-block-start: calc(
-```
- | 
-| `space-x-reverse` | ```
-& > :not(:last-child)) {
-  --tw-space-x-reverse: 1;
-}
-```
- | 
-| `space-y-reverse` | ```
-& > :not(:last-child)) {
-  --tw-space-y-reverse: 1;
-}
-```
- | 
+| `ml-(``<custom-property>` ) | `margin-left: var(``<custom-property>` ); | 
+| `ml-[``<value>` ] | `margin-left:` `<value>` ; | 
+| `space-x-``<number>` | ``` & > :not(:last-child) {   --tw-space-x-reverse: 0;   margin-inline-start: calc(calc(var(--spacing) *  ``` `<number>` ) * var(--tw-space-x-reverse));   margin-inline-end: calc(calc(var(--spacing) *`<number>` ) * calc(1 - var(--tw-space-x-reverse))); }; | 
+| `-space-x-``<number>` | ``` & > :not(:last-child) {   --tw-space-x-reverse: 0;   margin-inline-start: calc(calc(var(--spacing) * - ``` `<number>` ) * var(--tw-space-x-reverse));   margin-inline-end: calc(calc(var(--spacing) * -`<number>` ) * calc(1 - var(--tw-space-x-reverse))); }; | 
+| `space-x-px` | ``` & > :not(:last-child) {   --tw-space-x-reverse: 0;   margin-inline-start: calc(1px * var(--tw-space-x-reverse));   margin-inline-end: calc(1px * calc(1 - var(--tw-space-x-reverse))); }; ```  | 
+| `-space-x-px` | ``` & > :not(:last-child) {   --tw-space-x-reverse: 0;   margin-inline-start: calc(-1px * var(--tw-space-x-reverse));   margin-inline-end: calc(-1px * calc(1 - var(--tw-space-x-reverse))); }; ```  | 
+| `space-x-(``<custom-property>` ) | ``` & > :not(:last-child) {   --tw-space-x-reverse: 0;   margin-inline-start: calc(var( ``` `<custom-property>` ) * var(--tw-space-x-reverse));   margin-inline-end: calc(var(`<custom-property>` ) * calc(1 - var(--tw-space-x-reverse))); }; | 
+| `space-x-[``<value>` ] | ``` & > :not(:last-child) {   --tw-space-x-reverse: 0;   margin-inline-start: calc( ``` `<value>` * var(--tw-space-x-reverse));   margin-inline-end: calc(`<value>` * calc(1 - var(--tw-space-x-reverse))); }; | 
+| `space-y-``<number>` | ``` & > :not(:last-child) {   --tw-space-y-reverse: 0;   margin-block-start: calc(calc(var(--spacing) *  ``` `<number>` ) * var(--tw-space-y-reverse));   margin-block-end: calc(calc(var(--spacing) *`<number>` ) * calc(1 - var(--tw-space-y-reverse))); }; | 
+| `-space-y-``<number>` | ``` & > :not(:last-child) {   --tw-space-y-reverse: 0;   margin-block-start: calc(calc(var(--spacing) * - ``` `<number>` ) * var(--tw-space-y-reverse));   margin-block-end: calc(calc(var(--spacing) * -`<number>` ) * calc(1 - var(--tw-space-y-reverse))); }; | 
+| `space-y-px` | ``` & > :not(:last-child) {   --tw-space-y-reverse: 0;   margin-block-start: calc(1px * var(--tw-space-y-reverse));   margin-block-end: calc(1px * calc(1 - var(--tw-space-y-reverse))); }; ```  | 
+| `-space-y-px` | ``` & > :not(:last-child) {   --tw-space-y-reverse: 0;   margin-block-start: calc(-1px * var(--tw-space-y-reverse));   margin-block-end: calc(-1px * calc(1 - var(--tw-space-y-reverse))); }; ```  | 
+| `space-y-(``<custom-property>` ) | ``` & > :not(:last-child) {   --tw-space-y-reverse: 0;   margin-block-start: calc(var( ``` `<custom-property>` ) * var(--tw-space-y-reverse));   margin-block-end: calc(var(`<custom-property>` ) * calc(1 - var(--tw-space-y-reverse))); }; | 
+| `space-y-[``<value>` ] | ``` & > :not(:last-child) {   --tw-space-y-reverse: 0;   margin-block-start: calc( ``` `<value>` * var(--tw-space-y-reverse));   margin-block-end: calc(`<value>` * calc(1 - var(--tw-space-y-reverse))); }; | 
+| `space-x-reverse` | ``` & > :not(:last-child)) {   --tw-space-x-reverse: 1; } ```  | 
+| `space-y-reverse` | ``` & > :not(:last-child)) {   --tw-space-y-reverse: 1; } ```  | 
 
 Use `m-` utilities like `<number>``m-4` and `m-8` to control the margin on all sides of an element:
 
@@ -196,7 +118,8 @@ Use `ms-` or `<number>``me-` utilities like `<number>``ms-4` and `me-8` to set t
 
 Use the `mbs-` and `<number>``mbe-` utilities to set the `<number>``margin-block-start` and `margin-block-end` logical properties, which map to either the top or bottom side based on the writing mode:
 
-`<div class="mbs-8 ...">mbs-8</div>`Use `space-x-` or `<number>``space-y-` utilities like `<number>``space-x-4` and `space-y-8` to control the space between elements:
+`<div class="mbs-8 ...">mbs-8</div>`
+Use `space-x-` or `<number>``space-y-` utilities like `<number>``space-x-4` and `space-y-8` to control the space between elements:
 
 If your elements are in reverse order (using say `flex-row-reverse` or `flex-col-reverse`), use the `space-x-reverse` or `space-y-reverse` utilities to ensure the space is added to the correct side of each element:
 
@@ -208,17 +131,21 @@ Additionally, the space utilities are not designed to work together with the [di
 
 Use utilities like `m-[`,`<value>`]`mx-[`, and `<value>`]`mb-[` to set the margin based on a completely custom value:`<value>`]
 
-`<div class="m-[5px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `m-(` syntax:`<custom-property>`)
+`<div class="m-[5px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `m-(` syntax:`<custom-property>`)
 
-`<div class="m-(--my-margin) ...">  <!-- ... --></div>`This is just a shorthand for `m-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="m-(--my-margin) ...">  <!-- ... --></div>`
+This is just a shorthand for `m-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `margin` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="mt-4 md:mt-8 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="mt-4 md:mt-8 ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `m-`,`<number>``mx-`,`<number>``my-`,`<number>``ms-`,`<number>``me-`,`<number>``mbs-`,`<number>``mbe-`,`<number>``mt-`,`<number>``mr-`,`<number>``mb-`, and `<number>``ml-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

@@ -3,7 +3,7 @@ type: Web Page
 title: max-inline-size - Sizing - Tailwind CSS
 description: Utilities for setting the maximum inline size of an element.
 resource: https://tailwindcss.com/docs/max-inline-size
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the maximum inline size of an element.
 
 | Class | Styles | 
 |---|---|
-| `max-inline-` | `max-inline-size: calc(var(--spacing) * ` | 
-| `max-inline-` | `max-inline-size: calc(` | 
+| `max-inline-``<number>` | `max-inline-size: calc(var(--spacing) *` `<number>` ); | 
+| `max-inline-``<fraction>` | `max-inline-size: calc(``<fraction>` * 100%); | 
 | `max-inline-3xs` | `max-inline-size: var(--container-3xs); /* 16rem (256px) */` | 
 | `max-inline-2xs` | `max-inline-size: var(--container-2xs); /* 18rem (288px) */` | 
 | `max-inline-xs` | `max-inline-size: var(--container-xs); /* 20rem (320px) */` | 
@@ -40,8 +40,8 @@ Utilities for setting the maximum inline size of an element.
 | `max-inline-min` | `max-inline-size: min-content;` | 
 | `max-inline-max` | `max-inline-size: max-content;` | 
 | `max-inline-fit` | `max-inline-size: fit-content;` | 
-| `max-inline-(` | `max-inline-size: var(` | 
-| `max-inline-[` | `max-inline-size: ` | 
+| `max-inline-(``<custom-property>` ) | `max-inline-size: var(``<custom-property>` ); | 
+| `max-inline-[``<value>` ] | `max-inline-size:` `<value>` ; | 
 
 Use `max-inline-` utilities like `<number>``max-inline-24` and `max-inline-64` to set an element to a fixed maximum inline size based on the spacing scale:
 
@@ -49,25 +49,25 @@ Resize the example to see the expected behavior
 
 Use `max-inline-full` or `max-inline-` utilities like `<fraction>``max-inline-1/2` and `max-inline-2/5` to give an element a percentage-based maximum inline size:
 
-Resize the example to see the expected behavior
-
 Use utilities like `max-inline-sm` and `max-inline-xl` to set an element to a fixed maximum inline size based on the container scale:
-
-Resize the example to see the expected behavior
 
 Use the `max-inline-[` syntax to set the maximum inline size based on a completely custom value:`<value>`]
 
-`<div class="max-inline-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `max-inline-(` syntax:`<custom-property>`)
+`<div class="max-inline-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `max-inline-(` syntax:`<custom-property>`)
 
-`<div class="max-inline-(--my-max-inline-size) ...">  <!-- ... --></div>`This is just a shorthand for `max-inline-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="max-inline-(--my-max-inline-size) ...">  <!-- ... --></div>`
+This is just a shorthand for `max-inline-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `max-inline-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="max-inline-sm md:max-inline-lg ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="max-inline-sm md:max-inline-lg ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `max-inline-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

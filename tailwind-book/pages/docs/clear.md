@@ -3,7 +3,7 @@ type: Web Page
 title: clear - Layout - Tailwind CSS
 description: Utilities for controlling the wrapping of content around an element.
 resource: https://tailwindcss.com/docs/clear
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Layout
@@ -31,7 +31,8 @@ Use the `clear-none` utility to reset any clears that are applied to an element:
 
 Prefix a `clear` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="clear-left md:clear-none ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<p class="clear-left md:clear-none ...">  Lorem ipsum dolor sit amet...</p>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

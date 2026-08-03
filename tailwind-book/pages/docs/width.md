@@ -3,7 +3,7 @@ type: Web Page
 title: width - Sizing - Tailwind CSS
 description: Utilities for setting the width of an element.
 resource: https://tailwindcss.com/docs/width
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the width of an element.
 
 | Class | Styles | 
 |---|---|
-| `w-` | `width: calc(var(--spacing) * ` | 
-| `w-` | `width: calc(` | 
+| `w-``<number>` | `width: calc(var(--spacing) *` `<number>` ); | 
+| `w-``<fraction>` | `width: calc(``<fraction>` * 100%); | 
 | `w-3xs` | `width: var(--container-3xs); /* 16rem (256px) */` | 
 | `w-2xs` | `width: var(--container-2xs); /* 18rem (288px) */` | 
 | `w-xs` | `width: var(--container-xs); /* 20rem (320px) */` | 
@@ -40,72 +40,24 @@ Utilities for setting the width of an element.
 | `w-min` | `width: min-content;` | 
 | `w-max` | `width: max-content;` | 
 | `w-fit` | `width: fit-content;` | 
-| `w-(` | `width: var(` | 
-| `w-[` | `width: ` | 
-| `size-` | `width: calc(var(--spacing) * ` | 
-| `size-` | `width: calc(` | 
-| `size-auto` | ```
-width: auto;
-height: auto;
-```
- | 
-| `size-px` | ```
-width: 1px;
-height: 1px;
-```
- | 
-| `size-full` | ```
-width: 100%;
-height: 100%;
-```
- | 
-| `size-dvw` | ```
-width: 100dvw;
-height: 100dvw;
-```
- | 
-| `size-dvh` | ```
-width: 100dvh;
-height: 100dvh;
-```
- | 
-| `size-lvw` | ```
-width: 100lvw;
-height: 100lvw;
-```
- | 
-| `size-lvh` | ```
-width: 100lvh;
-height: 100lvh;
-```
- | 
-| `size-svw` | ```
-width: 100svw;
-height: 100svw;
-```
- | 
-| `size-svh` | ```
-width: 100svh;
-height: 100svh;
-```
- | 
-| `size-min` | ```
-width: min-content;
-height: min-content;
-```
- | 
-| `size-max` | ```
-width: max-content;
-height: max-content;
-```
- | 
-| `size-fit` | ```
-width: fit-content;
-height: fit-content;
-```
- | 
-| `size-(` | `width: var(` | 
-| `size-[` | `width: ` | 
+| `w-(``<custom-property>` ) | `width: var(``<custom-property>` ); | 
+| `w-[``<value>` ] | `width:` `<value>` ; | 
+| `size-``<number>` | `width: calc(var(--spacing) *` `<number>` ); height: calc(var(--spacing) *`<number>` ); | 
+| `size-``<fraction>` | `width: calc(``<fraction>` * 100%); height: calc(`<fraction>` * 100%); | 
+| `size-auto` | ``` width: auto; height: auto; ```  | 
+| `size-px` | ``` width: 1px; height: 1px; ```  | 
+| `size-full` | ``` width: 100%; height: 100%; ```  | 
+| `size-dvw` | ``` width: 100dvw; height: 100dvw; ```  | 
+| `size-dvh` | ``` width: 100dvh; height: 100dvh; ```  | 
+| `size-lvw` | ``` width: 100lvw; height: 100lvw; ```  | 
+| `size-lvh` | ``` width: 100lvh; height: 100lvh; ```  | 
+| `size-svw` | ``` width: 100svw; height: 100svw; ```  | 
+| `size-svh` | ``` width: 100svh; height: 100svh; ```  | 
+| `size-min` | ``` width: min-content; height: min-content; ```  | 
+| `size-max` | ``` width: max-content; height: max-content; ```  | 
+| `size-fit` | ``` width: fit-content; height: fit-content; ```  | 
+| `size-(``<custom-property>` ) | `width: var(``<custom-property>` ); height: var(`<custom-property>` ); | 
+| `size-[``<value>` ] | `width:` `<value>` ; height:`<value>` ; | 
 
 Use `w-` utilities like `<number>``w-24` and `w-64` to set an element to a fixed width based on the spacing scale:
 
@@ -115,25 +67,31 @@ Use utilities like `w-sm` and `w-xl` to set an element to a fixed width based on
 
 Use the `w-screen` utility to make an element span the entire width of the viewport:
 
-`<div class="w-screen">  <!-- ... --></div>`Alternatively, you can match the width of the large, small or dynamic viewports using the `w-lvw`, `w-svw`, and `w-dvw` utilities.
+`<div class="w-screen">  <!-- ... --></div>`
+Alternatively, you can match the width of the large, small or dynamic viewports using the `w-lvw`, `w-svw`, and `w-dvw` utilities.
 
 Use the `w-auto` utility to remove an element's assigned width under a specific condition, like at a particular breakpoint:
 
-`<div class="w-full md:w-auto">  <!-- ... --></div>`Use utilities like `size-px`, `size-4`, and `size-full` to set both the width and height of an element at the same time:
+`<div class="w-full md:w-auto">  <!-- ... --></div>`
+Use utilities like `size-px`, `size-4`, and `size-full` to set both the width and height of an element at the same time:
 
 Use the `w-[` syntax to set the width based on a completely custom value:`<value>`]
 
-`<div class="w-[5px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `w-(` syntax:`<custom-property>`)
+`<div class="w-[5px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `w-(` syntax:`<custom-property>`)
 
-`<div class="w-(--my-width) ...">  <!-- ... --></div>`This is just a shorthand for `w-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="w-(--my-width) ...">  <!-- ... --></div>`
+This is just a shorthand for `w-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `width` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="w-1/2 md:w-full ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="w-1/2 md:w-full ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `w-` and `<number>``size-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

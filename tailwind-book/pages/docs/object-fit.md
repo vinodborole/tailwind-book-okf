@@ -4,7 +4,7 @@ title: object-fit - Layout - Tailwind CSS
 description: Utilities for controlling how a replaced element's content should be
   resized.
 resource: https://tailwindcss.com/docs/object-fit
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Layout
@@ -31,7 +31,8 @@ Use the `object-none` utility to display an element's content at its original si
 
 Prefix an `object-fit` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<img class="object-contain md:object-cover" src="/img/mountains.jpg" />`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<img class="object-contain md:object-cover" src="/img/mountains.jpg" />`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

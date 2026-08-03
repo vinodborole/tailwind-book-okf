@@ -3,7 +3,7 @@ type: Web Page
 title: min-inline-size - Sizing - Tailwind CSS
 description: Utilities for setting the minimum inline size of an element.
 resource: https://tailwindcss.com/docs/min-inline-size
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the minimum inline size of an element.
 
 | Class | Styles | 
 |---|---|
-| `min-inline-` | `min-inline-size: calc(var(--spacing) * ` | 
-| `min-inline-` | `min-inline-size: calc(` | 
+| `min-inline-``<number>` | `min-inline-size: calc(var(--spacing) *` `<number>` ); | 
+| `min-inline-``<fraction>` | `min-inline-size: calc(``<fraction>` * 100%); | 
 | `min-inline-3xs` | `min-inline-size: var(--container-3xs); /* 16rem (256px) */` | 
 | `min-inline-2xs` | `min-inline-size: var(--container-2xs); /* 18rem (288px) */` | 
 | `min-inline-xs` | `min-inline-size: var(--container-xs); /* 20rem (320px) */` | 
@@ -40,8 +40,8 @@ Utilities for setting the minimum inline size of an element.
 | `min-inline-min` | `min-inline-size: min-content;` | 
 | `min-inline-max` | `min-inline-size: max-content;` | 
 | `min-inline-fit` | `min-inline-size: fit-content;` | 
-| `min-inline-(` | `min-inline-size: var(` | 
-| `min-inline-[` | `min-inline-size: ` | 
+| `min-inline-(``<custom-property>` ) | `min-inline-size: var(``<custom-property>` ); | 
+| `min-inline-[``<value>` ] | `min-inline-size:` `<value>` ; | 
 
 Use `min-inline-` utilities like `<number>``min-inline-24` and `min-inline-64` to set an element to a fixed minimum inline size based on the spacing scale:
 
@@ -51,17 +51,21 @@ Use utilities like `min-inline-sm` and `min-inline-xl` to set an element to a fi
 
 Use the `min-inline-[` syntax to set the minimum inline size based on a completely custom value:`<value>`]
 
-`<div class="min-inline-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `min-inline-(` syntax:`<custom-property>`)
+`<div class="min-inline-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `min-inline-(` syntax:`<custom-property>`)
 
-`<div class="min-inline-(--my-min-inline-size) ...">  <!-- ... --></div>`This is just a shorthand for `min-inline-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="min-inline-(--my-min-inline-size) ...">  <!-- ... --></div>`
+This is just a shorthand for `min-inline-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `min-inline-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="inline-24 min-inline-full md:min-inline-0 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="inline-24 min-inline-full md:min-inline-0 ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `min-inline-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

@@ -4,7 +4,7 @@ title: isolation - Layout - Tailwind CSS
 description: Utilities for controlling whether an element should explicitly create
   a new stacking context.
 resource: https://tailwindcss.com/docs/isolation
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Layout
@@ -18,9 +18,11 @@ Utilities for controlling whether an element should explicitly create a new stac
 
 Use the `isolate` and `isolation-auto` utilities to control whether an element should explicitly create a new stacking context:
 
-`<div class="isolate ...">  <!-- ... --></div>`Prefix an `isolation` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
+`<div class="isolate ...">  <!-- ... --></div>`
+Prefix an `isolation` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="isolate md:isolation-auto ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="isolate md:isolation-auto ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

@@ -4,7 +4,7 @@ title: justify-content - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how flex and grid items are positioned along
   a container's main axis.
 resource: https://tailwindcss.com/docs/justify-content
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Flexbox & Grid
@@ -35,8 +35,6 @@ When there is not enough space available, the `justify-center-safe` utility will
 
 Use the `justify-end` or `justify-end-safe` utilities to justify items against the end of the container's main axis:
 
-Resize the container to see the alignment behavior
-
 When there is not enough space available, the `justify-end-safe` utility will align items to the start of the container instead of the end.
 
 Use the `justify-between` utility to justify items along the container's main axis such that there is an equal amount of space between each item:
@@ -51,7 +49,8 @@ Use the `justify-normal` utility to pack content items in their default position
 
 Prefix a `justify-content` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="flex justify-start md:justify-between ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="flex justify-start md:justify-between ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

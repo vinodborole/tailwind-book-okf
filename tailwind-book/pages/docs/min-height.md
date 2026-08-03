@@ -3,7 +3,7 @@ type: Web Page
 title: min-height - Sizing - Tailwind CSS
 description: Utilities for setting the minimum height of an element.
 resource: https://tailwindcss.com/docs/min-height
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the minimum height of an element.
 
 | Class | Styles | 
 |---|---|
-| `min-h-` | `min-height: calc(var(--spacing) * ` | 
-| `min-h-` | `min-height: calc(` | 
+| `min-h-``<number>` | `min-height: calc(var(--spacing) *` `<number>` ); | 
+| `min-h-``<fraction>` | `min-height: calc(``<fraction>` * 100%); | 
 | `min-h-px` | `min-height: 1px;` | 
 | `min-h-full` | `min-height: 100%;` | 
 | `min-h-screen` | `min-height: 100vh;` | 
@@ -28,8 +28,8 @@ Utilities for setting the minimum height of an element.
 | `min-h-max` | `min-height: max-content;` | 
 | `min-h-fit` | `min-height: fit-content;` | 
 | `min-h-lh` | `min-height: 1lh;` | 
-| `min-h-(` | `min-height: var(` | 
-| `min-h-[` | `min-height: ` | 
+| `min-h-(``<custom-property>` ) | `min-height: var(``<custom-property>` ); | 
+| `min-h-[``<value>` ] | `min-height:` `<value>` ; | 
 
 Use `min-h-` utilities like `<number>``min-h-24` and `min-h-64` to set an element to a fixed minimum height based on the spacing scale:
 
@@ -37,17 +37,21 @@ Use `min-h-full` or `min-h-` utilities like `<fraction>``min-h-1/2`, and `min-h-
 
 Use the `min-h-[` syntax to set the minimum height based on a completely custom value:`<value>`]
 
-`<div class="min-h-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `min-h-(` syntax:`<custom-property>`)
+`<div class="min-h-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `min-h-(` syntax:`<custom-property>`)
 
-`<div class="min-h-(--my-min-height) ...">  <!-- ... --></div>`This is just a shorthand for `min-h-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="min-h-(--my-min-height) ...">  <!-- ... --></div>`
+This is just a shorthand for `min-h-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `min-height` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="h-24 min-h-0 md:min-h-full ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="h-24 min-h-0 md:min-h-full ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `min-h-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

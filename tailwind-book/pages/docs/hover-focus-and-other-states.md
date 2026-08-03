@@ -3,7 +3,7 @@ type: Web Page
 title: Hover, focus, and other states - Core concepts - Tailwind CSS
 description: Using utilities to style elements on hover, focus, and more.
 resource: https://tailwindcss.com/docs/hover-focus-and-other-states
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Core concepts
@@ -20,19 +20,23 @@ When writing CSS the traditional way, a single class name would do different thi
 
 Traditionally the same class name applies different styles on hover
 
-`.btn-primary {  background-color: #0ea5e9;}.btn-primary:hover {  background-color: #0369a1;}`In Tailwind, rather than adding the styles for a hover state to an existing class, you add another class to the element that *only* does something on hover:
+`.btn-primary {  background-color: #0ea5e9;}.btn-primary:hover {  background-color: #0369a1;}`
+In Tailwind, rather than adding the styles for a hover state to an existing class, you add another class to the element that *only* does something on hover:
 
 In Tailwind, separate classes are used for the default state and the hover state
 
-`.bg-sky-500 {  background-color: #0ea5e9;}.hover\:bg-sky-700:hover {  background-color: #0369a1;}`Notice how `hover:bg-sky-700` *only* defines styles for the `:hover` state? It does nothing by default, but as soon as you hover over an element with that class, the background color will change to `sky-700`.
+`.bg-sky-500 {  background-color: #0ea5e9;}.hover\:bg-sky-700:hover {  background-color: #0369a1;}`
+Notice how `hover:bg-sky-700` *only* defines styles for the `:hover` state? It does nothing by default, but as soon as you hover over an element with that class, the background color will change to `sky-700`.
 
 This is what we mean when we say a utility class can be applied *conditionally* — by using variants you can control exactly how your design behaves in different states, without ever leaving your HTML.
 
 Tailwind includes variants for just about everything you'll ever need, including:
 
-`:hover`, `:focus`, `:first-child`, and `:required``::before`, `::after`, `::placeholder`, and `::selection``prefers-reduced-motion``[dir="rtl"]` and `[open]``& > *` and `& *`These variants can even be stacked to target more specific situations, for example changing the background color in dark mode, at the medium breakpoint, on hover:
+`:hover`, `:focus`, `:first-child`, and `:required``::before`, `::after`, `::placeholder`, and `::selection``prefers-reduced-motion``[dir="rtl"]` and `[open]``& > *` and `& *`
+These variants can even be stacked to target more specific situations, for example changing the background color in dark mode, at the medium breakpoint, on hover:
 
-`<button class="dark:md:hover:bg-fuchsia-600 ...">Save changes</button>`In this guide you'll learn about every variant available in the framework, how to use them with your own custom classes, and even how to create your own.
+`<button class="dark:md:hover:bg-fuchsia-600 ...">Save changes</button>`
+In this guide you'll learn about every variant available in the framework, how to use them with your own custom classes, and even how to create your own.
 
 Style elements on hover, focus, and active using the `hover`, `focus`, and `active` variants:
 
@@ -46,7 +50,7 @@ Style an element when it is the first-child or last-child using the `first` and 
 
 You can also style an element when it's an odd or even child using the `odd` and `even` variants:
 
-| Name | Title | |
+| Name | Title |  | 
 |---|---|---|
 | Jane Cooper | Regional Paradigm Technician | jane.cooper@example.com | 
 | Cody Fisher | Product Directives Officer | cody.fisher@example.com | 
@@ -54,13 +58,13 @@ You can also style an element when it's an odd or even child using the `odd` and
 | Emily Selman | VP, Hardware Engineering | emily.selman@example.com | 
 | Anna Roberts | Chief Strategy Officer | anna.roberts@example.com | 
 
-`<table>  <!-- ... -->  <tbody>    {#each people as person}      <!-- Use different background colors for odd and even rows -->      <tr class="odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">        <td>{person.name}</td>        <td>{person.title}</td>        <td>{person.email}</td>      </tr>    {/each}  </tbody></table>`Use the `nth-*` and `nth-last-*` variants to style children based on their position in the list:
+`<table>  <!-- ... -->  <tbody>    {#each people as person}      <!-- Use different background colors for odd and even rows -->      <tr class="odd:bg-white even:bg-gray-50 dark:odd:bg-gray-900/50 dark:even:bg-gray-950">        <td>{person.name}</td>        <td>{person.title}</td>        <td>{person.email}</td>      </tr>    {/each}  </tbody></table>`
+Use the `nth-*` and `nth-last-*` variants to style children based on their position in the list:
 
-`<div class="nth-3:underline">  <!-- ... --></div><div class="nth-last-5:underline">  <!-- ... --></div><div class="nth-of-type-4:underline">  <!-- ... --></div><div class="nth-last-of-type-6:underline">  <!-- ... --></div>`You can pass any number you want to these by default, and use arbitrary values for more complex expressions like `nth-[2n+1_of_li]`.
+`<div class="nth-3:underline">  <!-- ... --></div><div class="nth-last-5:underline">  <!-- ... --></div><div class="nth-of-type-4:underline">  <!-- ... --></div><div class="nth-last-of-type-6:underline">  <!-- ... --></div>`
+You can pass any number you want to these by default, and use arbitrary values for more complex expressions like `nth-[2n+1_of_li]`.
 
 Tailwind also includes variants for other structural pseudo-classes like `:only-child`, `:first-of-type`, `:empty`, and more.
-
-See the [pseudo-class reference](#pseudo-class-reference) for a complete list of available pseudo-class variants.
 
 Style form elements in different states using variants like `required`, `invalid`, and `disabled`:
 
@@ -69,8 +73,6 @@ Try making the email address valid to see the styles change
 Using variants for this sort of thing can reduce the amount of conditional logic in your templates, letting you use the same set of classes regardless of what state an input is in and letting the browser apply the right styles for you.
 
 Tailwind also includes variants for other form states like `:read-only`, `:indeterminate`, `:checked`, and more.
-
-See the [pseudo-class reference](#pseudo-class-reference) for a complete list of available pseudo-class variants.
 
 Use the `has-*` variant to style an element based on the state or content of its descendants:
 
@@ -88,7 +90,8 @@ Try focusing on the button and then hovering over it
 
 You can also combine the `not-` variant with media query variants like `forced-colors` or `supports` to only style an element when something about the user's environment is not true:
 
-`<div class="not-supports-[display:grid]:flex">  <!-- ... --></div>`When you need to style an element based on the state of some *parent* element, mark the parent with the `group` class, and use `group-*` variants like `group-hover` to style the target element:
+`<div class="not-supports-[display:grid]:flex">  <!-- ... --></div>`
+When you need to style an element based on the state of some *parent* element, mark the parent with the `group` class, and use `group-*` variants like `group-hover` to style the target element:
 
 Hover over the card to see both text elements change color
 
@@ -100,11 +103,14 @@ Groups can be named however you like and don’t need to be configured in any wa
 
 You can create one-off `group-*` variants on the fly by providing your own selector as an [arbitrary value](/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
 
-`<div class="group is-published">  <div class="hidden group-[.is-published]:block">    Published  </div></div>`For more control, you can use the `&` character to mark where `.group` should end up in the final selector relative to the selector you are passing in:
+`<div class="group is-published">  <div class="hidden group-[.is-published]:block">    Published  </div></div>`
+For more control, you can use the `&` character to mark where `.group` should end up in the final selector relative to the selector you are passing in:
 
-`<div class="group">  <div class="group-[:nth-of-type(3)_&]:block">    <!-- ... -->  </div></div>`The `in-*` variant works similarly to `group` except you don't need to add `group` to the parent element:
+`<div class="group">  <div class="group-[:nth-of-type(3)_&]:block">    <!-- ... -->  </div></div>`
+The `in-*` variant works similarly to `group` except you don't need to add `group` to the parent element:
 
-`<div tabindex="0" class="group">  <div class="opacity-50 group-focus:opacity-100"><div tabindex="0">  <div class="opacity-50 in-focus:opacity-100">    <!-- ... -->  </div></div>`The `in-*` variant responds to state changes in any parent, so if you want more fine-grained control you'll need to use `group` instead.
+`<div tabindex="0" class="group">  <div class="opacity-50 group-focus:opacity-100"><div tabindex="0">  <div class="opacity-50 in-focus:opacity-100">    <!-- ... -->  </div></div>`
+The `in-*` variant responds to state changes in any parent, so if you want more fine-grained control you'll need to use `group` instead.
 
 When you need to style an element based on the state of a *sibling* element, mark the sibling with the `peer` class, and use `peer-*` variants like `peer-invalid` to style the target element:
 
@@ -118,15 +124,18 @@ It's important to note that the `peer` marker can only be used on *previous* sib
 
 Won't work, only previous siblings can be marked as peers
 
-`<label>  <span class="peer-invalid:text-red-500 ...">Email</span>  <input type="email" class="peer ..." /></label>`When using multiple peers, you can style something on the state of a *specific* peer by giving that peer a unique name using a `peer/{name}` class, and including that name in variants using classes like `peer-checked/{name}`:
+`<label>  <span class="peer-invalid:text-red-500 ...">Email</span>  <input type="email" class="peer ..." /></label>`
+When using multiple peers, you can style something on the state of a *specific* peer by giving that peer a unique name using a `peer/{name}` class, and including that name in variants using classes like `peer-checked/{name}`:
 
 Peers can be named however you like and don’t need to be configured in any way — just name your peers directly in your markup and Tailwind will automatically generate the necessary CSS.
 
 You can create one-off `peer-*` variants on the fly by providing your own selector as an [arbitrary value](/docs/adding-custom-styles#using-arbitrary-values) between square brackets:
 
-`<form>  <label for="email">Email:</label>  <input id="email" name="email" type="email" class="is-dirty peer" required />  <div class="peer-[.is-dirty]:peer-required:block hidden">This field is required.</div>  <!-- ... --></form>`For more control, you can use the `&` character to mark where `.peer` should end up in the final selector relative to the selector you are passing in:
+`<form>  <label for="email">Email:</label>  <input id="email" name="email" type="email" class="is-dirty peer" required />  <div class="peer-[.is-dirty]:peer-required:block hidden">This field is required.</div>  <!-- ... --></form>`
+For more control, you can use the `&` character to mark where `.peer` should end up in the final selector relative to the selector you are passing in:
 
-`<div>  <input type="text" class="peer" />  <div class="hidden peer-[:nth-of-type(3)_&]:block">    <!-- ... -->  </div></div>`Style the `::before` and `::after` pseudo-elements using the `before` and `after` variants:
+`<div>  <input type="text" class="peer" />  <div class="hidden peer-[:nth-of-type(3)_&]:block">    <!-- ... -->  </div></div>`
+Style the `::before` and `::after` pseudo-elements using the `before` and `after` variants:
 
 When using these variants, Tailwind will automatically add `content: ''` by default so you don't have to specify it unless you want a different value:
 
@@ -134,7 +143,8 @@ It's worth noting that you don't really need `::before` and `::after` pseudo-ele
 
 For example, here's the same design from above but using a `<span>` instead of the `::before` pseudo-element, which is a little easier to read and is actually less code:
 
-`<blockquote class="text-center text-2xl font-semibold text-gray-900 italic">  When you look  <span class="relative">    <span class="absolute -inset-1 block -skew-y-3 bg-pink-500" aria-hidden="true"></span>    <span class="relative text-white">annoyed</span>  </span>  all the time, people think that you're busy.</blockquote>`Save `before` and `after` for situations where it's important that the content of the pseudo-element is not actually in the DOM and can't be selected by the user.
+`<blockquote class="text-center text-2xl font-semibold text-gray-900 italic">  When you look  <span class="relative">    <span class="absolute -inset-1 block -skew-y-3 bg-pink-500" aria-hidden="true"></span>    <span class="relative text-white">annoyed</span>  </span>  all the time, people think that you're busy.</blockquote>`
+Save `before` and `after` for situations where it's important that the content of the pseudo-element is not actually in the DOM and can't be selected by the user.
 
 Style the placeholder text of any input or textarea using the `placeholder` variant:
 
@@ -152,19 +162,23 @@ We've designed the `selection` variant to be inheritable, so you can add it anyw
 
 This makes it easy to set the selection color to match your brand across your entire site:
 
-`<html>  <head>    <!-- ... -->  </head>  <body class="selection:bg-pink-300">    <!-- ... -->  </body></html>`Style the first line in a block of content using the `first-line` variant, and the first letter using the `first-letter` variant:
+`<html>  <head>    <!-- ... -->  </head>  <body class="selection:bg-pink-300">    <!-- ... -->  </body></html>`
+Style the first line in a block of content using the `first-line` variant, and the first letter using the `first-letter` variant:
 
-Style the backdrop of a [native  <dialog> element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) using the 
+Style the backdrop of a [native `<dialog>` element](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog) using the `backdrop` variant:
 
-`backdrop` variant:`<dialog class="backdrop:bg-gray-50">  <form method="dialog">    <!-- ... -->  </form></dialog>`If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](/docs/hover-focus-and-other-states#openclosed-state) using the `open` variant.
+`<dialog class="backdrop:bg-gray-50">  <form method="dialog">    <!-- ... -->  </form></dialog>`
+If you're using native `<dialog>` elements in your project, you may also want to read about [styling open/closed states](/docs/hover-focus-and-other-states#openclosed-state) using the `open` variant.
 
 To style an element at a specific breakpoint, use responsive variants like `md` and `lg`.
 
 For example, this will render a 3-column grid on mobile, a 4-column grid on medium-width screens, and a 6-column grid on large-width screens:
 
-`<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6">  <!-- ... --></div>`To style an element based on the width of a parent element instead of the viewport, use variants like `@md` and `@lg`:
+`<div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6">  <!-- ... --></div>`
+To style an element based on the width of a parent element instead of the viewport, use variants like `@md` and `@lg`:
 
-`<div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>`Check out the [Responsive design](/docs/responsive-design) documentation for an in-depth look at how these features work.
+`<div class="@container">  <div class="flex flex-col @md:flex-row">    <!-- ... -->  </div></div>`
+Check out the [Responsive design](/docs/responsive-design) documentation for an in-depth look at how these features work.
 
 The `prefers-color-scheme` media query tells you whether the user prefers a light theme or dark theme, and is usually configured at the operating system level.
 
@@ -180,7 +194,8 @@ Try emulating `prefers-reduced-motion: reduce` in your developer tools to hide t
 
 Tailwind also includes a `motion-safe` variant that only adds styles when the user has *not* requested reduced motion. This can be useful when using the `motion-reduce` helper would mean having to "undo" a lot of styles:
 
-`<!-- Using `motion-reduce` can mean lots of "undoing" styles --><button class="transition hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ...">  Save changes</button><!-- Using `motion-safe` is less code in these situations --><button class="motion-safe:transition motion-safe:hover:-translate-x-0.5 ...">Save changes</button>`The `prefers-contrast` media query tells you if the user has requested more or less contrast.
+``<!-- Using `motion-reduce` can mean lots of "undoing" styles --><button class="transition hover:-translate-y-0.5 motion-reduce:transition-none motion-reduce:hover:translate-y-0 ...">  Save changes</button><!-- Using `motion-safe` is less code in these situations --><button class="motion-safe:transition motion-safe:hover:-translate-x-0.5 ...">Save changes</button>``
+The `prefers-contrast` media query tells you if the user has requested more or less contrast.
 
 Use the `contrast-more` variant to conditionally add styles when the user has requested more contrast:
 
@@ -196,11 +211,13 @@ Try emulating `forced-colors: active` in your developer tools to see the changes
 
 Use the `not-forced-colors` variant to apply styles based when the user is *not* using a forced colors mode:
 
-`<div class="not-forced-colors:appearance-none ...">  <!-- ... --></div>`Tailwind also includes a [forced color adjust](/docs/forced-color-adjust) utilities to opt in and out of forced colors.
+`<div class="not-forced-colors:appearance-none ...">  <!-- ... --></div>`
+Tailwind also includes a [forced color adjust](/docs/forced-color-adjust) utilities to opt in and out of forced colors.
 
 Use the `inverted-colors` variant to conditionally add styles when the user has enabled an inverted color scheme:
 
-`<div class="shadow-xl inverted-colors:shadow-none ...">  <!-- ... --></div>`The `pointer` media query tells you whether the user has a primary pointing device, like a mouse, and the accuracy of that pointing device.
+`<div class="shadow-xl inverted-colors:shadow-none ...">  <!-- ... --></div>`
+The `pointer` media query tells you whether the user has a primary pointing device, like a mouse, and the accuracy of that pointing device.
 
 Use the `pointer-fine` variant to target an accurate pointing device, like a mouse or trackpad, or the `pointer-coarse` variant to target a less accurate pointing device, like a touchscreen, which can be useful for providing larger click targets on touch devices:
 
@@ -212,29 +229,37 @@ You can use `pointer-none` and `any-pointer-none` to target the absence of a poi
 
 Use the `portrait` and `landscape` variants to conditionally add styles when the viewport is in a specific orientation:
 
-`<div>  <div class="portrait:hidden">    <!-- ... -->  </div>  <div class="landscape:hidden">    <p>This experience is designed to be viewed in landscape. Please rotate your device to view the site.</p>  </div></div>`Use the `noscript` variant to conditionally add styles based on whether the user has scripting, such as JavaScript, enabled:
+`<div>  <div class="portrait:hidden">    <!-- ... -->  </div>  <div class="landscape:hidden">    <p>This experience is designed to be viewed in landscape. Please rotate your device to view the site.</p>  </div></div>`
+Use the `noscript` variant to conditionally add styles based on whether the user has scripting, such as JavaScript, enabled:
 
-`<div class="hidden noscript:block">  <p>This experience requires JavaScript to function. Please enable JavaScript in your browser settings.</p></div>`Use the `print` variant to conditionally add styles that only apply when the document is being printed:
+`<div class="hidden noscript:block">  <p>This experience requires JavaScript to function. Please enable JavaScript in your browser settings.</p></div>`
+Use the `print` variant to conditionally add styles that only apply when the document is being printed:
 
-`<div>  <article class="print:hidden">    <h1>My Secret Pizza Recipe</h1>    <p>This recipe is a secret, and must not be shared with anyone</p>    <!-- ... -->  </article>  <div class="hidden print:block">Are you seriously trying to print this? It's secret!</div></div>`Use the `supports-[...]` variant to style things based on whether a certain feature is supported in the user's browser:
+`<div>  <article class="print:hidden">    <h1>My Secret Pizza Recipe</h1>    <p>This recipe is a secret, and must not be shared with anyone</p>    <!-- ... -->  </article>  <div class="hidden print:block">Are you seriously trying to print this? It's secret!</div></div>`
+Use the `supports-[...]` variant to style things based on whether a certain feature is supported in the user's browser:
 
-`<div class="flex supports-[display:grid]:grid ...">  <!-- ... --></div>`Under the hood the `supports-[...]` variant generates [ @supports rules](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) and takes anything you’d use with 
+`<div class="flex supports-[display:grid]:grid ...">  <!-- ... --></div>`
+Under the hood the `supports-[...]` variant generates [`@supports rules`](https://developer.mozilla.org/en-US/docs/Web/CSS/@supports) and takes anything you’d use with `@supports (...)` between the square brackets, like a property/value pair, and even expressions using `and` and `or`.
 
-`@supports (...)` between the square brackets, like a property/value pair, and even expressions using `and` and `or`.For terseness, if you only need to check if a property is supported (and not a specific value), you can just specify the property name:
+For terseness, if you only need to check if a property is supported (and not a specific value), you can just specify the property name:
 
-`<div class="bg-black/75 supports-backdrop-filter:bg-black/25 supports-backdrop-filter:backdrop-blur ...">  <!-- ... --></div>`Use the `not-supports-[...]` variant to style things based on whether a certain feature is not supported in the user's browser:
+`<div class="bg-black/75 supports-backdrop-filter:bg-black/25 supports-backdrop-filter:backdrop-blur ...">  <!-- ... --></div>`
+Use the `not-supports-[...]` variant to style things based on whether a certain feature is not supported in the user's browser:
 
-`<div class="not-supports-[display:grid]:flex">  <!-- ... --></div>`You can configure shortcuts for common `@supports` rules you're using in your project by creating a new variant in the `supports-*` namespace:
+You can configure shortcuts for common `@supports` rules you're using in your project by creating a new variant in the `supports-*` namespace:
 
-`@custom-variant supports-grid {  @supports (display: grid) {    @slot;  }}`You can then use these custom `supports-*` variants in your project:
+`@custom-variant supports-grid {  @supports (display: grid) {    @slot;  }}`
+You can then use these custom `supports-*` variants in your project:
 
-`<div class="supports-grid:grid">  <!-- ... --></div>`Use the `starting` variant to set the appearance of an element when it is first rendered in the DOM, or transitions from `display: none` to visible:
+`<div class="supports-grid:grid">  <!-- ... --></div>`
+Use the `starting` variant to set the appearance of an element when it is first rendered in the DOM, or transitions from `display: none` to visible:
 
 Use the `aria-*` variant to conditionally style things based on [ARIA attributes](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes).
 
 For example, to apply the `bg-sky-700` class when the `aria-checked` attribute is set to `true`, use the `aria-checked:bg-sky-700` class:
 
-`<div aria-checked="true" class="bg-gray-600 aria-checked:bg-sky-700">  <!-- ... --></div>`By default we've included variants for the most common boolean ARIA attributes:
+`<div aria-checked="true" class="bg-gray-600 aria-checked:bg-sky-700">  <!-- ... --></div>`
+By default we've included variants for the most common boolean ARIA attributes:
 
 | Variant | CSS | 
 |---|---|
@@ -250,7 +275,8 @@ For example, to apply the `bg-sky-700` class when the `aria-checked` attribute i
 
 You can customize which `aria-*` variants are available by creating a new variant:
 
-`@custom-variant aria-asc (&[aria-sort="ascending"]);@custom-variant aria-desc (&[aria-sort="descending"]);`If you need to use a one-off `aria` variant that doesn’t make sense to include in your project, or for more complex ARIA attributes that take specific values, use square brackets to generate a property on the fly using any arbitrary value:
+`@custom-variant aria-asc (&[aria-sort="ascending"]);@custom-variant aria-desc (&[aria-sort="descending"]);`
+If you need to use a one-off `aria` variant that doesn’t make sense to include in your project, or for more complex ARIA attributes that take specific values, use square brackets to generate a property on the fly using any arbitrary value:
 
 | Invoice # | Client | Amount | 
 |---|---|---|
@@ -258,19 +284,25 @@ You can customize which `aria-*` variants are available by creating a new varian
 | #101 | Kruger Industrial Smoothing | $545.00 | 
 | #102 | J. Peterman | $10,000.25 | 
 
-`<table>  <thead>    <tr>      <th        aria-sort="ascending"        class="aria-[sort=ascending]:bg-[url('/img/down-arrow.svg')] aria-[sort=descending]:bg-[url('/img/up-arrow.svg')]"      >        Invoice #      </th>      <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`ARIA state variants can also target parent and sibling elements using the `group-aria-*` and `peer-aria-*` variants:
+`<table>  <thead>    <tr>      <th        aria-sort="ascending"        class="aria-[sort=ascending]:bg-[url('/img/down-arrow.svg')] aria-[sort=descending]:bg-[url('/img/up-arrow.svg')]"      >        Invoice #      </th>      <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`
+ARIA state variants can also target parent and sibling elements using the `group-aria-*` and `peer-aria-*` variants:
 
-`<table>  <thead>    <tr>    <th aria-sort="ascending" class="group">      Invoice #      <svg class="group-aria-[sort=ascending]:rotate-0 group-aria-[sort=descending]:rotate-180"><!-- ... --></svg>    </th>    <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`Use the `data-*` variant to conditionally apply styles based on [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
+`<table>  <thead>    <tr>    <th aria-sort="ascending" class="group">      Invoice #      <svg class="group-aria-[sort=ascending]:rotate-0 group-aria-[sort=descending]:rotate-180"><!-- ... --></svg>    </th>    <!-- ... -->    </tr>  </thead>  <!-- ... --></table>`
+Use the `data-*` variant to conditionally apply styles based on [data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
 To check if a data attribute exists (and not a specific value), you can just specify the attribute name:
 
-`<!-- Will apply --><div data-active class="border border-gray-300 data-active:border-purple-500">  <!-- ... --></div><!-- Will not apply --><div class="border border-gray-300 data-active:border-purple-500">  <!-- ... --></div>`If you need to check for a specific value you may use an arbitrary value:
+`<!-- Will apply --><div data-active class="border border-gray-300 data-active:border-purple-500">  <!-- ... --></div><!-- Will not apply --><div class="border border-gray-300 data-active:border-purple-500">  <!-- ... --></div>`
+If you need to check for a specific value you may use an arbitrary value:
 
-`<!-- Will apply --><div data-size="large" class="data-[size=large]:p-8">  <!-- ... --></div><!-- Will not apply --><div data-size="medium" class="data-[size=large]:p-8">  <!-- ... --></div>`Alternatively, you can configure shortcuts for common data attributes you're using in your project by creating a new variant in the `data-*` namespace:
+`<!-- Will apply --><div data-size="large" class="data-[size=large]:p-8">  <!-- ... --></div><!-- Will not apply --><div data-size="medium" class="data-[size=large]:p-8">  <!-- ... --></div>`
+Alternatively, you can configure shortcuts for common data attributes you're using in your project by creating a new variant in the `data-*` namespace:
 
-`@import "tailwindcss";@custom-variant data-checked (&[data-ui~="checked"]);`You can then use these custom `data-*` variants in your project:
+`@import "tailwindcss";@custom-variant data-checked (&[data-ui~="checked"]);`
+You can then use these custom `data-*` variants in your project:
 
-`<div data-ui="checked active" class="data-checked:underline">  <!-- ... --></div>`Use the `rtl` and `ltr` variants to conditionally add styles in right-to-left and left-to-right modes respectively when building multi-directional layouts:
+`<div data-ui="checked active" class="data-checked:underline">  <!-- ... --></div>`
+Use the `rtl` and `ltr` variants to conditionally add styles in right-to-left and left-to-right modes respectively when building multi-directional layouts:
 
 Remember, these variants are only useful if you are building a site that needs to support *both* left-to-right and right-to-left layouts. If you're building a site that only needs to support a single direction, you don't need these variants — just apply the styles that make sense for your content.
 
@@ -280,7 +312,8 @@ Try toggling the disclosure to see the styles change
 
 This variant also targets the `:popover-open` pseudo-class for popovers:
 
-`<div>  <button popovertarget="my-popover">Open Popover</button>  <div popover id="my-popover" class="opacity-0 open:opacity-100 ...">    <!-- ... -->  </div></div>`The `inert` variant lets you style elements marked with the `inert` attribute:
+`<div>  <button popovertarget="my-popover">Open Popover</button>  <div popover id="my-popover" class="opacity-0 open:opacity-100 ...">    <!-- ... -->  </div></div>`
+The `inert` variant lets you style elements marked with the `inert` attribute:
 
 This is useful for adding visual cues that make it clear that sections of content aren't interactive.
 
@@ -290,25 +323,32 @@ It's important to note that overriding a style with a utility directly on the ch
 
 Won't work, children can't override styles given to them by the parent.
 
-`<ul class="*:bg-sky-50 ...">  <li class="bg-red-50 ...">Sales</li>  <li>Marketing</li>  <li>SEO</li>  <!-- ... --></ul>`Like `*`, the `**` variant can be used to style children of an element. The main difference is that `**` will apply styles to *all* descendants, not just the direct children. This is especially useful when you combine it with another variant for narrowing the thing you're selecting:
+`<ul class="*:bg-sky-50 ...">  <li class="bg-red-50 ...">Sales</li>  <li>Marketing</li>  <li>SEO</li>  <!-- ... --></ul>`
+Like `*`, the `**` variant can be used to style children of an element. The main difference is that `**` will apply styles to *all* descendants, not just the direct children. This is especially useful when you combine it with another variant for narrowing the thing you're selecting:
 
 Just like [arbitrary values](/docs/adding-custom-styles#using-arbitrary-values) let you use custom values with your utility classes, arbitrary variants let you write custom selector variants directly in your HTML.
 
 Arbitrary variants are just format strings that represent the selector, wrapped in square brackets. For example, this arbitrary variant changes the cursor to `grabbing` when the element has the `is-dragging` class:
 
-`<ul role="list">  {#each items as item}    <li class="[&.is-dragging]:cursor-grabbing">{item}</li>  {/each}</ul>`Arbitrary variants can be stacked with built-in variants or with each other, just like the rest of the variants in Tailwind:
+`<ul role="list">  {#each items as item}    <li class="[&.is-dragging]:cursor-grabbing">{item}</li>  {/each}</ul>`
+Arbitrary variants can be stacked with built-in variants or with each other, just like the rest of the variants in Tailwind:
 
-`<ul role="list">  {#each items as item}    <li class="[&.is-dragging]:active:cursor-grabbing">{item}</li>  {/each}</ul>`If you need spaces in your selector, you can use an underscore. For example, this arbitrary variant selects all `p` elements within the element where you've added the class:
+`<ul role="list">  {#each items as item}    <li class="[&.is-dragging]:active:cursor-grabbing">{item}</li>  {/each}</ul>`
+If you need spaces in your selector, you can use an underscore. For example, this arbitrary variant selects all `p` elements within the element where you've added the class:
 
-`<div class="[&_p]:mt-4">  <p>Lorem ipsum...</p>  <ul>    <li>      <p>Lorem ipsum...</p>    </li>    <!-- ... -->  </ul></div>`You can also use at-rules like `@media` or `@supports` in arbitrary variants:
+`<div class="[&_p]:mt-4">  <p>Lorem ipsum...</p>  <ul>    <li>      <p>Lorem ipsum...</p>    </li>    <!-- ... -->  </ul></div>`
+You can also use at-rules like `@media` or `@supports` in arbitrary variants:
 
-`<div class="flex [@supports(display:grid)]:grid">  <!-- ... --></div>`With at-rule custom variants the `&` placeholder isn't necessary, just like when nesting with a preprocessor.
+`<div class="flex [@supports(display:grid)]:grid">  <!-- ... --></div>`
+With at-rule custom variants the `&` placeholder isn't necessary, just like when nesting with a preprocessor.
 
 If you find yourself using the same arbitrary variant multiple times in your project, it might be worth creating a custom variant using the `@custom-variant` directive:
 
-`@custom-variant theme-midnight (&:where([data-theme="midnight"] *));`Now you can use the `theme-midnight:` variant in your HTML:`<utility>`
+`@custom-variant theme-midnight (&:where([data-theme="midnight"] *));`
+Now you can use the `theme-midnight:` variant in your HTML:`<utility>`
 
-`<html data-theme="midnight">  <button class="theme-midnight:bg-black ..."></button></html>`Learn more about adding custom variants in the [adding custom variants documentation](/docs/adding-custom-styles#adding-custom-variants).
+`<html data-theme="midnight">  <button class="theme-midnight:bg-black ..."></button></html>`
+Learn more about adding custom variants in the [adding custom variants documentation](/docs/adding-custom-styles#adding-custom-variants).
 
 A quick reference table of every single variant included in Tailwind by default.
 
@@ -323,11 +363,11 @@ A quick reference table of every single variant included in Tailwind by default.
 | [target](#target) | `&:target` | 
 | [*](#styling-direct-children) | `:is(&  > *)` | 
 | [**](#styling-all-descendants) | `:is(&  *)` | 
-| [has-[...]](#has) | `&:has(...)` | 
-| [group-[...]](#styling-based-on-parent-state) | `&:is(:where(.group)... *)` | 
-| [peer-[...]](#styling-based-on-sibling-state) | `&:is(:where(.peer)... ~ *)` | 
-| [in-[...]](#implicit-groups) | `:where(...) &` | 
-| [not-[...]](#not) | `&:not(...)` | 
+| [has-\[...\]](#has) | `&:has(...)` | 
+| [group-\[...\]](#styling-based-on-parent-state) | `&:is(:where(.group)... *)` | 
+| [peer-\[...\]](#styling-based-on-sibling-state) | `&:is(:where(.peer)... ~ *)` | 
+| [in-\[...\]](#implicit-groups) | `:where(...) &` | 
+| [not-\[...\]](#not) | `&:not(...)` | 
 | [inert](#styling-inert-elements) | `&:is([inert], [inert] *)` | 
 | [first](#first) | `&:first-child` | 
 | [last](#last) | `&:last-child` | 
@@ -337,10 +377,10 @@ A quick reference table of every single variant included in Tailwind by default.
 | [first-of-type](#first-of-type) | `&:first-of-type` | 
 | [last-of-type](#last-of-type) | `&:last-of-type` | 
 | [only-of-type](#only-of-type) | `&:only-of-type` | 
-| [nth-[...]](#nth) | `&:nth-child(...)` | 
-| [nth-last-[...]](#nth-last) | `&:nth-last-child(...)` | 
-| [nth-of-type-[...]](#nth-of-type) | `&:nth-of-type(...)` | 
-| [nth-last-of-type-[...]](#nth-last-of-type) | `&:nth-last-of-type(...)` | 
+| [nth-\[...\]](#nth) | `&:nth-child(...)` | 
+| [nth-last-\[...\]](#nth-last) | `&:nth-last-child(...)` | 
+| [nth-of-type-\[...\]](#nth-of-type) | `&:nth-of-type(...)` | 
+| [nth-last-of-type-\[...\]](#nth-last-of-type) | `&:nth-last-of-type(...)` | 
 | [empty](#empty) | `&:empty` | 
 | [disabled](#disabled) | `&:disabled` | 
 | [enabled](#enabled) | `&:enabled` | 
@@ -373,13 +413,13 @@ A quick reference table of every single variant included in Tailwind by default.
 | [lg](#responsive-breakpoints) | `@media (width >= 64rem)` | 
 | [xl](#responsive-breakpoints) | `@media (width >= 80rem)` | 
 | [2xl](#responsive-breakpoints) | `@media (width >= 96rem)` | 
-| [min-[...]](#responsive-breakpoints) | `@media (width >=  ...)` | 
+| [min-\[...\]](#responsive-breakpoints) | `@media (width >=  ...)` | 
 | [max-sm](#responsive-breakpoints) | `@media (width < 40rem)` | 
 | [max-md](#responsive-breakpoints) | `@media (width < 48rem)` | 
 | [max-lg](#responsive-breakpoints) | `@media (width < 64rem)` | 
 | [max-xl](#responsive-breakpoints) | `@media (width < 80rem)` | 
 | [max-2xl](#responsive-breakpoints) | `@media (width < 96rem)` | 
-| [max-[...]](#responsive-breakpoints) | `@media (width <  ...)` | 
+| [max-\[...\]](#responsive-breakpoints) | `@media (width <  ...)` | 
 | [@3xs](#responsive-breakpoints) | `@container (width >= 16rem)` | 
 | [@2xs](#responsive-breakpoints) | `@container (width >= 18rem)` | 
 | [@xs](#responsive-breakpoints) | `@container (width >= 20rem)` | 
@@ -393,7 +433,7 @@ A quick reference table of every single variant included in Tailwind by default.
 | [@5xl](#responsive-breakpoints) | `@container (width >= 64rem)` | 
 | [@6xl](#responsive-breakpoints) | `@container (width >= 72rem)` | 
 | [@7xl](#responsive-breakpoints) | `@container (width >= 80rem)` | 
-| [@min-[...]](#responsive-breakpoints) | `@container (width >=  ...)` | 
+| [@min-\[...\]](#responsive-breakpoints) | `@container (width >=  ...)` | 
 | [@max-3xs](#responsive-breakpoints) | `@container (width < 16rem)` | 
 | [@max-2xs](#responsive-breakpoints) | `@container (width < 18rem)` | 
 | [@max-xs](#responsive-breakpoints) | `@container (width < 20rem)` | 
@@ -407,7 +447,7 @@ A quick reference table of every single variant included in Tailwind by default.
 | [@max-5xl](#responsive-breakpoints) | `@container (width < 64rem)` | 
 | [@max-6xl](#responsive-breakpoints) | `@container (width < 72rem)` | 
 | [@max-7xl](#responsive-breakpoints) | `@container (width < 80rem)` | 
-| [@max-[...]](#responsive-breakpoints) | `@container (width <  ...)` | 
+| [@max-\[...\]](#responsive-breakpoints) | `@container (width <  ...)` | 
 | [dark](#prefers-color-scheme) | `@media (prefers-color-scheme: dark)` | 
 | [motion-safe](#prefers-reduced-motion) | `@media (prefers-reduced-motion: no-preference)` | 
 | [motion-reduce](#prefers-reduced-motion) | `@media (prefers-reduced-motion: reduce)` | 
@@ -425,7 +465,7 @@ A quick reference table of every single variant included in Tailwind by default.
 | [landscape](#orientation) | `@media (orientation: landscape)` | 
 | [noscript](#scripting) | `@media (scripting: none)` | 
 | [print](#print) | `@media print` | 
-| [supports-[…]](#supports) | `@supports (…)` | 
+| [supports-\[…\]](#supports) | `@supports (…)` | 
 | [aria-busy](#aria-states) | `&[aria-busy="true"]` | 
 | [aria-checked](#aria-states) | `&[aria-checked="true"]` | 
 | [aria-disabled](#aria-states) | `&[aria-disabled="true"]` | 
@@ -435,8 +475,8 @@ A quick reference table of every single variant included in Tailwind by default.
 | [aria-readonly](#aria-states) | `&[aria-readonly="true"]` | 
 | [aria-required](#aria-states) | `&[aria-required="true"]` | 
 | [aria-selected](#aria-states) | `&[aria-selected="true"]` | 
-| [aria-[…]](#aria-states) | `&[aria-…]` | 
-| [data-[…]](#data-attributes) | `&[data-…]` | 
+| [aria-\[…\]](#aria-states) | `&[aria-…]` | 
+| [data-\[…\]](#data-attributes) | `&[data-…]` | 
 | [rtl](#rtl-support) | `&:where(:dir(rtl), [dir="rtl"], [dir="rtl"] *)` | 
 | [ltr](#rtl-support) | `&:where(:dir(ltr), [dir="ltr"], [dir="ltr"] *)` | 
 | [open](#openclosed-state) | `&:is([open], :popover-open, :open)` | 
@@ -446,77 +486,113 @@ This is a comprehensive list of examples for all the pseudo-class variants inclu
 
 Style an element when the user hovers over it with the mouse cursor using the `hover` variant:
 
-`<div class="bg-black hover:bg-white ...">  <!-- ... --></div>`Style an element when it has focus using the `focus` variant:
+`<div class="bg-black hover:bg-white ...">  <!-- ... --></div>`
+Style an element when it has focus using the `focus` variant:
 
-`<input class="border-gray-300 focus:border-blue-400 ..." />`Style an element when it or one of its descendants has focus using the `focus-within` variant:
+`<input class="border-gray-300 focus:border-blue-400 ..." />`
+Style an element when it or one of its descendants has focus using the `focus-within` variant:
 
-`<div class="focus-within:shadow-lg ...">  <input type="text" /></div>`Style an element when it has been focused using the keyboard using the `focus-visible` variant:
+`<div class="focus-within:shadow-lg ...">  <input type="text" /></div>`
+Style an element when it has been focused using the keyboard using the `focus-visible` variant:
 
-`<button class="focus-visible:outline-2 ...">Submit</button>`Style an element when it is being pressed using the `active` variant:
+`<button class="focus-visible:outline-2 ...">Submit</button>`
+Style an element when it is being pressed using the `active` variant:
 
-`<button class="bg-blue-500 active:bg-blue-600 ...">Submit</button>`Style a link when it has already been visited using the `visited` variant:
+`<button class="bg-blue-500 active:bg-blue-600 ...">Submit</button>`
+Style a link when it has already been visited using the `visited` variant:
 
-`<a href="https://seinfeldquotes.com" class="text-blue-600 visited:text-purple-600 ..."> Inspiration </a>`Style an element if its ID matches the current URL fragment using the `target` variant:
+`<a href="https://seinfeldquotes.com" class="text-blue-600 visited:text-purple-600 ..."> Inspiration </a>`
+Style an element if its ID matches the current URL fragment using the `target` variant:
 
-`<div id="about" class="target:shadow-lg ...">  <!-- ... --></div>`Style an element if it's the first child using the `first` variant:
+`<div id="about" class="target:shadow-lg ...">  <!-- ... --></div>`
+Style an element if it's the first child using the `first` variant:
 
-`<ul>  {#each people as person}    <li class="py-4 first:pt-0 ...">      <!-- ... -->    </li>  {/each}</ul>`Style an element if it's the last child using the `last` variant:
+`<ul>  {#each people as person}    <li class="py-4 first:pt-0 ...">      <!-- ... -->    </li>  {/each}</ul>`
+Style an element if it's the last child using the `last` variant:
 
-`<ul>  {#each people as person}    <li class="py-4 last:pb-0 ...">      <!-- ... -->    </li>  {/each}</ul>`Style an element if it's the only child using the `only` variant:
+`<ul>  {#each people as person}    <li class="py-4 last:pb-0 ...">      <!-- ... -->    </li>  {/each}</ul>`
+Style an element if it's the only child using the `only` variant:
 
-`<ul>  {#each people as person}    <li class="py-4 only:py-0 ...">      <!-- ... -->    </li>  {/each}</ul>`Style an element if it's an oddly numbered child using the `odd` variant:
+`<ul>  {#each people as person}    <li class="py-4 only:py-0 ...">      <!-- ... -->    </li>  {/each}</ul>`
+Style an element if it's an oddly numbered child using the `odd` variant:
 
-`<table>  {#each people as person}    <tr class="bg-white odd:bg-gray-100 ...">      <!-- ... -->    </tr>  {/each}</table>`Style an element if it's an evenly numbered child using the `even` variant:
+`<table>  {#each people as person}    <tr class="bg-white odd:bg-gray-100 ...">      <!-- ... -->    </tr>  {/each}</table>`
+Style an element if it's an evenly numbered child using the `even` variant:
 
-`<table>  {#each people as person}    <tr class="bg-white even:bg-gray-100 ...">      <!-- ... -->    </tr>  {/each}</table>`Style an element if it's the first child of its type using the `first-of-type` variant:
+`<table>  {#each people as person}    <tr class="bg-white even:bg-gray-100 ...">      <!-- ... -->    </tr>  {/each}</table>`
+Style an element if it's the first child of its type using the `first-of-type` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="ml-2 first-of-type:ml-6 ...">      <!-- ... -->    </a>  {/each}</nav>`Style an element if it's the last child of its type using the `last-of-type` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="ml-2 first-of-type:ml-6 ...">      <!-- ... -->    </a>  {/each}</nav>`
+Style an element if it's the last child of its type using the `last-of-type` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mr-2 last-of-type:mr-6 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`Style an element if it's the only child of its type using the `only-of-type` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mr-2 last-of-type:mr-6 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`
+Style an element if it's the only child of its type using the `only-of-type` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 only-of-type:mx-6 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`Style an element at a specific position using the `nth` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 only-of-type:mx-6 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`
+Style an element at a specific position using the `nth` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-3:mx-6 nth-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`Style an element at a specific position from the end using the `nth-last` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-3:mx-6 nth-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`
+Style an element at a specific position from the end using the `nth-last` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-last-3:mx-6 nth-last-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`Style an element at a specific position, of the same type using the `nth-of-type` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-last-3:mx-6 nth-last-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`
+Style an element at a specific position, of the same type using the `nth-of-type` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-of-type-3:mx-6 nth-of-type-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`Style an element at a specific position from the end, of the same type using the `nth-last-of-type` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-of-type-3:mx-6 nth-of-type-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`
+Style an element at a specific position from the end, of the same type using the `nth-last-of-type` variant:
 
-`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-last-of-type-3:mx-6 nth-last-of-type-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`Style an element if it has no content using the `empty` variant:
+`<nav>  <img src="/logo.svg" alt="Vandelay Industries" />  {#each links as link}    <a href="#" class="mx-2 nth-last-of-type-3:mx-6 nth-last-of-type-[3n+1]:mx-7 ...">      <!-- ... -->    </a>  {/each}  <button>More</button></nav>`
+Style an element if it has no content using the `empty` variant:
 
-`<ul>  {#each people as person}    <li class="empty:hidden ...">{person.hobby}</li>  {/each}</ul>`Style an input when it's disabled using the `disabled` variant:
+`<ul>  {#each people as person}    <li class="empty:hidden ...">{person.hobby}</li>  {/each}</ul>`
+Style an input when it's disabled using the `disabled` variant:
 
-`<input class="disabled:opacity-75 ..." />`Style an input when it's enabled using the `enabled` variant, most helpful when you only want to apply another style when an element is not disabled:
+`<input class="disabled:opacity-75 ..." />`
+Style an input when it's enabled using the `enabled` variant, most helpful when you only want to apply another style when an element is not disabled:
 
-`<input class="enabled:hover:border-gray-400 disabled:opacity-75 ..." />`Style a checkbox or radio button when it's checked using the `checked` variant:
+`<input class="enabled:hover:border-gray-400 disabled:opacity-75 ..." />`
+Style a checkbox or radio button when it's checked using the `checked` variant:
 
-`<input type="checkbox" class="appearance-none checked:bg-blue-500 ..." />`Style a checkbox or radio button in an indeterminate state using the `indeterminate` variant:
+`<input type="checkbox" class="appearance-none checked:bg-blue-500 ..." />`
+Style a checkbox or radio button in an indeterminate state using the `indeterminate` variant:
 
-`<input type="checkbox" class="appearance-none indeterminate:bg-gray-300 ..." />`Style an option, checkbox or radio button that was the default value when the page initially loaded using the `default` variant:
+`<input type="checkbox" class="appearance-none indeterminate:bg-gray-300 ..." />`
+Style an option, checkbox or radio button that was the default value when the page initially loaded using the `default` variant:
 
-`<input type="checkbox" class="default:outline-2 ..." />`Style an input when it's optional using the `optional` variant:
+`<input type="checkbox" class="default:outline-2 ..." />`
+Style an input when it's optional using the `optional` variant:
 
-`<input class="border optional:border-red-500 ..." />`Style an input when it's required using the `required` variant:
+`<input class="border optional:border-red-500 ..." />`
+Style an input when it's required using the `required` variant:
 
-`<input required class="border required:border-red-500 ..." />`Style an input when it's valid using the `valid` variant:
+`<input required class="border required:border-red-500 ..." />`
+Style an input when it's valid using the `valid` variant:
 
-`<input required class="border valid:border-green-500 ..." />`Style an input when it's invalid using the `invalid` variant:
+`<input required class="border valid:border-green-500 ..." />`
+Style an input when it's invalid using the `invalid` variant:
 
-`<input required class="border invalid:border-red-500 ..." />`Style an input when it's valid and the user has interacted with it, using the `user-valid` variant:
+`<input required class="border invalid:border-red-500 ..." />`
+Style an input when it's valid and the user has interacted with it, using the `user-valid` variant:
 
-`<input required class="border user-valid:border-green-500" />`Style an input when it's invalid and the user has interacted with it, using the `user-invalid` variant:
+`<input required class="border user-valid:border-green-500" />`
+Style an input when it's invalid and the user has interacted with it, using the `user-invalid` variant:
 
-`<input required class="border user-invalid:border-red-500" />`Style an input when its value is within a specified range limit using the `in-range` variant:
+`<input required class="border user-invalid:border-red-500" />`
+Style an input when its value is within a specified range limit using the `in-range` variant:
 
-`<input min="1" max="5" class="in-range:border-green-500 ..." />`Style an input when its value is outside of a specified range limit using the `out-of-range` variant:
+`<input min="1" max="5" class="in-range:border-green-500 ..." />`
+Style an input when its value is outside of a specified range limit using the `out-of-range` variant:
 
-`<input min="1" max="5" class="out-of-range:border-red-500 ..." />`Style an input when the placeholder is shown using the `placeholder-shown` variant:
+`<input min="1" max="5" class="out-of-range:border-red-500 ..." />`
+Style an input when the placeholder is shown using the `placeholder-shown` variant:
 
-`<input class="placeholder-shown:border-gray-500 ..." placeholder="you@example.com" />`Style the content of a `<details>` element using the `details-content` variant:
+`<input class="placeholder-shown:border-gray-500 ..." placeholder="you@example.com" />`
+Style the content of a `<details>` element using the `details-content` variant:
 
-`<details class="details-content:bg-gray-100 ...">  <summary>Details</summary>  This is a secret.</details>`Style an input when it has been autofilled by the browser using the `autofill` variant:
+`<details class="details-content:bg-gray-100 ...">  <summary>Details</summary>  This is a secret.</details>`
+Style an input when it has been autofilled by the browser using the `autofill` variant:
 
-`<input class="autofill:bg-yellow-200 ..." />`Style an input when it is read-only using the `read-only` variant:
+`<input class="autofill:bg-yellow-200 ..." />`
+Style an input when it is read-only using the `read-only` variant:
 
 `<input class="read-only:bg-gray-100 ..." />`
 

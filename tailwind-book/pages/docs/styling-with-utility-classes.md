@@ -3,7 +3,7 @@ type: Web Page
 title: Styling with utility classes - Core concepts - Tailwind CSS
 description: Building complex components from a constrained set of primitive utilities.
 resource: https://tailwindcss.com/docs/styling-with-utility-classes
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Core concepts
@@ -14,7 +14,8 @@ You style things with Tailwind by combining many single-purpose presentational c
 
 For example, in the UI above we've used:
 
-`flex`, `shrink-0`, and `p-6`) to control the overall layout`max-w-sm` and `mx-auto`) to constrain the card width and center it horizontally`bg-white`, `rounded-xl`, and `shadow-lg`) to style the card's appearance`size-12`) to set the width and height of the logo image`gap-x-4`) to handle the spacing between the logo and the text`text-xl`, `text-black`, `font-medium`, etc.) to style the card textStyling things this way contradicts a lot of traditional best practices, but once you try it you'll quickly notice some really important benefits:
+`flex`, `shrink-0`, and `p-6`) to control the overall layout`max-w-sm` and `mx-auto`) to constrain the card width and center it horizontally`bg-white`, `rounded-xl`, and `shadow-lg`) to style the card's appearance`size-12`) to set the width and height of the logo image`gap-x-4`) to handle the spacing between the logo and the text`text-xl`, `text-black`, `font-medium`, etc.) to style the card text
+Styling things this way contradicts a lot of traditional best practices, but once you try it you'll quickly notice some really important benefits:
 
 These benefits make a big difference on small projects, but they are even more valuable for teams working on long-running projects at scale.
 
@@ -32,13 +33,16 @@ These prefixes are called [variants](/docs/hover-focus-and-other-states) in Tail
 
 Here's what the generated CSS looks like for the `hover:bg-sky-700` class:
 
-`.hover\:bg-sky-700 {  &:hover {    background-color: var(--color-sky-700);  }}`Notice how this class does nothing *unless* the element is hovered? Its *only* job is to provide hover styles — nothing else.
+`.hover\:bg-sky-700 {  &:hover {    background-color: var(--color-sky-700);  }}`
+Notice how this class does nothing *unless* the element is hovered? Its *only* job is to provide hover styles — nothing else.
 
 This is different from how you'd write traditional CSS, where a single class would usually provide the styles for many states:
 
-`<button class="btn">Save changes</button><style>  .btn {    background-color: var(--color-sky-500);    &:hover {      background-color: var(--color-sky-700);    }  }</style>`You can even stack variants in Tailwind to apply a utility when multiple conditions match, like combining `hover:` and `disabled:`
+`<button class="btn">Save changes</button><style>  .btn {    background-color: var(--color-sky-500);    &:hover {      background-color: var(--color-sky-700);    }  }</style>`
+You can even stack variants in Tailwind to apply a utility when multiple conditions match, like combining `hover:` and `disabled:`
 
-`<button class="bg-sky-500 disabled:hover:bg-sky-500 ...">Save changes</button>`Learn more in the documentation styling elements on [hover, focus, and other states](/docs/hover-focus-and-other-states).
+`<button class="bg-sky-500 disabled:hover:bg-sky-500 ...">Save changes</button>`
+Learn more in the documentation styling elements on [hover, focus, and other states](/docs/hover-focus-and-other-states).
 
 Just like hover and focus states, you can style elements at different breakpoints by prefixing any utility with the breakpoint where you want that style to apply:
 
@@ -46,19 +50,23 @@ Resize this example to see the layout change
 
 In the example above, the `sm:` prefix makes sure that `grid-cols-3` only triggers at the `sm` breakpoint and above, which is 40rem out of the box:
 
-`.sm\:grid-cols-3 {  @media (width >= 40rem) {    grid-template-columns: repeat(3, minmax(0, 1fr));  }}`Learn more in the [responsive design](/docs/responsive-design) documentation.
+`.sm\:grid-cols-3 {  @media (width >= 40rem) {    grid-template-columns: repeat(3, minmax(0, 1fr));  }}`
+Learn more in the [responsive design](/docs/responsive-design) documentation.
 
 Styling an element in dark mode is just a matter of adding the `dark:` prefix to any utility you want to apply when dark mode is active:
 
 Just like with hover states or media queries, the important thing to understand is that a single utility class will never include *both* the light and dark styles — you style things in dark mode by using multiple classes, one for the light mode styles and another for the dark mode styles.
 
-`.dark\:bg-gray-800 {  @media (prefers-color-scheme: dark) {    background-color: var(--color-gray-800);  }}`Learn more in the [dark mode](/docs/dark-mode) documentation.
+`.dark\:bg-gray-800 {  @media (prefers-color-scheme: dark) {    background-color: var(--color-gray-800);  }}`
+Learn more in the [dark mode](/docs/dark-mode) documentation.
 
 A lot of the time with Tailwind you'll even use multiple classes to build up the value for a single CSS property, for example adding multiple filters to an element:
 
-`<div class="blur-sm grayscale">  <!-- ... --></div>`Both of these effects rely on the `filter` property in CSS, so Tailwind uses CSS variables to make it possible to compose these effects together:
+`<div class="blur-sm grayscale">  <!-- ... --></div>`
+Both of these effects rely on the `filter` property in CSS, so Tailwind uses CSS variables to make it possible to compose these effects together:
 
-`.blur-sm {  --tw-blur: blur(var(--blur-sm));  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-grayscale,);}.grayscale {  --tw-grayscale: grayscale(100%);  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-grayscale,);}`The generated CSS above is slightly simplified, but the trick here is that each utility sets a CSS variable just for the effect it's meant to apply. Then the `filter` property looks at all of these variables, falling back to nothing if the variable hasn't been set.
+`.blur-sm {  --tw-blur: blur(var(--blur-sm));  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-grayscale,);}.grayscale {  --tw-grayscale: grayscale(100%);  filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-grayscale,);}`
+The generated CSS above is slightly simplified, but the trick here is that each utility sets a CSS variable just for the effect it's meant to apply. Then the `filter` property looks at all of these variables, falling back to nothing if the variable hasn't been set.
 
 Tailwind uses this same approach for [gradients](/docs/background-image#adding-a-linear-gradient), [shadow colors](/docs/box-shadow#setting-the-shadow-color), [transforms](/docs/translate), and more.
 
@@ -66,19 +74,24 @@ Many utilities in Tailwind are driven by [theme variables](/docs/theme), like `b
 
 When you need to use a one-off value outside of your theme, use the special square bracket syntax for specifying arbitrary values:
 
-`<button class="bg-[#316ff6] ...">  Sign in with Facebook</button>`This can be useful for one-off colors outside of your color palette *(like the Facebook blue above)*, but also when you need a complex custom value like a very specific grid:
+`<button class="bg-[#316ff6] ...">  Sign in with Facebook</button>`
+This can be useful for one-off colors outside of your color palette *(like the Facebook blue above)*, but also when you need a complex custom value like a very specific grid:
 
-`<div class="grid grid-cols-[24rem_2.5rem_minmax(0,1fr)]">  <!-- ... --></div>`It's also useful when you need to use CSS features like `calc()`, even if you are using your theme values:
+`<div class="grid grid-cols-[24rem_2.5rem_minmax(0,1fr)]">  <!-- ... --></div>`
+It's also useful when you need to use CSS features like `calc()`, even if you are using your theme values:
 
-`<div class="max-h-[calc(100dvh-(--spacing(6)))]">  <!-- ... --></div>`There's even a syntax for generating completely arbitrary CSS including an arbitrary property name, which can be useful for setting CSS variables:
+`<div class="max-h-[calc(100dvh-(--spacing(6)))]">  <!-- ... --></div>`
+There's even a syntax for generating completely arbitrary CSS including an arbitrary property name, which can be useful for setting CSS variables:
 
-`<div class="[--gutter-width:1rem] lg:[--gutter-width:2rem]">  <!-- ... --></div>`Learn more in the documentation on [using arbitrary values](/docs/adding-custom-styles#using-arbitrary-values).
+`<div class="[--gutter-width:1rem] lg:[--gutter-width:2rem]">  <!-- ... --></div>`
+Learn more in the documentation on [using arbitrary values](/docs/adding-custom-styles#using-arbitrary-values).
 
 Tailwind CSS isn't one big static stylesheet like you might be used to with other CSS frameworks — it generates the CSS needed based on the classes you're actually using when you compile your CSS.
 
 It does this by scanning all of the files in your project looking for any symbol that looks like it could be a class name:
 
-`export default function Button({ size, children }) {  let sizeClasses = {    md: "px-4 py-2 rounded-md text-base",    lg: "px-5 py-3 rounded-lg text-lg",  }[size];  return (    <button type="button" className={`font-bold ${sizeClasses}`}>      {children}    </button>  );}`After it's found all of the potential classes, Tailwind generates the CSS for each one and compiles it all into one stylesheet of just the styles you actually need.
+``export default function Button({ size, children }) {  let sizeClasses = {    md: "px-4 py-2 rounded-md text-base",    lg: "px-5 py-3 rounded-lg text-lg",  }[size];  return (    <button type="button" className={`font-bold ${sizeClasses}`}>      {children}    </button>  );}``
+After it's found all of the potential classes, Tailwind generates the CSS for each one and compiles it all into one stylesheet of just the styles you actually need.
 
 Since the CSS is generated based on the class name, Tailwind can recognize classes using arbitrary values like `bg-[#316ff6]` and generate the necessary CSS, even when the value isn't part of your theme.
 
@@ -88,19 +101,25 @@ Sometimes you need to style an element under a combination of conditions, for ex
 
 Here's an example of what that looks like with Tailwind:
 
-`<button class="dark:lg:data-current:hover:bg-indigo-600 ...">  <!-- ... --></button>``@media (prefers-color-scheme: dark) and (width >= 64rem) {  button[data-current]:hover {    background-color: var(--color-indigo-600);  }}`Tailwind also supports things like `group-hover`, which let you style an element when a specific parent is hovered:
+`<button class="dark:lg:data-current:hover:bg-indigo-600 ...">  <!-- ... --></button>``@media (prefers-color-scheme: dark) and (width >= 64rem) {  button[data-current]:hover {    background-color: var(--color-indigo-600);  }}`
+Tailwind also supports things like `group-hover`, which let you style an element when a specific parent is hovered:
 
-`<a href="#" class="group rounded-lg p-8">  <!-- ... -->  <span class="group-hover:underline">Read more…</span></a>``@media (hover: hover) {  a:hover span {    text-decoration-line: underline;  }}`This `group-*` syntax works with other variants too, like `group-focus`, `group-active`, and [many more](/docs/hover-focus-and-other-states#styling-based-on-parent-state).
+`<a href="#" class="group rounded-lg p-8">  <!-- ... -->  <span class="group-hover:underline">Read more…</span></a>``@media (hover: hover) {  a:hover span {    text-decoration-line: underline;  }}`
+This `group-*` syntax works with other variants too, like `group-focus`, `group-active`, and [many more](/docs/hover-focus-and-other-states#styling-based-on-parent-state).
 
 For really complex scenarios *(especially when styling HTML you don't control)*, Tailwind supports [arbitrary variants](/docs/adding-custom-styles#arbitrary-variants) which let you write any selector you want, directly in a class name:
 
-`<div class="[&>[data-active]+span]:text-blue-600 ...">  <span data-active><!-- ... --></span>  <span>This text will be blue</span></div>``div > [data-active] + span {  color: var(--color-blue-600);}`Inline styles are still very useful in Tailwind CSS projects, particularly when a value is coming from a dynamic source like a database or API:
+`<div class="[&>[data-active]+span]:text-blue-600 ...">  <span data-active><!-- ... --></span>  <span>This text will be blue</span></div>``div > [data-active] + span {  color: var(--color-blue-600);}`
+Inline styles are still very useful in Tailwind CSS projects, particularly when a value is coming from a dynamic source like a database or API:
 
-`export function BrandedButton({ buttonColor, textColor, children }) {  return (    <button      style={{        backgroundColor: buttonColor,        color: textColor,      }}      className="rounded-md px-3 py-1.5 font-medium"    >      {children}    </button>  );}`You might also reach for an inline style for very complicated arbitrary values that are difficult to read when formatted as a class name:
+`export function BrandedButton({ buttonColor, textColor, children }) {  return (    <button      style={{        backgroundColor: buttonColor,        color: textColor,      }}      className="rounded-md px-3 py-1.5 font-medium"    >      {children}    </button>  );}`
+You might also reach for an inline style for very complicated arbitrary values that are difficult to read when formatted as a class name:
 
-`<div class="grid-[2fr_max(0,var(--gutter-width))_calc(var(--gutter-width)+10px)]"><div style="grid-template-columns: 2fr max(0, var(--gutter-width)) calc(var(--gutter-width) + 10px)">  <!-- ... --></div>`Another useful pattern is setting CSS variables based on dynamic sources using inline styles, then referencing those variables with utility classes:
+`<div class="grid-[2fr_max(0,var(--gutter-width))_calc(var(--gutter-width)+10px)]"><div style="grid-template-columns: 2fr max(0, var(--gutter-width)) calc(var(--gutter-width) + 10px)">  <!-- ... --></div>`
+Another useful pattern is setting CSS variables based on dynamic sources using inline styles, then referencing those variables with utility classes:
 
-`export function BrandedButton({ buttonColor, buttonColorHover, textColor, children }) {  return (    <button      style={{        "--bg-color": buttonColor,        "--bg-color-hover": buttonColorHover,        "--text-color": textColor,      }}      className="bg-(--bg-color) text-(--text-color) hover:bg-(--bg-color-hover) ..."    >      {children}    </button>  );}`When you build entire projects with just utility classes, you'll inevitably find yourself repeating certain patterns to recreate the same design in different places.
+`export function BrandedButton({ buttonColor, buttonColorHover, textColor, children }) {  return (    <button      style={{        "--bg-color": buttonColor,        "--bg-color-hover": buttonColorHover,        "--text-color": textColor,      }}      className="bg-(--bg-color) text-(--text-color) hover:bg-(--bg-color-hover) ..."    >      {children}    </button>  );}`
+When you build entire projects with just utility classes, you'll inevitably find yourself repeating certain patterns to recreate the same design in different places.
 
 For example, here the utility classes for each avatar image are repeated five separate times:
 
@@ -130,15 +149,19 @@ Again though, for anything that's more complicated than just a single HTML eleme
 
 When you add two classes that target the same CSS property, the class that appears later in the stylesheet wins. So in this example, the element will receive `display: grid` even though `flex` comes last in the actual `class` attribute:
 
-`<div class="grid flex">  <!-- ... --></div>``.flex {  display: flex;}.grid {  display: grid;}`In general, you should just never add two conflicting classes to the same element — only ever add the one you actually want to take effect:
+`<div class="grid flex">  <!-- ... --></div>``.flex {  display: flex;}.grid {  display: grid;}`
+In general, you should just never add two conflicting classes to the same element — only ever add the one you actually want to take effect:
 
-`export function Example({ gridLayout }) {  return <div className={gridLayout ? "grid" : "flex"}>{/* ... */}</div>;}`Using component-based libraries like React or Vue, this often means exposing specific props for styling customizations instead of letting consumers add extra classes from outside of a component, since those styles will often conflict.
+`export function Example({ gridLayout }) {  return <div className={gridLayout ? "grid" : "flex"}>{/* ... */}</div>;}`
+Using component-based libraries like React or Vue, this often means exposing specific props for styling customizations instead of letting consumers add extra classes from outside of a component, since those styles will often conflict.
 
 When you really need to force a specific utility class to take effect and have no other means of managing the specificity, you can add `!` to the end of the class name to make all of the declarations `!important`:
 
-`<div class="bg-teal-500 bg-red-500!">  <!-- ... --></div>``.bg-red-500\! {  background-color: var(--color-red-500) !important;}.bg-teal-500 {  background-color: var(--color-teal-500);}`If you're adding Tailwind to a project that has existing complex CSS with high specificity rules, you can use the `important` flag when importing Tailwind to mark *all* utilities as `!important`:
+`<div class="bg-teal-500 bg-red-500!">  <!-- ... --></div>``.bg-red-500\! {  background-color: var(--color-red-500) !important;}.bg-teal-500 {  background-color: var(--color-teal-500);}`
+If you're adding Tailwind to a project that has existing complex CSS with high specificity rules, you can use the `important` flag when importing Tailwind to mark *all* utilities as `!important`:
 
-`@import "tailwindcss" important;``@layer utilities {  .flex {    display: flex !important;  }  .gap-4 {    gap: 1rem !important;  }  .underline {    text-decoration-line: underline !important;  }}`If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the `prefix` option:
+`@import "tailwindcss" important;``@layer utilities {  .flex {    display: flex !important;  }  .gap-4 {    gap: 1rem !important;  }  .underline {    text-decoration-line: underline !important;  }}`
+If your project has class names that conflict with Tailwind CSS utilities, you can prefix all Tailwind-generated classes and CSS variables using the `prefix` option:
 
 `@import "tailwindcss" prefix(tw);``@layer theme {  :root {    --tw-color-red-500: oklch(0.637 0.237 25.331);  }}@layer utilities {  .tw\:text-red-500 {    color: var(--tw-color-red-500);  }}`
 

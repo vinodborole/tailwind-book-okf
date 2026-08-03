@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://tailwindcss.com/docs/installation/using-vite",
-  "updated_at": "2026-07-27T09:26:23.389723+00:00",
+  "updated_at": "2026-08-03T09:00:03.520687+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 90,
@@ -16,529 +16,529 @@
       "path": "pages/docs/adding-custom-styles.md",
       "url": "https://tailwindcss.com/docs/adding-custom-styles",
       "title": "Adding custom styles - Core concepts - Tailwind CSS",
-      "hash": "3ef84adab786ac70bcb2117c7930378d609f6a7b333bb6ec993cbc6213105a16"
+      "hash": "4e239b88c71dad04d4aea93293a09b8455af82f3f22d51a19765e290511b7f7c"
     },
     {
       "path": "pages/docs/align-content.md",
       "url": "https://tailwindcss.com/docs/align-content",
       "title": "align-content - Flexbox & Grid - Tailwind CSS",
-      "hash": "965dddc6724e297c05ae7c51fda0316941244bb266cf6ecdc87c234e0ca21598"
+      "hash": "31c36e64210e9f4986b1fe37e3bfd11561576585b91546aed87a6b9400a51783"
     },
     {
       "path": "pages/docs/align-items.md",
       "url": "https://tailwindcss.com/docs/align-items",
       "title": "align-items - Flexbox & Grid - Tailwind CSS",
-      "hash": "cc94b1564fee646abe99f0ab157e6be2217c063a98be59b7148a65af0732a695"
+      "hash": "21b07695b16dfbeded19cb4a8478bd3b1a430e53581cda3811297b5521dc2db1"
     },
     {
       "path": "pages/docs/align-self.md",
       "url": "https://tailwindcss.com/docs/align-self",
       "title": "align-self - Flexbox & Grid - Tailwind CSS",
-      "hash": "0ea283f36957b775eed3a74ecbacb413f094f53efeb85f2c0ff9a99dc6dd1c6c"
+      "hash": "3383dbe147b5fab668d807c30dc62f8e553eeb765b5d0d041b9d87c6911f46e2"
     },
     {
       "path": "pages/docs/aspect-ratio.md",
       "url": "https://tailwindcss.com/docs/aspect-ratio",
       "title": "aspect-ratio - Layout - Tailwind CSS",
-      "hash": "5dcb93b15eb888e12e4b66591cb3e35fc1debd32a00f6de8537f48e952ad2ef9"
+      "hash": "b1f9425ecd2708facc42b3de4cec052d09bd9bdf26c5ce41d15cb6a7eccd4eeb"
     },
     {
       "path": "pages/docs/block-size.md",
       "url": "https://tailwindcss.com/docs/block-size",
       "title": "block-size - Sizing - Tailwind CSS",
-      "hash": "ec4bac8a780ad645244264ff2408416bdf53bae542240d4120c9924c41baa42b"
+      "hash": "d28fcd6beed1585d1a8f60c6ddcce13a1e498ff69b5bfbc9356e67e732ff4b95"
     },
     {
       "path": "pages/docs/box-decoration-break.md",
       "url": "https://tailwindcss.com/docs/box-decoration-break",
       "title": "box-decoration-break - Layout - Tailwind CSS",
-      "hash": "9f041aa9a12632ad317332e87b49839cf85435259ee664771e0469f891ca4b5c"
+      "hash": "b264d726bc6a9662ff11ada093bd51e0c433f4208d624db4df250b51b434b361"
     },
     {
       "path": "pages/docs/box-sizing.md",
       "url": "https://tailwindcss.com/docs/box-sizing",
       "title": "box-sizing - Layout - Tailwind CSS",
-      "hash": "6c52d8101c0e3ea7ee76024c022bf4a0f22ddb950bede06072bb81e16c5fd5f6"
+      "hash": "17933136f05b7feff9e55ab17c465970d9edf2cbe4e0cd99c15a4bc7b32914b5"
     },
     {
       "path": "pages/docs/break-after.md",
       "url": "https://tailwindcss.com/docs/break-after",
       "title": "break-after - Layout - Tailwind CSS",
-      "hash": "2dfc0ab883f821bbf00c75015a710c8fa01b501f9dc0b5a1931d1c68ac84cf3e"
+      "hash": "1318977e56d16af4146be9a1a1f4c4c2da2649c9a834ba7a2fb7d87be3a18099"
     },
     {
       "path": "pages/docs/break-before.md",
       "url": "https://tailwindcss.com/docs/break-before",
       "title": "break-before - Layout - Tailwind CSS",
-      "hash": "2b666e804af8302a9e2ae5b1f89e746294c6c672ef465e6f4d27b8ff6fc064f2"
+      "hash": "5c2266cf490315fc5e2d822bd1a49acba4194554b5f929d793ad84fa3fdfd7ef"
     },
     {
       "path": "pages/docs/break-inside.md",
       "url": "https://tailwindcss.com/docs/break-inside",
       "title": "break-inside - Layout - Tailwind CSS",
-      "hash": "f7f95bc69818e40b30ad5ae2e093477cb7de265c00059d3b69fb01e17cee30d0"
+      "hash": "22fcef7b3557deca37d214ccd7eb116ea50f3cfe3eec599a7360f12e169a65a5"
     },
     {
       "path": "pages/docs/clear.md",
       "url": "https://tailwindcss.com/docs/clear",
       "title": "clear - Layout - Tailwind CSS",
-      "hash": "11c36cb24111a41bb231321816af628d04175f571319f78e4139a9314b681e54"
+      "hash": "a6121d77dc98889d48c3f546488b7e033239d8889a48c7ae93f4f2c9484f80eb"
     },
     {
       "path": "pages/docs/color.md",
       "url": "https://tailwindcss.com/docs/color",
       "title": "color - Typography - Tailwind CSS",
-      "hash": "3377b716d19b94f1ff113379ead2d476fa8e700dc3b9fef1973a69e2f4d8585e"
+      "hash": "7b0d5e483767feb26d03b2d3a248081e5307664cf479d13ca1420665cad67f7f"
     },
     {
       "path": "pages/docs/colors.md",
       "url": "https://tailwindcss.com/docs/colors",
       "title": "Colors - Core concepts - Tailwind CSS",
-      "hash": "5e60271b2990c81eb795f891b482077023151e2a812db24068078025eba9a731"
+      "hash": "eae25c869b7c712af5843aab5df9ff2c1f0778a018b47c7d6966574a7cb44bf0"
     },
     {
       "path": "pages/docs/columns.md",
       "url": "https://tailwindcss.com/docs/columns",
       "title": "columns - Layout - Tailwind CSS",
-      "hash": "c9861e90bbf97825186ed731c642cd38fd21a19981df9df9fd28543f576dd67c"
+      "hash": "fc829222ffcec7704bc0b627c5ab1e6418d81bcad8642a5f36809737109a67ac"
     },
     {
       "path": "pages/docs/compatibility.md",
       "url": "https://tailwindcss.com/docs/compatibility",
       "title": "Compatibility - Getting started - Tailwind CSS",
-      "hash": "7c8c6ae126f6682d9b261fe4e629757b49829a90bac8ee37917dbf0f014b2593"
+      "hash": "3bbb881cddbfe0ffdb2a4fd9d1b36f597d76952f6c44b52e021756bc7b2835be"
     },
     {
       "path": "pages/docs/dark-mode.md",
       "url": "https://tailwindcss.com/docs/dark-mode",
       "title": "Dark mode - Core concepts - Tailwind CSS",
-      "hash": "a3f72d1bd58cf4e3d2888646f207d5530fc296ff4e93a8dbf8273736b41eb5e4"
+      "hash": "30252ae4d2d8fb83bbc0d78d21ad1b629c5c5c61957c4482e3bec96e9797c137"
     },
     {
       "path": "pages/docs/detecting-classes-in-source-files.md",
       "url": "https://tailwindcss.com/docs/detecting-classes-in-source-files",
       "title": "Detecting classes in source files - Core concepts - Tailwind CSS",
-      "hash": "b6d884b23bbee493ed69501cb088f0536fec80a8120f112cd5a6b0de446c54dc"
+      "hash": "a320394f290026e1d4ec4a2d9df67da4ac964d71e7c08a26bba5629c3ae9feb7"
     },
     {
       "path": "pages/docs/display.md",
       "url": "https://tailwindcss.com/docs/display",
       "title": "display - Layout - Tailwind CSS",
-      "hash": "c924bfc13b7a3b0a564099385f1b909ae87017cacaf44910d7a7af849667aeb3"
+      "hash": "566c7a6e12d8bfe8de63b3621f23af1779352c46873fc1709f0ff40783028421"
     },
     {
       "path": "pages/docs/editor-setup.md",
       "url": "https://tailwindcss.com/docs/editor-setup",
       "title": "Editor setup - Getting started - Tailwind CSS",
-      "hash": "2c6d944e7a8922bfdea38e5bd04e42af4fd9d7a28e8a6153de8f198165c13803"
+      "hash": "199113bb26cae8210a4a570a818a610bbdfc13ebcaa0d858b10af1cf0c1b9908"
     },
     {
       "path": "pages/docs/flex-basis.md",
       "url": "https://tailwindcss.com/docs/flex-basis",
       "title": "flex-basis - Flexbox & Grid - Tailwind CSS",
-      "hash": "80af52dbce25e2b39c3d05c3eb197df07a0705686eb2f5ad4879b96d26902aa0"
+      "hash": "d0a6c1e3fcf140495e3555aa3ce0464c82eb1fa391492987a28777b25441c613"
     },
     {
       "path": "pages/docs/flex-direction.md",
       "url": "https://tailwindcss.com/docs/flex-direction",
       "title": "flex-direction - Flexbox & Grid - Tailwind CSS",
-      "hash": "2a130cfc827e2dcf253689360a22dec284748e894852ceef01308e091339bbcb"
+      "hash": "88888bb168015cee3550149f64a41480fbbc5aa7f215ec226a4277eb52f05d96"
     },
     {
       "path": "pages/docs/flex-grow.md",
       "url": "https://tailwindcss.com/docs/flex-grow",
       "title": "flex-grow - Flexbox & Grid - Tailwind CSS",
-      "hash": "a9bd682c921a4383bc319372f8ce337ba6b43d83a09d2bcb41d6edc5b351f09c"
+      "hash": "aa96a3cabb91f9641860591733d523c51db2054e3ee3224b13bf15592f8c248a"
     },
     {
       "path": "pages/docs/flex-shrink.md",
       "url": "https://tailwindcss.com/docs/flex-shrink",
       "title": "flex-shrink - Flexbox & Grid - Tailwind CSS",
-      "hash": "dac4cf74fbf11749be6e8d671ddfedcc7ac505c1f889d06b99330731c015d655"
+      "hash": "35f206d658852fa67888fed71e6190ec2f278b8d59d162ded117a8eb8db38a2c"
     },
     {
       "path": "pages/docs/flex-wrap.md",
       "url": "https://tailwindcss.com/docs/flex-wrap",
       "title": "flex-wrap - Flexbox & Grid - Tailwind CSS",
-      "hash": "c8b9cc6f0eab975612767cef26eb03e62d4b68f59e6fab2fa7cf4c08ca8180bd"
+      "hash": "15dc7c81be5ebf027b3aef3ea91615aaa348031f8326ba419df4f4b67a2a4649"
     },
     {
       "path": "pages/docs/flex.md",
       "url": "https://tailwindcss.com/docs/flex",
       "title": "flex - Flexbox & Grid - Tailwind CSS",
-      "hash": "f1d61c0b8f6aabc630c3afab946b5b4f91fb0768eb09296940290585f84e91d5"
+      "hash": "45201d93d5363f818f1783c49cfba541f374c4ff27120d94081449dd46d9f2df"
     },
     {
       "path": "pages/docs/float.md",
       "url": "https://tailwindcss.com/docs/float",
       "title": "float - Layout - Tailwind CSS",
-      "hash": "2775cb396e4dc4880eefe110dcccaa7467d679e47c3e8f3c3857ea411f0695fe"
+      "hash": "04a9d33738a52d39a0689a67955f27b6063b951b99497d4cc596aec38c5c8cce"
     },
     {
       "path": "pages/docs/font-family.md",
       "url": "https://tailwindcss.com/docs/font-family",
       "title": "font-family - Typography - Tailwind CSS",
-      "hash": "100016405adbe024d85b9135a19488994fd688fa7b6091320db57d94ae1fcc33"
+      "hash": "9e46493ac1c1872e58080444df6e1cefa8aa710b2ec441047be9e8e25a9c7c1d"
     },
     {
       "path": "pages/docs/font-feature-settings.md",
       "url": "https://tailwindcss.com/docs/font-feature-settings",
       "title": "font-feature-settings - Typography - Tailwind CSS",
-      "hash": "d7f3278946ff4503c345fc1aa6f7cee6efdbcd485197e055541f560f6454fa0d"
+      "hash": "6c9a5fa7fff6fff1355809dd6dcb903a279fc4aa30aa9b2b87a5754dfe5a4464"
     },
     {
       "path": "pages/docs/font-size.md",
       "url": "https://tailwindcss.com/docs/font-size",
       "title": "font-size - Typography - Tailwind CSS",
-      "hash": "49bb2e4478999c093b2c102deeaa52db61be2288ff539108d17b94bd4bfb5079"
+      "hash": "a0bcd31e05b4af371d9071a41d3b5137d1a9aabf57c18b9e59bd0953ee38cc48"
     },
     {
       "path": "pages/docs/font-smoothing.md",
       "url": "https://tailwindcss.com/docs/font-smoothing",
       "title": "font-smoothing - Typography - Tailwind CSS",
-      "hash": "0786b1f27484c5d0e5d8ddc8595cba00ddd141d8238b7723a69fec1c1807ca59"
+      "hash": "5e4d7d023c0470957c973b14e4736684d299fdeceda4bb3dd4477907fa9c90ea"
     },
     {
       "path": "pages/docs/font-stretch.md",
       "url": "https://tailwindcss.com/docs/font-stretch",
       "title": "font-stretch - Typography - Tailwind CSS",
-      "hash": "d580858173ec993a867edee825350f0ed565b814b9e5067a5bde0e7e56e3bd86"
+      "hash": "4e81783d2fdc712a574f099e4b5615b6b7ad1f052965037f8a7685ecce8cfbc8"
     },
     {
       "path": "pages/docs/font-style.md",
       "url": "https://tailwindcss.com/docs/font-style",
       "title": "font-style - Typography - Tailwind CSS",
-      "hash": "99a7fd116678870d37f02216fc97fb968c2fd27f872bc1828071f20e6ed917ec"
+      "hash": "2d5354a1182715bc2e7fce9c7336d323838a152e63b716f8457ebcd16c30b780"
     },
     {
       "path": "pages/docs/font-variant-numeric.md",
       "url": "https://tailwindcss.com/docs/font-variant-numeric",
       "title": "font-variant-numeric - Typography - Tailwind CSS",
-      "hash": "58070b44ee1fb292fa5f46b0ea70558243adefbed9eee253bcd14182482f0469"
+      "hash": "770dbc73badff3d85a6f0c6c50d25696adc2a1899ffdad8636924b94644665eb"
     },
     {
       "path": "pages/docs/font-weight.md",
       "url": "https://tailwindcss.com/docs/font-weight",
       "title": "font-weight - Typography - Tailwind CSS",
-      "hash": "cdf48e8ef5af410b63c31d8f39b4b538da1a1656e4e1f0805edfa33db6ee692c"
+      "hash": "417cf01cc134d6a1ac2ac56b94b10b566a0157c675990e94e44d0ea429fb9fc1"
     },
     {
       "path": "pages/docs/functions-and-directives.md",
       "url": "https://tailwindcss.com/docs/functions-and-directives",
       "title": "Functions and directives - Core concepts - Tailwind CSS",
-      "hash": "946a710bc5a93c8ccfdec25e81e9c15e6dc10a8338c5469a5acd7df3a17b19a4"
+      "hash": "804e7a42ac47517d6974f109b9815c26e766379256197ed9a41455949c49e6c5"
     },
     {
       "path": "pages/docs/gap.md",
       "url": "https://tailwindcss.com/docs/gap",
       "title": "gap - Flexbox & Grid - Tailwind CSS",
-      "hash": "f8ccd0bacfdbddc50963d62cf965918d004ce4ce7c2dd53f365093c5dfc0eeee"
+      "hash": "2dad5ee0c389a53f51b493de5e22c895aeef2521022a07f207b87e35d77d7e83"
     },
     {
       "path": "pages/docs/grid-auto-columns.md",
       "url": "https://tailwindcss.com/docs/grid-auto-columns",
       "title": "grid-auto-columns - Flexbox & Grid - Tailwind CSS",
-      "hash": "7a33e35b1f1ff59bd4c128ebecced9b2a56e7fd9c25cf7f031f94dfc95f0c14b"
+      "hash": "00050d3ba9d8bfff83e77267680ec435fff3284cfd58324124c2343e0d200e51"
     },
     {
       "path": "pages/docs/grid-auto-flow.md",
       "url": "https://tailwindcss.com/docs/grid-auto-flow",
       "title": "grid-auto-flow - Flexbox & Grid - Tailwind CSS",
-      "hash": "251d2115d180d56784209f24649fe5d7ce47223f109a385a971159024ecaca59"
+      "hash": "c5af7ac9a4bf29f2ecb52679f307245461265e839ad0b2c2d9d77cc3df87cb87"
     },
     {
       "path": "pages/docs/grid-auto-rows.md",
       "url": "https://tailwindcss.com/docs/grid-auto-rows",
       "title": "grid-auto-rows - Flexbox & Grid - Tailwind CSS",
-      "hash": "b955effedd414fdf53090cd55fe775ff93c50c1c2273781c29cca66b91520783"
+      "hash": "590a1f15a41fc8cb0b233e40e92ef145d3b0e6942366d3f6d2931dc87cbdcb3e"
     },
     {
       "path": "pages/docs/grid-column.md",
       "url": "https://tailwindcss.com/docs/grid-column",
       "title": "grid-column - Flexbox & Grid - Tailwind CSS",
-      "hash": "918f1e40d79a2d359de0d27b541a75acb89df0146ba42e841c9a3619134c1cf2"
+      "hash": "9fad503ba1284af6e0fa4e21a26684aebb41191998398c45184dfb9edef3e625"
     },
     {
       "path": "pages/docs/grid-row.md",
       "url": "https://tailwindcss.com/docs/grid-row",
       "title": "grid-row - Flexbox & Grid - Tailwind CSS",
-      "hash": "8854e84b5750ce807b3db7f45749884d86da5676a3d040c52bdb59433832b206"
+      "hash": "be0519fce645d34f7edbc9c9f0ee97ec7ef7b4544ea405e8a35e51be8bbcfe24"
     },
     {
       "path": "pages/docs/grid-template-columns.md",
       "url": "https://tailwindcss.com/docs/grid-template-columns",
       "title": "grid-template-columns - Flexbox & Grid - Tailwind CSS",
-      "hash": "3f4299712dff4651262cf2b2c04c34331794e030d0d4ff065c2fa6b732b4019f"
+      "hash": "0396fb487178d4c59f04760eb412e803119ffdc3c3b69af8e0d83726011b6555"
     },
     {
       "path": "pages/docs/grid-template-rows.md",
       "url": "https://tailwindcss.com/docs/grid-template-rows",
       "title": "grid-template-rows - Flexbox & Grid - Tailwind CSS",
-      "hash": "53b8d5c83bc365e0189da3fe546edd7f1bb6ee7c930788b072f68d1eff059172"
+      "hash": "150a68ea233c0731ac2492605afae63a236b73f683c3623ac0581c06fe03375f"
     },
     {
       "path": "pages/docs/height.md",
       "url": "https://tailwindcss.com/docs/height",
       "title": "height - Sizing - Tailwind CSS",
-      "hash": "41028d4adef90bd84c7568146e69f351f48ab77e71e32e50f40a67db9a8b8eb5"
+      "hash": "71042b7224d6f27e905981f16a6f523beeaf425e56f03c48fa44e8fced6a62ec"
     },
     {
       "path": "pages/docs/hover-focus-and-other-states.md",
       "url": "https://tailwindcss.com/docs/hover-focus-and-other-states",
       "title": "Hover, focus, and other states - Core concepts - Tailwind CSS",
-      "hash": "7dfc841e5999778c07bffda0973706ed760fe62bde83cf4ed3408d4b2a2d270b"
+      "hash": "4d1f8d7681549bb9f29184e6cc2c0b348b2e88f6f2eb235c49b8ed5d8f7ba594"
     },
     {
       "path": "pages/docs/inline-size.md",
       "url": "https://tailwindcss.com/docs/inline-size",
       "title": "inline-size - Sizing - Tailwind CSS",
-      "hash": "cc969d14a6e6aa2b4319ddd46bb6fabf9cd9a4c46a8cae4a37658ccbbe01c4aa"
+      "hash": "937676d9e38b3798ea214d1d71893d1f254aa2cc9035c020444315b263d37a73"
     },
     {
       "path": "pages/docs/installation/using-vite.md",
       "url": "https://tailwindcss.com/docs/installation/using-vite",
       "title": "Installing Tailwind CSS with Vite - Tailwind CSS",
-      "hash": "5cad5a119af50027738e4610766723a993739b5dfe961fe8b1d6d60859f134e7"
+      "hash": "9e54d594d6d8489d316407530c8f623c7ae96cf8925867447855fb3666794bbd"
     },
     {
       "path": "pages/docs/isolation.md",
       "url": "https://tailwindcss.com/docs/isolation",
       "title": "isolation - Layout - Tailwind CSS",
-      "hash": "e7e5bbb1963ac136bf60eac9f277572818e6ed01ce42143a2ffbc5ab64d823c4"
+      "hash": "36085a9f8684b16e76ffbb6e1f62274e63819cd29edf7b9b63eaaf72c413e162"
     },
     {
       "path": "pages/docs/justify-content.md",
       "url": "https://tailwindcss.com/docs/justify-content",
       "title": "justify-content - Flexbox & Grid - Tailwind CSS",
-      "hash": "158b579625e7164fc89934b4f3ebe89b88b2ffe2d6f0ff045ac3f9d4feeb57ca"
+      "hash": "7d793004044b64b6c941278f9b07b2861a026b807d6174fb085e974a12f9e447"
     },
     {
       "path": "pages/docs/justify-items.md",
       "url": "https://tailwindcss.com/docs/justify-items",
       "title": "justify-items - Flexbox & Grid - Tailwind CSS",
-      "hash": "73928f76628cc920408690e34314f4de63ca027edad1a6e39e5bf0adef4ba070"
+      "hash": "7e2f0e352c2e46c54bbd3d02424a51916336b1a80004b4978f0b6aed54f34720"
     },
     {
       "path": "pages/docs/justify-self.md",
       "url": "https://tailwindcss.com/docs/justify-self",
       "title": "justify-self - Flexbox & Grid - Tailwind CSS",
-      "hash": "037d82cbbb07746a987414689562fbdefd0a200c3c85beb5879cd21b99e9249f"
+      "hash": "8414e7fda9188b36c58dae5a3e353203c25bf7d34b59840a62fbd394ffe98803"
     },
     {
       "path": "pages/docs/letter-spacing.md",
       "url": "https://tailwindcss.com/docs/letter-spacing",
       "title": "letter-spacing - Typography - Tailwind CSS",
-      "hash": "3f18d8ab3d703b39fa59e526f8d5c78351368d768c5d8a039e21c41b8da7f8e2"
+      "hash": "8504eca58f89e42cc56a45b4bd01d098a87c349b767bfea5fce31d87538da5cf"
     },
     {
       "path": "pages/docs/line-clamp.md",
       "url": "https://tailwindcss.com/docs/line-clamp",
       "title": "line-clamp - Typography - Tailwind CSS",
-      "hash": "3918f06ca3e33786fc58d5cb5ea3f58b836f4f2e2351e4484db8a8689eedde7d"
+      "hash": "d39695120bf597cfac80c5d634ac32ba7a9ed896c663aa48c12bf4670b7b17a1"
     },
     {
       "path": "pages/docs/line-height.md",
       "url": "https://tailwindcss.com/docs/line-height",
       "title": "line-height - Typography - Tailwind CSS",
-      "hash": "02487733bef48b7677eb24b85634c46ee0a8e0ff60b4cf5a6d1e294928fc3d3b"
+      "hash": "e47cf165dfcc0d71c937f8bdbf021ed8b74369e468cc4b0492613c82efc66493"
     },
     {
       "path": "pages/docs/list-style-image.md",
       "url": "https://tailwindcss.com/docs/list-style-image",
       "title": "list-style-image - Typography - Tailwind CSS",
-      "hash": "298db815a72b5da56f6f0775476ab9669dbedf1b80bd576892176656ad89ee69"
+      "hash": "2bb43c764965b00d7ddba66fe6293de561c613d618024767279ae3f6ce32f63b"
     },
     {
       "path": "pages/docs/list-style-position.md",
       "url": "https://tailwindcss.com/docs/list-style-position",
       "title": "list-style-position - Typography - Tailwind CSS",
-      "hash": "a574c03993387d00be5f9a29b29cc0b6004e701b9b554d8b367c3d492542ff77"
+      "hash": "8e04d77d5dabdc59af60f5ce0ce4214d8d75d9b38624700f7f975983ad808e51"
     },
     {
       "path": "pages/docs/list-style-type.md",
       "url": "https://tailwindcss.com/docs/list-style-type",
       "title": "list-style-type - Typography - Tailwind CSS",
-      "hash": "b7798493afbaa7715df79b3d8106ed3df03ab631a2b8427bfaf1d269633c3966"
+      "hash": "c709f2ed68252d6a0dd8411a15a73537e9f1e79cee5305d86d5483673c97bdcb"
     },
     {
       "path": "pages/docs/margin.md",
       "url": "https://tailwindcss.com/docs/margin",
       "title": "margin - Spacing - Tailwind CSS",
-      "hash": "73acd4ab48f79e8c88d70f745eb981d8c7685c9cd8d6eb1d207899b16af68d42"
+      "hash": "02a10157f073c1d8324bdf6b6a4cd37741490eac089246bd11a5311f05aa8dca"
     },
     {
       "path": "pages/docs/max-block-size.md",
       "url": "https://tailwindcss.com/docs/max-block-size",
       "title": "max-block-size - Sizing - Tailwind CSS",
-      "hash": "8f201abe2a84702d5b6a9ba78b85015321ad469ff901d08b27a965a431afc62f"
+      "hash": "6c681a8b8ebd4f5caa2b82b0cd2b30879835b2202cb2592f4f779fa086fca536"
     },
     {
       "path": "pages/docs/max-height.md",
       "url": "https://tailwindcss.com/docs/max-height",
       "title": "max-height - Sizing - Tailwind CSS",
-      "hash": "80bc7ac66e76c5df854f4c1e4235c266921ce4d792c183dcc49008b6b0ef7553"
+      "hash": "4aa407b3844ebb11b70b69d3318e3070ba4840dba98024df7fc50b36f1c24edc"
     },
     {
       "path": "pages/docs/max-inline-size.md",
       "url": "https://tailwindcss.com/docs/max-inline-size",
       "title": "max-inline-size - Sizing - Tailwind CSS",
-      "hash": "a64bc9f612c24265f92263fa286ea2e160fa7779af33ea52a28369a83bcbfce4"
+      "hash": "5d640da982c96f64800760694c2f5bcc37dd7cecd16064651704ffafd3f99467"
     },
     {
       "path": "pages/docs/max-width.md",
       "url": "https://tailwindcss.com/docs/max-width",
       "title": "max-width - Sizing - Tailwind CSS",
-      "hash": "6c2ed2ab6219c6476d4623d82b2abc79cc4e922e8dfb06c4928b65ed841d8d39"
+      "hash": "38c76960576c5389b8fa4a1b7792e6fbd7894e623a770021bd57ed919bfe121d"
     },
     {
       "path": "pages/docs/min-block-size.md",
       "url": "https://tailwindcss.com/docs/min-block-size",
       "title": "min-block-size - Sizing - Tailwind CSS",
-      "hash": "5759b6534b58ab0ddc9fb26c0a4dd2a3dbc6db54578390095216166506ccd3fb"
+      "hash": "328471a1a5dc30b46066263a29cacc15c9f8a56993572186eb7e8473f891405d"
     },
     {
       "path": "pages/docs/min-height.md",
       "url": "https://tailwindcss.com/docs/min-height",
       "title": "min-height - Sizing - Tailwind CSS",
-      "hash": "d654837231585fe88a325067ddb368f021b152fe79c9ea27228fd05a35558ba7"
+      "hash": "18faa7d602b248b966a1bfb9a0c9d5ee4f3e57c4d0315c884eb10590ca205499"
     },
     {
       "path": "pages/docs/min-inline-size.md",
       "url": "https://tailwindcss.com/docs/min-inline-size",
       "title": "min-inline-size - Sizing - Tailwind CSS",
-      "hash": "55e44e1f98808168e56d0ad8d0f093a5463395bc0a70b26a5320d23986bb16f9"
+      "hash": "648d68f8e684b88e95f24810aff03048b7d189656980c94db1f71ca39d3a667f"
     },
     {
       "path": "pages/docs/min-width.md",
       "url": "https://tailwindcss.com/docs/min-width",
       "title": "min-width - Sizing - Tailwind CSS",
-      "hash": "9d6c2c555b0e16dd9252b0104ca9fd80b77668009feb2da5c22aaa95fa02516a"
+      "hash": "03820eee0a0fb4a1b79d98ed2bdd84e96a3424e00d1c9a2bd53b31bd3f17f073"
     },
     {
       "path": "pages/docs/object-fit.md",
       "url": "https://tailwindcss.com/docs/object-fit",
       "title": "object-fit - Layout - Tailwind CSS",
-      "hash": "4fee39270e6c458ebb8b83f8518e32cde6e860c0a75e2f9a65308937f0666ea2"
+      "hash": "c0341335932459ccd9bfca34888dd4704107e1e4603a052679e9ce070aa1d1c9"
     },
     {
       "path": "pages/docs/object-position.md",
       "url": "https://tailwindcss.com/docs/object-position",
       "title": "object-position - Layout - Tailwind CSS",
-      "hash": "456cf0cf08d313b007a4d8105de5aebc7d3c4af4313623b4befb861aa062fa34"
+      "hash": "5ccfbfb07781c50141ba29b385cbca3ca04d25ca3c7e7e06af01bd893c530d2f"
     },
     {
       "path": "pages/docs/order.md",
       "url": "https://tailwindcss.com/docs/order",
       "title": "order - Flexbox & Grid - Tailwind CSS",
-      "hash": "1253e10ded896a61f8a07677e32ac852961e70674dca7e7225fe73414475f28f"
+      "hash": "9c389d2a39dc1e469b33d89b3e7bd9fd8a2aa149b67faa4c21d6e5a18643b127"
     },
     {
       "path": "pages/docs/overflow.md",
       "url": "https://tailwindcss.com/docs/overflow",
       "title": "overflow - Layout - Tailwind CSS",
-      "hash": "9d4f43dadd3a293dc5e3e5d51dbada723e0dab5390c10886c69177d2c5338049"
+      "hash": "4655f72c35a1e2bef7a1b250f80d98f1a07ea848373a27cc8475522d5930d5ac"
     },
     {
       "path": "pages/docs/overscroll-behavior.md",
       "url": "https://tailwindcss.com/docs/overscroll-behavior",
       "title": "overscroll-behavior - Layout - Tailwind CSS",
-      "hash": "2bdab39e03f538a1e17e1080a9cf406eefd811a274f921d7f41ed3e54ce331aa"
+      "hash": "912827adf03b52c37c94280eb1d551e44ff4e6a23c6affcd208692756660cca6"
     },
     {
       "path": "pages/docs/padding.md",
       "url": "https://tailwindcss.com/docs/padding",
       "title": "padding - Spacing - Tailwind CSS",
-      "hash": "f37a1fc3e51bc119b8ad8eb41da4cb42b38983e33940845592ce0a6c35df419a"
+      "hash": "50e8b11fc85c6eade718b1e43496a7cedcd3219d07ce0296cde3f9ecd1addcce"
     },
     {
       "path": "pages/docs/place-content.md",
       "url": "https://tailwindcss.com/docs/place-content",
       "title": "place-content - Flexbox & Grid - Tailwind CSS",
-      "hash": "e04fba8aee39392f8c9c626c0c5760ecbd50658096fd9dce33a1df3962308933"
+      "hash": "aa4592b7cd827084ef9439f96ad2d2bcd13c189af3e6932e73e688a057e960cc"
     },
     {
       "path": "pages/docs/place-items.md",
       "url": "https://tailwindcss.com/docs/place-items",
       "title": "place-items - Flexbox & Grid - Tailwind CSS",
-      "hash": "66172662718f8a1b5a5b6e68b1e62aaa85b5058af1747f10180a13cf05569884"
+      "hash": "4adeabf5a5564bc8f09b35d331ac3b92f8ce17b9d4609a9d1361ff6f2d27495d"
     },
     {
       "path": "pages/docs/place-self.md",
       "url": "https://tailwindcss.com/docs/place-self",
       "title": "place-self - Flexbox & Grid - Tailwind CSS",
-      "hash": "071d4772487b97bf63262ab91ec2809e3dfd54533835d0eaa0ebcdb1c53c4ce7"
+      "hash": "47716adfa9aeff14ef052a87ca71c766943c55bdaa8a4523522514f8004cbac7"
     },
     {
       "path": "pages/docs/position.md",
       "url": "https://tailwindcss.com/docs/position",
       "title": "position - Layout - Tailwind CSS",
-      "hash": "f43b28a1fc96b115ba0dbe501c1a43c52c6da2c4bd3ca7d96934a8c66d36d11b"
+      "hash": "cef331e5f8179bc0f37d5ec3e7d5571b642c93aa3242afa5df4da03b1b2990c1"
     },
     {
       "path": "pages/docs/preflight.md",
       "url": "https://tailwindcss.com/docs/preflight",
       "title": "Preflight - Base styles - Tailwind CSS",
-      "hash": "7f3f77ba047d2882449f6a24690d9d5a37cade835508e6285eb2e3164db09f24"
+      "hash": "054311288748600625f4d94f9475cc3d4711147761b88a72bdb45608efeca7c3"
     },
     {
       "path": "pages/docs/responsive-design.md",
       "url": "https://tailwindcss.com/docs/responsive-design",
       "title": "Responsive design - Core concepts - Tailwind CSS",
-      "hash": "96e39255e9e8748c0df6f060d44fa358c50a0a56c49761d49be24d843fbeb458"
+      "hash": "65be305ed586be01a51213a09e64511fdfe11fe7e703a89564f99e6855eced52"
     },
     {
       "path": "pages/docs/styling-with-utility-classes.md",
       "url": "https://tailwindcss.com/docs/styling-with-utility-classes",
       "title": "Styling with utility classes - Core concepts - Tailwind CSS",
-      "hash": "5164f919a355ba6037c19310d9c54a34325c4a3b12abf9a217406cbcf91e5eb6"
+      "hash": "044a99fde8f25adfc4e886c155a8bde2ec77485c42aba68de5c9ca45ca790c33"
     },
     {
       "path": "pages/docs/text-align.md",
       "url": "https://tailwindcss.com/docs/text-align",
       "title": "text-align - Typography - Tailwind CSS",
-      "hash": "2f1204009deaea6315dd67f4f356f0cd0c3ec9e027a668cc1ce3f7ecb4acad6e"
+      "hash": "d5fb8ec88f137c350830fcadee45e76f28f488365811cfb67986af47394a8497"
     },
     {
       "path": "pages/docs/text-decoration-line.md",
       "url": "https://tailwindcss.com/docs/text-decoration-line",
       "title": "text-decoration-line - Typography - Tailwind CSS",
-      "hash": "b699ba80bc10a7576f92112d35b0b97ba3a4acc68c8fa32683435ad486294f5e"
+      "hash": "23eb5db0fa1d0b2239622b3f1cdf43b32e2f821133466d23513b9d5891191192"
     },
     {
       "path": "pages/docs/theme.md",
       "url": "https://tailwindcss.com/docs/theme",
       "title": "Theme variables - Core concepts - Tailwind CSS",
-      "hash": "c1f9186e084fa481bb45122af68500e89b4c96e1fdb7687382fccf2f961a5910"
+      "hash": "e42a1db03c5a57c1ac4c0847952e93f1b2a382e461e5903ae7d5499e17f5e7b7"
     },
     {
       "path": "pages/docs/top-right-bottom-left.md",
       "url": "https://tailwindcss.com/docs/top-right-bottom-left",
       "title": "top / right / bottom / left - Layout - Tailwind CSS",
-      "hash": "1ac27b69bdf4ab68d259ef0bc616630ac03f4e0b83790fbf30158195fee07d67"
+      "hash": "88e5c18abaebdb77d53c485da96c8bddfed560021e3e8978605182cf77931e02"
     },
     {
       "path": "pages/docs/upgrade-guide.md",
       "url": "https://tailwindcss.com/docs/upgrade-guide",
       "title": "Upgrade guide - Getting started - Tailwind CSS",
-      "hash": "f0db69b22912a6b3f6f779a4d523910c111a124e1ad0dfdd419375a89d6c799e"
+      "hash": "3df527cab0c978f7d3a429d50497753ccba53bd45d6bad98dac0e11a9ba513c2"
     },
     {
       "path": "pages/docs/visibility.md",
       "url": "https://tailwindcss.com/docs/visibility",
       "title": "visibility - Layout - Tailwind CSS",
-      "hash": "7d4a100c3dce3232199020705d2b4ff946d56ead39c9490158f7cbd96bb0b65a"
+      "hash": "cc22b24cc2aa6d771ea401e7fbde463b7241206b3aa5ffd9cca0f2f680f7f31a"
     },
     {
       "path": "pages/docs/width.md",
       "url": "https://tailwindcss.com/docs/width",
       "title": "width - Sizing - Tailwind CSS",
-      "hash": "c5ad2e5cca81e0f0a5f07aea95540662d88370353eecd291ab46b8ab13e2f0b4"
+      "hash": "4a2ac29f0d5b0d70062bb962ea4e073fea9ea4ada75e3c3240f42f4e0abd0519"
     },
     {
       "path": "pages/docs/z-index.md",
       "url": "https://tailwindcss.com/docs/z-index",
       "title": "z-index - Layout - Tailwind CSS",
-      "hash": "cf15b15348c125f2a2aec70f0e412c2ff954e1787d82c7973c24096b86dfaa3b"
+      "hash": "c90d85aff9df0243ba4a702013cbee2fe23219606ec4a9c7d4c495ae98164049"
     }
   ],
   "edges": [
@@ -1120,9 +1120,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-07-27T09:26:23.362425+00:00",
+    "synced_at": "2026-08-03T09:00:03.492906+00:00",
     "added": 0,
-    "changed": 0,
+    "changed": 88,
     "removed": 0,
     "pages": 88
   }

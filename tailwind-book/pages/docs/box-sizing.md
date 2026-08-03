@@ -4,7 +4,7 @@ title: box-sizing - Layout - Tailwind CSS
 description: Utilities for controlling how the browser should calculate an element's
   total size.
 resource: https://tailwindcss.com/docs/box-sizing
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Layout
@@ -28,7 +28,8 @@ This means a 100px × 100px element with a 2px border and 4px of padding on all 
 
 Prefix a `box-sizing` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="box-content md:box-border ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="box-content md:box-border ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

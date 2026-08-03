@@ -4,7 +4,7 @@ title: Editor setup - Getting started - Tailwind CSS
 description: Tooling to improve the developer experience when working with Tailwind
   CSS.
 resource: https://tailwindcss.com/docs/editor-setup
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Getting started
@@ -33,7 +33,8 @@ We maintain an official [Prettier plugin](https://github.com/tailwindlabs/pretti
 
 It works seamlessly with custom Tailwind configurations, and because it’s just a Prettier plugin, it works anywhere Prettier works — including every popular editor and IDE, and of course on the command line.
 
-`<!-- Before --><button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800">Submit</button><!-- After --><button class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">Submit</button>`Check out the plugin [on GitHub](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) to learn more and get started.
+`<!-- Before --><button class="text-white px-4 sm:px-8 py-2 sm:py-3 bg-sky-700 hover:bg-sky-800">Submit</button><!-- After --><button class="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">Submit</button>`
+Check out the plugin [on GitHub](https://github.com/tailwindlabs/prettier-plugin-tailwindcss) to learn more and get started.
 
 JetBrains IDEs like WebStorm, PhpStorm, and others include support for intelligent Tailwind CSS completions in your HTML.
 

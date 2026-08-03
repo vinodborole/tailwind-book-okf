@@ -3,7 +3,7 @@ type: Web Page
 title: min-block-size - Sizing - Tailwind CSS
 description: Utilities for setting the minimum block size of an element.
 resource: https://tailwindcss.com/docs/min-block-size
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the minimum block size of an element.
 
 | Class | Styles | 
 |---|---|
-| `min-block-` | `min-block-size: calc(var(--spacing) * ` | 
-| `min-block-` | `min-block-size: calc(` | 
+| `min-block-``<number>` | `min-block-size: calc(var(--spacing) *` `<number>` ); | 
+| `min-block-``<fraction>` | `min-block-size: calc(``<fraction>` * 100%); | 
 | `min-block-px` | `min-block-size: 1px;` | 
 | `min-block-full` | `min-block-size: 100%;` | 
 | `min-block-screen` | `min-block-size: 100vh;` | 
@@ -28,8 +28,8 @@ Utilities for setting the minimum block size of an element.
 | `min-block-max` | `min-block-size: max-content;` | 
 | `min-block-fit` | `min-block-size: fit-content;` | 
 | `min-block-lh` | `min-block-size: 1lh;` | 
-| `min-block-(` | `min-block-size: var(` | 
-| `min-block-[` | `min-block-size: ` | 
+| `min-block-(``<custom-property>` ) | `min-block-size: var(``<custom-property>` ); | 
+| `min-block-[``<value>` ] | `min-block-size:` `<value>` ; | 
 
 Use `min-block-` utilities like `<number>``min-block-24` and `min-block-64` to set an element to a fixed minimum block size based on the spacing scale:
 
@@ -37,17 +37,21 @@ Use `min-block-full` or `min-block-` utilities like `<fraction>``min-block-1/2`,
 
 Use the `min-block-[` syntax to set the minimum block size based on a completely custom value:`<value>`]
 
-`<div class="min-block-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `min-block-(` syntax:`<custom-property>`)
+`<div class="min-block-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `min-block-(` syntax:`<custom-property>`)
 
-`<div class="min-block-(--my-min-block-size) ...">  <!-- ... --></div>`This is just a shorthand for `min-block-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="min-block-(--my-min-block-size) ...">  <!-- ... --></div>`
+This is just a shorthand for `min-block-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `min-block-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="block-24 min-block-0 md:min-block-full ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="block-24 min-block-0 md:min-block-full ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `min-block-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

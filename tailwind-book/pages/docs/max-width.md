@@ -3,7 +3,7 @@ type: Web Page
 title: max-width - Sizing - Tailwind CSS
 description: Utilities for setting the maximum width of an element.
 resource: https://tailwindcss.com/docs/max-width
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the maximum width of an element.
 
 | Class | Styles | 
 |---|---|
-| `max-w-` | `max-width: calc(var(--spacing) * ` | 
-| `max-w-` | `max-width: calc(` | 
+| `max-w-``<number>` | `max-width: calc(var(--spacing) *` `<number>` ); | 
+| `max-w-``<fraction>` | `max-width: calc(``<fraction>` * 100%); | 
 | `max-w-3xs` | `max-width: var(--container-3xs); /* 16rem (256px) */` | 
 | `max-w-2xs` | `max-width: var(--container-2xs); /* 18rem (288px) */` | 
 | `max-w-xs` | `max-width: var(--container-xs); /* 20rem (320px) */` | 
@@ -40,17 +40,9 @@ Utilities for setting the maximum width of an element.
 | `max-w-min` | `max-width: min-content;` | 
 | `max-w-max` | `max-width: max-content;` | 
 | `max-w-fit` | `max-width: fit-content;` | 
-| `container` | ```
-width: 100%;
-@media (width >= 40rem) { max-width: 40rem; }
-@media (width >= 48rem) { max-width: 48rem; }
-@media (width >= 64rem) { max-width: 64rem; }
-@media (width >= 80rem) { max-width: 80rem; }
-@media (width >= 96rem) { max-width: 96rem; }
-```
- | 
-| `max-w-(` | `max-width: var(` | 
-| `max-w-[` | `max-width: ` | 
+| `container` | ``` width: 100%; @media (width >= 40rem) { max-width: 40rem; } @media (width >= 48rem) { max-width: 48rem; } @media (width >= 64rem) { max-width: 64rem; } @media (width >= 80rem) { max-width: 80rem; } @media (width >= 96rem) { max-width: 96rem; } ```  | 
+| `max-w-(``<custom-property>` ) | `max-width: var(``<custom-property>` ); | 
+| `max-w-[``<value>` ] | `max-width:` `<value>` ; | 
 
 Use `max-w-` utilities like `<number>``max-w-24` and `max-w-64` to set an element to a fixed maximum width based on the spacing scale:
 
@@ -58,29 +50,31 @@ Resize the example to see the expected behavior
 
 Use `max-w-full` or `max-w-` utilities like `<fraction>``max-w-1/2` and `max-w-2/5` to give an element a percentage-based maximum width:
 
-Resize the example to see the expected behavior
-
 Use utilities like `max-w-sm` and `max-w-xl` to set an element to a fixed maximum width based on the container scale:
-
-Resize the example to see the expected behavior
 
 Use the `container` utility to set the maximum width of an element to match the `min-width` of the current breakpoint. This is useful if you'd prefer to design for a fixed set of screen sizes instead of trying to accommodate a fully fluid viewport:
 
-`<div class="container">  <!-- ... --></div>`Note that unlike containers you might have used in other frameworks, Tailwind's container does not center itself automatically and does not have any built-in horizontal padding. Use `mx-auto` and the `px-` utilities to add these:`<number>`
+`<div class="container">  <!-- ... --></div>`
+Note that unlike containers you might have used in other frameworks, Tailwind's container does not center itself automatically and does not have any built-in horizontal padding. Use `mx-auto` and the `px-` utilities to add these:`<number>`
 
-`<div class="container mx-auto px-4">  <!-- ... --></div>`Use the `max-w-[` syntax to set the maximum width based on a completely custom value:`<value>`]
+`<div class="container mx-auto px-4">  <!-- ... --></div>`
+Use the `max-w-[` syntax to set the maximum width based on a completely custom value:`<value>`]
 
-`<div class="max-w-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `max-w-(` syntax:`<custom-property>`)
+`<div class="max-w-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `max-w-(` syntax:`<custom-property>`)
 
-`<div class="max-w-(--my-max-width) ...">  <!-- ... --></div>`This is just a shorthand for `max-w-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="max-w-(--my-max-width) ...">  <!-- ... --></div>`
+This is just a shorthand for `max-w-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `max-width` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="max-w-sm md:max-w-lg ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="max-w-sm md:max-w-lg ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `max-w-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

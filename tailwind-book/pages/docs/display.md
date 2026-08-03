@@ -3,7 +3,7 @@ type: Web Page
 title: display - Layout - Tailwind CSS
 description: Utilities for controlling the display box type of an element.
 resource: https://tailwindcss.com/docs/display
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Layout
@@ -33,29 +33,8 @@ Utilities for controlling the display box type of an element.
 | `table-row` | `display: table-row;` | 
 | `list-item` | `display: list-item;` | 
 | `hidden` | `display: none;` | 
-| `sr-only` | ```
-position: absolute;
-width: 1px;
-height: 1px;
-padding: 0;
-margin: -1px;
-overflow: hidden;
-clip-path: inset(50%);
-white-space: nowrap;
-border-width: 0;
-```
- | 
-| `not-sr-only` | ```
-position: static;
-width: auto;
-height: auto;
-padding: 0;
-margin: 0;
-overflow: visible;
-clip-path: none;
-white-space: normal;
-```
- | 
+| `sr-only` | ``` position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border-width: 0; ```  | 
+| `not-sr-only` | ``` position: static; width: auto; height: auto; padding: 0; margin: 0; overflow: visible; clip-path: none; white-space: normal; ```  | 
 
 Use the `inline`, `inline-block`, and `block` utilities to control the flow of text and elements:
 
@@ -79,13 +58,16 @@ To visually hide an element but keep it in the document, use the [visibility](/d
 
 Use `sr-only` to hide an element visually without hiding it from screen readers:
 
-`<a href="#">  <svg><!-- ... --></svg>  <span class="sr-only">Settings</span></a>`Use `not-sr-only` to undo `sr-only`, making an element visible to sighted users as well as screen readers:
+`<a href="#">  <svg><!-- ... --></svg>  <span class="sr-only">Settings</span></a>`
+Use `not-sr-only` to undo `sr-only`, making an element visible to sighted users as well as screen readers:
 
-`<a href="#">  <svg><!-- ... --></svg>  <span class="sr-only sm:not-sr-only">Settings</span></a>`This can be useful when you want to visually hide something on small screens but show it on larger screens for example.
+`<a href="#">  <svg><!-- ... --></svg>  <span class="sr-only sm:not-sr-only">Settings</span></a>`
+This can be useful when you want to visually hide something on small screens but show it on larger screens for example.
 
 Prefix a `display` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="flex md:inline-flex ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="flex md:inline-flex ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

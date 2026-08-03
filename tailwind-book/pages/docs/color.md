@@ -3,7 +3,7 @@ type: Web Page
 title: color - Typography - Tailwind CSS
 description: Utilities for controlling the text color of an element.
 resource: https://tailwindcss.com/docs/color
-timestamp: '2026-07-20T08:37:00.428497+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Typography
@@ -303,8 +303,8 @@ Utilities for controlling the text color of an element.
 | `text-taupe-800` | `color: var(--color-taupe-800); /* oklch(26.8% 0.011 36.5) */` | 
 | `text-taupe-900` | `color: var(--color-taupe-900); /* oklch(21.4% 0.009 43.1) */` | 
 | `text-taupe-950` | `color: var(--color-taupe-950); /* oklch(14.7% 0.004 49.3) */` | 
-| `text-(` | `color: var(` | 
-| `text-[` | `color: ` | 
+| `text-(``<custom-property>` ) | `color: var(``<custom-property>` ); | 
+| `text-[``<value>` ] | `color:` `<value>` ; | 
 
 Use utilities like `text-blue-600` and `text-sky-400` to control the text color of an element:
 
@@ -312,9 +312,11 @@ Use the color opacity modifier to control the text color opacity of an element:
 
 Use the `text-[` syntax to set the text color based on a completely custom value:`<value>`]
 
-`<p class="text-[#50d71e] ...">  Lorem ipsum dolor sit amet...</p>`For CSS variables, you can also use the `text-(` syntax:`<custom-property>`)
+`<p class="text-[#50d71e] ...">  Lorem ipsum dolor sit amet...</p>`
+For CSS variables, you can also use the `text-(` syntax:`<custom-property>`)
 
-`<p class="text-(--my-color) ...">  Lorem ipsum dolor sit amet...</p>`This is just a shorthand for `text-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<p class="text-(--my-color) ...">  Lorem ipsum dolor sit amet...</p>`
+This is just a shorthand for `text-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `color` utility with a variant like `hover:*` to only apply the utility in that state:
 
@@ -324,13 +326,14 @@ Learn more about using variants in the [variants documentation](/docs/hover-focu
 
 Prefix a `color` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="text-blue-600 md:text-green-600 ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
-
+`<p class="text-blue-600 md:text-green-600 ...">  Lorem ipsum dolor sit amet...</p>`
 Use the `--color-*` theme variables to customize the color utilities in your project:
 
-`@theme {  --color-regal-blue: #243c5a; }`Now the `text-regal-blue` utility can be used in your markup:
+`@theme {  --color-regal-blue: #243c5a; }`
+Now the `text-regal-blue` utility can be used in your markup:
 
-`<p class="text-regal-blue">  Lorem ipsum dolor sit amet...</p>`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+`<p class="text-regal-blue">  Lorem ipsum dolor sit amet...</p>`
+Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

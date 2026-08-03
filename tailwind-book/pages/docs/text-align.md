@@ -3,7 +3,7 @@ type: Web Page
 title: text-align - Typography - Tailwind CSS
 description: Utilities for controlling the alignment of text.
 resource: https://tailwindcss.com/docs/text-align
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Typography
@@ -31,7 +31,8 @@ Use the `text-start` and `text-end` utilities, which use [logical properties](ht
 
 Prefix a `text-align` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<p class="text-left md:text-center ...">  Lorem ipsum dolor sit amet...</p>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<p class="text-left md:text-center ...">  Lorem ipsum dolor sit amet...</p>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 

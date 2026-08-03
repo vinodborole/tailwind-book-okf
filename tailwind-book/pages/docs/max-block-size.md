@@ -3,7 +3,7 @@ type: Web Page
 title: max-block-size - Sizing - Tailwind CSS
 description: Utilities for setting the maximum block size of an element.
 resource: https://tailwindcss.com/docs/max-block-size
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the maximum block size of an element.
 
 | Class | Styles | 
 |---|---|
-| `max-block-` | `max-block-size: calc(var(--spacing) * ` | 
-| `max-block-` | `max-block-size: calc(` | 
+| `max-block-``<number>` | `max-block-size: calc(var(--spacing) *` `<number>` ); | 
+| `max-block-``<fraction>` | `max-block-size: calc(``<fraction>` * 100%); | 
 | `max-block-none` | `max-block-size: none;` | 
 | `max-block-px` | `max-block-size: 1px;` | 
 | `max-block-full` | `max-block-size: 100%;` | 
@@ -28,8 +28,8 @@ Utilities for setting the maximum block size of an element.
 | `max-block-max` | `max-block-size: max-content;` | 
 | `max-block-fit` | `max-block-size: fit-content;` | 
 | `max-block-lh` | `max-block-size: 1lh;` | 
-| `max-block-(` | `max-block-size: var(` | 
-| `max-block-[` | `max-block-size: ` | 
+| `max-block-(``<custom-property>` ) | `max-block-size: var(``<custom-property>` ); | 
+| `max-block-[``<value>` ] | `max-block-size:` `<value>` ; | 
 
 Use `max-block-` utilities like `<number>``max-block-24` and `max-block-64` to set an element to a fixed maximum block size based on the spacing scale:
 
@@ -37,17 +37,21 @@ Use `max-block-full` or `max-block-` utilities like `<fraction>``max-block-1/2` 
 
 Use the `max-block-[` syntax to set the maximum block size based on a completely custom value:`<value>`]
 
-`<div class="max-block-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `max-block-(` syntax:`<custom-property>`)
+`<div class="max-block-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `max-block-(` syntax:`<custom-property>`)
 
-`<div class="max-block-(--my-max-block-size) ...">  <!-- ... --></div>`This is just a shorthand for `max-block-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="max-block-(--my-max-block-size) ...">  <!-- ... --></div>`
+This is just a shorthand for `max-block-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `max-block-size` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="block-48 max-block-full md:max-block-screen ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="block-48 max-block-full md:max-block-screen ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `max-block-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

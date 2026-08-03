@@ -3,7 +3,7 @@ type: Web Page
 title: columns - Layout - Tailwind CSS
 description: Utilities for controlling the number of columns within an element.
 resource: https://tailwindcss.com/docs/columns
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Layout
@@ -12,7 +12,7 @@ Utilities for controlling the number of columns within an element.
 
 | Class | Styles | 
 |---|---|
-| `columns-` | `columns: ` | 
+| `columns-``<number>` | `columns:` `<number>` ; | 
 | `columns-3xs` | `columns: var(--container-3xs); /* 16rem (256px) */` | 
 | `columns-2xs` | `columns: var(--container-2xs); /* 18rem (288px) */` | 
 | `columns-xs` | `columns: var(--container-xs); /* 20rem (320px) */` | 
@@ -27,8 +27,8 @@ Utilities for controlling the number of columns within an element.
 | `columns-6xl` | `columns: var(--container-6xl); /* 72rem (1152px) */` | 
 | `columns-7xl` | `columns: var(--container-7xl); /* 80rem (1280px) */` | 
 | `columns-auto` | `columns: auto;` | 
-| `columns-(` | `columns: var(` | 
-| `columns-[` | `columns: ` | 
+| `columns-(``<custom-property>` ) | `columns: var(``<custom-property>` ); | 
+| `columns-[``<value>` ] | `columns:` `<value>` ; | 
 
 Use `columns-` utilities like `<number>``columns-3` to set the number of columns that should be created for the content within an element:
 
@@ -46,21 +46,23 @@ Learn more about the gap utilities in the [gap documentation](/docs/gap).
 
 Use the `columns-[` syntax to set the columns based on a completely custom value:`<value>`]
 
-`<div class="columns-[30vw] ...">  <!-- ... --></div>`For CSS variables, you can also use the `columns-(` syntax:`<custom-property>`)
+`<div class="columns-[30vw] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `columns-(` syntax:`<custom-property>`)
 
-`<div class="columns-(--my-columns) ...">  <!-- ... --></div>`This is just a shorthand for `columns-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="columns-(--my-columns) ...">  <!-- ... --></div>`
+This is just a shorthand for `columns-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `columns` utility with a breakpoint variant like `sm:` to only apply the utility at small screen sizes and above:
-
-Resize the example to see the expected behavior
 
 Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 Use the `--container-*` theme variables to customize the fixed-width column utilities in your project:
 
-`@theme {  --container-4xs: 14rem; }`Now the `columns-4xs` utility can be used in your markup:
+`@theme {  --container-4xs: 14rem; }`
+Now the `columns-4xs` utility can be used in your markup:
 
-`<div class="columns-4xs">  <!-- ... --></div>`Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
+`<div class="columns-4xs">  <!-- ... --></div>`
+Learn more about customizing your theme in the [theme documentation](/docs/theme#customizing-your-theme).
 
 # Citations
 

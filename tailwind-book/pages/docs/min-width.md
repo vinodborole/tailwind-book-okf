@@ -3,7 +3,7 @@ type: Web Page
 title: min-width - Sizing - Tailwind CSS
 description: Utilities for setting the minimum width of an element.
 resource: https://tailwindcss.com/docs/min-width
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Sizing
@@ -12,8 +12,8 @@ Utilities for setting the minimum width of an element.
 
 | Class | Styles | 
 |---|---|
-| `min-w-` | `min-width: calc(var(--spacing) * ` | 
-| `min-w-` | `min-width: calc(` | 
+| `min-w-``<number>` | `min-width: calc(var(--spacing) *` `<number>` ); | 
+| `min-w-``<fraction>` | `min-width: calc(``<fraction>` * 100%); | 
 | `min-w-3xs` | `min-width: var(--container-3xs); /* 16rem (256px) */` | 
 | `min-w-2xs` | `min-width: var(--container-2xs); /* 18rem (288px) */` | 
 | `min-w-xs` | `min-width: var(--container-xs); /* 20rem (320px) */` | 
@@ -40,8 +40,8 @@ Utilities for setting the minimum width of an element.
 | `min-w-min` | `min-width: min-content;` | 
 | `min-w-max` | `min-width: max-content;` | 
 | `min-w-fit` | `min-width: fit-content;` | 
-| `min-w-(` | `min-width: var(` | 
-| `min-w-[` | `min-width: ` | 
+| `min-w-(``<custom-property>` ) | `min-width: var(``<custom-property>` ); | 
+| `min-w-[``<value>` ] | `min-width:` `<value>` ; | 
 
 Use `min-w-` utilities like `<number>``min-w-24` and `min-w-64` to set an element to a fixed minimum width based on the spacing scale:
 
@@ -51,17 +51,21 @@ Use utilities like `min-w-sm` and `min-w-xl` to set an element to a fixed minimu
 
 Use the `min-w-[` syntax to set the minimum width based on a completely custom value:`<value>`]
 
-`<div class="min-w-[220px] ...">  <!-- ... --></div>`For CSS variables, you can also use the `min-w-(` syntax:`<custom-property>`)
+`<div class="min-w-[220px] ...">  <!-- ... --></div>`
+For CSS variables, you can also use the `min-w-(` syntax:`<custom-property>`)
 
-`<div class="min-w-(--my-min-width) ...">  <!-- ... --></div>`This is just a shorthand for `min-w-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
+`<div class="min-w-(--my-min-width) ...">  <!-- ... --></div>`
+This is just a shorthand for `min-w-[var(` that adds the `<custom-property>`)]`var()` function for you automatically.
 
 Prefix a `min-width` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="w-24 min-w-full md:min-w-0 ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="w-24 min-w-full md:min-w-0 ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 The `min-w-` utilities are driven by the `<number>``--spacing` theme variable, which can be customized in your own theme:
 
-`@theme {  --spacing: 1px; }`Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
+`@theme {  --spacing: 1px; }`
+Learn more about customizing the spacing scale in the [theme variable documentation](/docs/theme).
 
 # Citations
 

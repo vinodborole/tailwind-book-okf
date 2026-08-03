@@ -4,7 +4,7 @@ title: align-self - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling how an individual flex or grid item is positioned
   along its container's cross axis.
 resource: https://tailwindcss.com/docs/align-self
-timestamp: '2026-07-09T12:17:00.933290+00:00'
+timestamp: '2026-08-03T09:00:03.448760+00:00'
 ---
 
 Flexbox & Grid
@@ -41,7 +41,8 @@ This is useful for ensuring that text items align with each other, even if they 
 
 Prefix an `align-self` utility with a breakpoint variant like `md:` to only apply the utility at medium screen sizes and above:
 
-`<div class="self-auto md:self-end ...">  <!-- ... --></div>`Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
+`<div class="self-auto md:self-end ...">  <!-- ... --></div>`
+Learn more about using variants in the [variants documentation](/docs/hover-focus-and-other-states).
 
 # Citations
 
