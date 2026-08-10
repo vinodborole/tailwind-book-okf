@@ -3,7 +3,7 @@ type: Web Page
 title: flex-basis - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling the initial size of flex items.
 resource: https://tailwindcss.com/docs/flex-basis
-timestamp: '2026-08-03T09:00:03.448760+00:00'
+timestamp: '2026-08-10T07:07:23.544096+00:00'
 ---
 
 Flexbox & Grid
@@ -16,6 +16,7 @@ Utilities for controlling the initial size of flex items.
 | `basis-``<fraction>` | `flex-basis: calc(``<fraction>` * 100%); | 
 | `basis-full` | `flex-basis: 100%;` | 
 | `basis-auto` | `flex-basis: auto;` | 
+| `basis-px` | `flex-basis: 1px;` | 
 | `basis-3xs` | `flex-basis: var(--container-3xs); /* 16rem (256px) */` | 
 | `basis-2xs` | `flex-basis: var(--container-2xs); /* 18rem (288px) */` | 
 | `basis-xs` | `flex-basis: var(--container-xs); /* 20rem (320px) */` | 

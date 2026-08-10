@@ -3,7 +3,7 @@ type: Web Page
 title: gap - Flexbox & Grid - Tailwind CSS
 description: Utilities for controlling gutters between grid and flexbox items.
 resource: https://tailwindcss.com/docs/gap
-timestamp: '2026-08-03T09:00:03.448760+00:00'
+timestamp: '2026-08-10T07:07:23.544096+00:00'
 ---
 
 Flexbox & Grid
@@ -13,12 +13,15 @@ Utilities for controlling gutters between grid and flexbox items.
 | Class | Styles | 
 |---|---|
 | `gap-``<number>` | `gap: calc(var(--spacing) *` `<value>` ); | 
+| `gap-px` | `gap: 1px;` | 
 | `gap-(``<custom-property>` ) | `gap: var(``<custom-property>` ); | 
 | `gap-[``<value>` ] | `gap:` `<value>` ; | 
 | `gap-x-``<number>` | `column-gap: calc(var(--spacing) *` `<value>` ); | 
+| `gap-x-px` | `column-gap: 1px;` | 
 | `gap-x-(``<custom-property>` ) | `column-gap: var(``<custom-property>` ); | 
 | `gap-x-[``<value>` ] | `column-gap:` `<value>` ; | 
 | `gap-y-``<number>` | `row-gap: calc(var(--spacing) *` `<value>` ); | 
+| `gap-y-px` | `row-gap: 1px;` | 
 | `gap-y-(``<custom-property>` ) | `row-gap: var(``<custom-property>` ); | 
 | `gap-y-[``<value>` ] | `row-gap:` `<value>` ; | 
 

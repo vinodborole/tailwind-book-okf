@@ -2,7 +2,7 @@
   "generator": "okf-kit",
   "okf_version": "0.1",
   "root_url": "https://tailwindcss.com/docs/installation/using-vite",
-  "updated_at": "2026-08-03T09:00:03.520687+00:00",
+  "updated_at": "2026-08-10T07:07:23.579719+00:00",
   "config": {
     "max_depth": 3,
     "max_pages": 90,
@@ -136,7 +136,7 @@
       "path": "pages/docs/flex-basis.md",
       "url": "https://tailwindcss.com/docs/flex-basis",
       "title": "flex-basis - Flexbox & Grid - Tailwind CSS",
-      "hash": "d0a6c1e3fcf140495e3555aa3ce0464c82eb1fa391492987a28777b25441c613"
+      "hash": "96c89c90331ed8f4445425a4bcbac3215eee3bb4a147453e864b649b73014b05"
     },
     {
       "path": "pages/docs/flex-direction.md",
@@ -232,7 +232,7 @@
       "path": "pages/docs/gap.md",
       "url": "https://tailwindcss.com/docs/gap",
       "title": "gap - Flexbox & Grid - Tailwind CSS",
-      "hash": "2dad5ee0c389a53f51b493de5e22c895aeef2521022a07f207b87e35d77d7e83"
+      "hash": "da32e8b246d024e015e6efd8c1e7dc8d19f08894613d6af22728ea284b78625a"
     },
     {
       "path": "pages/docs/grid-auto-columns.md",
@@ -1120,9 +1120,9 @@
     ]
   ],
   "last_sync": {
-    "synced_at": "2026-08-03T09:00:03.492906+00:00",
+    "synced_at": "2026-08-10T07:07:23.546736+00:00",
     "added": 0,
-    "changed": 88,
+    "changed": 2,
     "removed": 0,
     "pages": 88
   }
